@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import styled, { css, useTheme } from "styled-components";
 import preselectBreakfastItems from "../../data/preselect-breakfast-items.json";
 import { v4 as uuidv4 } from "uuid";
+import Text from "../text";
 
 const getTwoDecimals = (num: number) => parseFloat(num.toFixed(2));
 
@@ -15,6 +16,46 @@ interface BreakfastItem {
   fibre: number;
   id: string;
 }
+
+const headerForm = [
+  {
+    name: "food",
+    label: "Food",
+    placeHolder: "Food (name)",
+    required: true,
+    valueAsNumber: false,
+  },
+  {
+    name: "calories",
+    label: "Calories",
+    placeHolder: "Calories (g)",
+    valueAsNumber: true,
+  },
+  {
+    name: "carbohydrates",
+    label: "Carbohydrates",
+    placeHolder: "Carbohydrates (g)",
+    valueAsNumber: true,
+  },
+  {
+    name: "protein",
+    label: "Protein",
+    placeHolder: "Protein (g)",
+    valueAsNumber: true,
+  },
+  { name: "fat", label: "Fat", placeHolder: "Fat (g)", valueAsNumber: true },
+  {
+    name: "fibre",
+    label: "Fibre",
+    placeHolder: "Fibre (g)",
+    valueAsNumber: true,
+    sibling: (
+      <button type="submit" form="breakfast-item-form" style={{ width: "25%" }}>
+        Add
+      </button>
+    ),
+  },
+];
 
 const Breakfast = () => {
   const [raceBreakfast, setRaceBreakfast] = useState<BreakfastItem[]>([]);
@@ -126,67 +167,24 @@ const Breakfast = () => {
           </tr>
 
           <tr>
-            <TD backgroundColor={theme.colors.iceBlue}>
-              <input
-                {...register("food", {
-                  required: true,
-                  valueAsNumber: false,
-                })}
-                placeholder="Food (name)"
-                form="breakfast-item-form"
-              />
-              {errors.food && <span>This field is required</span>}
-            </TD>
-            <TD backgroundColor={theme.colors.iceBlue}>
-              <input
-                {...register("calories", { valueAsNumber: true })}
-                placeholder="Calories (g)"
-                form="breakfast-item-form"
-              />
-              {errors.calories && <span>This field is required</span>}
-            </TD>
-            <TD backgroundColor={theme.colors.iceBlue}>
-              <input
-                {...register("carbohydrates", {
-                  valueAsNumber: true,
-                })}
-                placeholder="Carbohydrates (g)"
-                form="breakfast-item-form"
-              />
-              {errors.carbohydrates && <span>This field is required</span>}
-            </TD>
-            <TD backgroundColor={theme.colors.iceBlue}>
-              <input
-                {...register("protein", { valueAsNumber: true })}
-                placeholder="Protein (g)"
-                form="breakfast-item-form"
-              />
-              {errors.protein && <span>This field is required</span>}
-            </TD>
-            <TD backgroundColor={theme.colors.iceBlue}>
-              <input
-                {...register("fat", { valueAsNumber: true })}
-                placeholder="Fat (g)"
-                form="breakfast-item-form"
-              />
-              {errors.fat && <span>This field is required</span>}
-            </TD>
-            <TD backgroundColor={theme.colors.iceBlue} separateItems>
-              <input
-                {...register("fibre", { valueAsNumber: true })}
-                placeholder="Fibre (g)"
-                form="breakfast-item-form"
-                style={{ width: "50%" }}
-              />
-              <button
-                type="submit"
-                form="breakfast-item-form"
-                style={{ width: "25%" }}
+            {headerForm.map((item) => (
+              <TD
+                key={item.name}
+                backgroundColor={theme.colors.iceBlue}
+                separateItems={item.sibling ?? false}
               >
-                Add
-              </button>
-              {errors.fibre && <span>This field is required</span>}
-            </TD>
+                <input
+                  {...register(item.name, {
+                    required: item.required ?? false,
+                    valueAsNumber: item.valueAsNumber,
+                  })}
+                  placeholder={item.placeHolder}
+                  form="breakfast-item-form"
+                />
+                {item.sibling}
+                {errors[item.name] && <Text>This field is required</Text>}
+              </TD>
+            ))}
           </tr>
         </thead>
 
