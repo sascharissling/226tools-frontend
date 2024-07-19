@@ -1,0 +1,122 @@
+[
+  {
+    "food": "Banana",
+    "calories": 89,
+    "carbohydrates": 23,
+    "protein": 1.1,
+    "fat": 0.3,
+    "fibre": 2.6
+  },
+  {
+    "food": "Slice of Toast",
+    "calories": 75,
+    "carbohydrates": 14,
+    "protein": 2.7,
+    "fat": 1,
+    "fibre": 0.8
+  },
+  {
+    "food": "Slice of Whole Grain Toast",
+    "calories": 79,
+    "carbohydrates": 15,
+    "protein": 3.5,
+    "fat": 1,
+    "fibre": 2
+  },
+  {
+    "food": "Tablespoon Honey",
+    "calories": 64,
+    "carbohydrates": 17,
+    "protein": 0.1,
+    "fat": 0,
+    "fibre": 0.1
+  },
+  {
+    "food": "200ml Coffee",
+    "calories": 2,
+    "carbohydrates": 0,
+    "protein": 0.3,
+    "fat": 0.1,
+    "fibre": 0
+  },
+  {
+    "food": "100ml Oat Milk",
+    "calories": 50,
+    "carbohydrates": 9.5,
+    "protein": 1,
+    "fat": 1.5,
+    "fibre": 0.8
+  },
+  {
+    "food": "1 Cup of Yoghurt",
+    "calories": 154,
+    "carbohydrates": 17.25,
+    "protein": 12.86,
+    "fat": 6.5,
+    "fibre": 0
+  },
+  {
+    "food": "Boiled Egg",
+    "calories": 77,
+    "carbohydrates": 0.6,
+    "protein": 6.3,
+    "fat": 5.3,
+    "fibre": 0
+  },
+  {
+    "food": "Almond Butter (1 tbsp)",
+    "calories": 98,
+    "carbohydrates": 3,
+    "protein": 3.4,
+    "fat": 9,
+    "fibre": 1.6
+  },
+  {
+    "food": "Blueberries (100g)",
+    "calories": 57,
+    "carbohydrates": 14.49,
+    "protein": 0.74,
+    "fat": 0.33,
+    "fibre": 2.4
+  },
+  {
+    "food": "Chia Seeds (1 tbsp)",
+    "calories": 59,
+    "carbohydrates": 5,
+    "protein": 3,
+    "fat": 4.5,
+    "fibre": 5.5
+  },
+  {
+    "food": "Avocado Toast",
+    "calories": 240,
+    "carbohydrates": 23,
+    "protein": 5,
+    "fat": 15,
+    "fibre": 7
+  },
+  {
+    "food": "Protein Shake",
+    "calories": 220,
+    "carbohydrates": 9,
+    "protein": 30,
+    "fat": 7,
+    "fibre": 5
+  },
+  {
+    "food": "Oatmeal (1 cup cooked)",
+    "calories": 158,
+    "carbohydrates": 27,
+    "protein": 5.5,
+    "fat": 3.2,
+    "fibre": 4
+  },
+  {
+    "food": "Granola Bar",
+    "calories": 113,
+    "carbohydrates": 20,
+    "protein": 2,
+    "fat": 4.5,
+    "fibre": 1.5
+  }
+]
