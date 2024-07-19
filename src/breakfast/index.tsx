@@ -1,6 +1,6 @@
 import { ChangeEvent, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 interface BreakfastItem {
   food: string;
@@ -14,6 +14,7 @@ interface BreakfastItem {
 const Breakfast = () => {
   const [raceBreakfast, setRaceBreakfast] = useState<BreakfastItem[]>([]);
   const [weight, setWeight] = useState<number>(0);
+  const theme = useTheme();
 
   const {
     register,
@@ -51,10 +52,8 @@ const Breakfast = () => {
     <section>
       <h2>Race Breakfast</h2>
 
-      <form
-        onSubmit={handleSubmit(addBreakfast)}
-        id="breakfast-item-form"
-      ></form>
+      <form onSubmit={handleSubmit(addBreakfast)} id="breakfast-item-form" />
+
       <table>
         <thead>
           <tr>
@@ -67,57 +66,57 @@ const Breakfast = () => {
           </tr>
 
           <tr>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("food", {
                   required: true,
                   valueAsNumber: false,
                 })}
-                placeholder="Food"
+                placeholder="Food (name)"
                 form="breakfast-item-form"
               />
               {errors.food && <span>This field is required</span>}
             </TD>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("calories", { valueAsNumber: true })}
-                placeholder="Calories"
+                placeholder="Calories (g)"
                 form="breakfast-item-form"
               />
               {errors.calories && <span>This field is required</span>}
             </TD>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("carbohydrates", {
                   valueAsNumber: true,
                 })}
-                placeholder="Carbohydrates"
+                placeholder="Carbohydrates (g)"
                 form="breakfast-item-form"
               />
               {errors.carbohydrates && <span>This field is required</span>}
             </TD>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("protein", { valueAsNumber: true })}
-                placeholder="Protein"
+                placeholder="Protein (g)"
                 form="breakfast-item-form"
               />
               {errors.protein && <span>This field is required</span>}
             </TD>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("fat", { valueAsNumber: true })}
-                placeholder="Fat"
+                placeholder="Fat (g)"
                 form="breakfast-item-form"
               />
               {errors.fat && <span>This field is required</span>}
             </TD>
-            <TD>
+            <TD backgroundColor={theme.colors.iceBlue}>
               <input
                 {...register("fibre", { valueAsNumber: true })}
-                placeholder="Fibre"
+                placeholder="Fibre (g)"
                 form="breakfast-item-form"
-                style={{ width: "25%" }}
+                style={{ width: "50%" }}
               />
               <button
                 type="submit"
@@ -164,8 +163,10 @@ const Breakfast = () => {
             </TD>
           </tr>
           <tr>
-            <TD backgroundColor="#13ff34">Carbs per kg/bw</TD>
-            <TD>{carbsPerKiloOfBodyweight}</TD>
+            <TD backgroundColor={theme.colors.lightGreen}>Carbs per kg/bw</TD>
+            <TD backgroundColor={theme.colors.lightGreen}>
+              {carbsPerKiloOfBodyweight}
+            </TD>
           </tr>
         </tfoot>
       </table>
@@ -176,18 +177,18 @@ const Breakfast = () => {
 export default Breakfast;
 
 const TD = styled.td<{ backgroundColor?: string }>`
-  //padding: 0.5rem;
-  background-color: ${(props) => props.backgroundColor};
-  //border: 1px solid black;
+  padding: 0.5rem;
+  background-color: ${(props) => props.backgroundColor ?? undefined};
+  border: 1px solid ${(props) => props.theme.colors.olivine};
 `;
 
 const TotalTD = styled.td`
   padding: 0.5rem;
-  border: 1px solid black;
-  background: lightcyan;
+  border: 1px solid ${(props) => props.theme.colors.redwood};
+  background-color: ${(props) => props.theme.colors.lightGreen};
 `;
 
 const TH = styled.th`
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   text-align: left;
 `;

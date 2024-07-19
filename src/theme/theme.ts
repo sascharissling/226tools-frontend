@@ -1,4 +1,4 @@
-export const theme: Theme = {
+export const theme = {
   colors: {
     iceBlue: "#9cfffa",
     lightGreen: "#ACF39D",
@@ -14,18 +14,4 @@ export const theme: Theme = {
   },
 };
 
-export interface Theme {
-  colors: {
-    iceBlue: string;
-    lightGreen: string;
-    olivine: string;
-    beaver: string;
-    redwood: string;
-  };
-  fonts: string[];
-  fontSizes: {
-    small: string;
-    medium: string;
-    large: string;
-  };
-}
+export type Theme = typeof theme;
