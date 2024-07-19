@@ -1,8 +1,12 @@
 import Breakfast from "./breakfast";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme/theme.ts";
+import GlobalStyle from "./theme/GlobalStyles.tsx";
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <main>
         <section>
           <h1>Triathlon Nutrition Calculator</h1>
@@ -14,7 +18,7 @@ function App() {
 
         <Breakfast />
       </main>
-    </>
+    </ThemeProvider>
   );
 }
 

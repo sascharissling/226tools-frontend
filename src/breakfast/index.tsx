@@ -164,7 +164,7 @@ const Breakfast = () => {
             </TD>
           </tr>
           <tr>
-            <TD>Carbs per kg/bw</TD>
+            <TD backgroundColor="#13ff34">Carbs per kg/bw</TD>
             <TD>{carbsPerKiloOfBodyweight}</TD>
           </tr>
         </tfoot>
@@ -175,8 +175,10 @@ const Breakfast = () => {
 
 export default Breakfast;
 
-const TD = styled.td`
-  padding: 0.5rem;
+const TD = styled.td<{ backgroundColor?: string }>`
+  //padding: 0.5rem;
+  background-color: ${(props) => props.backgroundColor};
+  //border: 1px solid black;
 `;
 
 const TotalTD = styled.td`
