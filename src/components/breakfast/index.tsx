@@ -162,107 +162,114 @@ const Breakfast = () => {
 
       <form onSubmit={handleSubmit(addBreakfast)} id="breakfast-item-form" />
 
-      <Table>
-        <thead>
-          <tr>
-            <TH>Food</TH>
-            <TH>Calories</TH>
-            <TH>Carbohydrate</TH>
-            <TH>Protein</TH>
-            <TH>Fat</TH>
-            <TH separateItems>
-              Fibre <button onClick={() => setRaceBreakfast([])}>Reset</button>
-            </TH>
-          </tr>
-
-          <tr>
-            {headerForm.map((item) => (
-              <TD
-                key={item.name}
-                backgroundColor={theme.colors.iceBlue}
-                separateItems={!!item.sibling}
-              >
-                <input
-                  {...register(item.name, {
-                    required: item.required ?? false,
-                    valueAsNumber: item.valueAsNumber,
-                  })}
-                  placeholder={item.placeHolder}
-                  form="breakfast-item-form"
-                  style={{
-                    textAlign: item.valueAsNumber ? "right" : "left",
-                  }}
-                />
-                {item.sibling}
-                {errors[item.name] && <Text>This field is required</Text>}
-              </TD>
-            ))}
-          </tr>
-        </thead>
-
-        <tbody>
-          {raceBreakfast.map((item, index) => (
-            <tr key={index}>
-              <TD>{item.food}</TD>
-              <TD>{item.calories}</TD>
-              <TD>{item.carbohydrates}</TD>
-              <TD>{item.protein}</TD>
-              <TD>{item.fat}</TD>
-              <TD separateItems>
-                {item.fibre}
-                <button onClick={() => handleRemoveBreakfastItem(item.id)}>
-                  Remove
+      <TableWrapper>
+        <table>
+          <thead>
+            <tr>
+              <TH>Food</TH>
+              <TH>Calories</TH>
+              <TH>Carbohydrate</TH>
+              <TH>Protein</TH>
+              <TH>Fat</TH>
+              <TH separateItems>
+                Fibre{" "}
+                <button onClick={() => setRaceBreakfast([])}>
+                  Reset Table
                 </button>
+              </TH>
+            </tr>
+
+            <tr>
+              {headerForm.map((item) => (
+                <TD
+                  key={item.name}
+                  backgroundColor={theme.colors.iceBlue}
+                  separateItems={!!item.sibling}
+                >
+                  <input
+                    {...register(item.name, {
+                      required: item.required ?? false,
+                      valueAsNumber: item.valueAsNumber,
+                    })}
+                    placeholder={item.placeHolder}
+                    form="breakfast-item-form"
+                    style={{
+                      textAlign: item.valueAsNumber ? "right" : "left",
+                    }}
+                  />
+                  {item.sibling}
+                  {errors[item.name] && <Text>This field is required</Text>}
+                </TD>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody>
+            {raceBreakfast.map((item, index) => (
+              <tr key={index}>
+                <TD textAlign="left">{item.food}</TD>
+                <TD>{item.calories}</TD>
+                <TD>{item.carbohydrates}</TD>
+                <TD>{item.protein}</TD>
+                <TD>{item.fat}</TD>
+                <TD separateItems>
+                  {item.fibre}
+                  <button onClick={() => handleRemoveBreakfastItem(item.id)}>
+                    Remove
+                  </button>
+                </TD>
+              </tr>
+            ))}
+          </tbody>
+          <tfoot>
+            <tr>
+              <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
+              <TotalTD>{breakfastTotal.calories}</TotalTD>
+              <TotalTD>{breakfastTotal.carbohydrates}</TotalTD>
+              <TotalTD>{breakfastTotal.protein}</TotalTD>
+              <TotalTD>{breakfastTotal.fat}</TotalTD>
+              <TotalTD>{breakfastTotal.fibre}</TotalTD>
+            </tr>
+            <tr>
+              <TotalTH>Weight (kg)</TotalTH>
+
+              <TD>
+                <input
+                  value={weight ?? 0}
+                  onChange={handleSetWeight}
+                  placeholder="kg"
+                  style={{ textAlign: "right" }}
+                />
               </TD>
             </tr>
-          ))}
-        </tbody>
-        <tfoot>
-          <tr>
-            <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
-            <TotalTD>{breakfastTotal.calories}</TotalTD>
-            <TotalTD>{breakfastTotal.carbohydrates}</TotalTD>
-            <TotalTD>{breakfastTotal.protein}</TotalTD>
-            <TotalTD>{breakfastTotal.fat}</TotalTD>
-            <TotalTD>{breakfastTotal.fibre}</TotalTD>
-          </tr>
-          <tr>
-            <TotalTH>Weight (kg)</TotalTH>
-
-            <TD>
-              <input
-                value={weight ?? 0}
-                onChange={handleSetWeight}
-                placeholder="kg"
-                style={{ textAlign: "right" }}
-              />
-            </TD>
-          </tr>
-          <tr>
-            <TotalTH backgroundColor={theme.colors.lightGreen}>
-              Carbs per kg/bw
-            </TotalTH>
-            <TotalTD>{carbsPerKiloOfBodyweight}</TotalTD>
-          </tr>
-        </tfoot>
-      </Table>
+            <tr>
+              <TotalTH backgroundColor={theme.colors.lightGreen}>
+                Carbs per kg/bw
+              </TotalTH>
+              <TotalTD>{carbsPerKiloOfBodyweight}</TotalTD>
+            </tr>
+          </tfoot>
+        </table>
+      </TableWrapper>
     </section>
   );
 };
 
 export default Breakfast;
 
-const Table = styled.table`
-  // if innerHtml is number then text-align: right
-  td {
-    text-align: right;
-  }
+const TableWrapper = styled.div`
+  overflow-x: auto;
 `;
 
-const TD = styled.td<{ backgroundColor?: string; separateItems?: boolean }>`
+const TD = styled.td<{
+  backgroundColor?: string;
+  separateItems?: boolean;
+  textAlign?: string;
+}>`
   padding: 0.5rem;
   background-color: ${(props) => props.backgroundColor ?? undefined};
   border: 1px solid ${(props) => props.theme.colors.olivine};
+  text-align: ${(props) => props.textAlign ?? "right"};
 
   ${(props) =>
     props.separateItems &&
