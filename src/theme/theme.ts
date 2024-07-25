@@ -9,6 +9,7 @@ export const theme = {
     white: "#fff",
     gray: "#808080",
     lightgray: "#D3D3D3",
+    whiteLighter: "#f8f8f8",
   },
   fonts: ["sans-serif", "Roboto"],
   fontSizes: {

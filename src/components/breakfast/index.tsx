@@ -280,5 +280,7 @@ const TH = styled.th<{ separateItems?: boolean }>`
 
 const Section = styled.section`
   padding: 1rem;
-  border: 1px solid ${(props) => props.theme.colors.beaver};
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
+  border-radius: 0.5rem;
+  background-color: ${(props) => props.theme.colors.whiteLighter};
 `;
