@@ -1,13 +1,13 @@
 import { ChangeEvent, ReactElement, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import styled, { css, useTheme } from "styled-components";
-import preselectBreakfastItems from "../../data/preselect-breakfast-items.json";
 import { v4 as uuidv4 } from "uuid";
 import Text from "../text";
+import BreakfastPreSelect from "./components/BreakfastPreSelect.tsx";
 
 const getTwoDecimals = (num: number) => parseFloat(num.toFixed(2));
 
-interface BreakfastItem {
+export interface BreakfastItem {
   food: string;
   calories: number;
   carbohydrates: number;
@@ -68,8 +68,6 @@ const headerForm: HeaderItem[] = [
 
 const Breakfast = () => {
   const [raceBreakfast, setRaceBreakfast] = useState<BreakfastItem[]>([]);
-  const [preselectSelectedItem, setPreselectSelectedItem] =
-    useState<string>("Banana");
   const [weight, setWeight] = useState<number>(0);
   const theme = useTheme();
 
@@ -82,16 +80,6 @@ const Breakfast = () => {
   const addBreakfast = (data: BreakfastItem) => {
     const id = uuidv4();
     setRaceBreakfast((prev) => [...prev, { ...data, id }]);
-  };
-
-  const handleAddPreselectBreakfastItems = () => {
-    const selected = preselectBreakfastItems.find(
-      (item) => item.food === preselectSelectedItem,
-    );
-    if (selected) {
-      const id = uuidv4();
-      setRaceBreakfast((prev) => [...prev, { ...selected, id }]);
-    }
   };
 
   const breakfastTotal = useMemo(() => {
@@ -136,34 +124,12 @@ const Breakfast = () => {
     <section>
       <h2>Race Breakfast</h2>
 
-      <Label htmlFor="breakfastItemSelect">
-        Add one of our preselected breakfast items, or add your own in the table
-      </Label>
-
-      <select
-        name="breakfastItemSelect"
-        id="breakfastItemSelect"
-        onChange={(e) => setPreselectSelectedItem(e.target.value)}
-        defaultValue={preselectSelectedItem}
-      >
-        {preselectBreakfastItems.map((item, index) => (
-          <option key={index} value={item.food}>
-            {item.food}
-          </option>
-        ))}
-      </select>
-
-      <button
-        onClick={handleAddPreselectBreakfastItems}
-        style={{ width: "25%" }}
-      >
-        Add
-      </button>
+      <BreakfastPreSelect setRaceBreakfast={setRaceBreakfast} />
 
       <form onSubmit={handleSubmit(addBreakfast)} id="breakfast-item-form" />
 
       <TableWrapper>
-        <table>
+        <Table>
           <thead>
             <tr>
               <TH>Food</TH>
@@ -221,6 +187,7 @@ const Breakfast = () => {
               </tr>
             ))}
           </tbody>
+
           <tfoot>
             <tr>
               <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
@@ -249,13 +216,18 @@ const Breakfast = () => {
               <TotalTD>{carbsPerKiloOfBodyweight}</TotalTD>
             </tr>
           </tfoot>
-        </table>
+        </Table>
       </TableWrapper>
     </section>
   );
 };
 
 export default Breakfast;
+
+const Table = styled.table`
+  //border-collapse: separate;
+  //border-spacing: 1rem;
+`;
 
 const TableWrapper = styled.div`
   overflow-x: auto;
@@ -284,6 +256,7 @@ const TotalTD = styled.td`
   border: 1px solid ${(props) => props.theme.colors.redwood};
   background-color: ${(props) => props.theme.colors.lightGreen};
   font-weight: bold;
+  text-align: right;
 `;
 
 const TotalTH = styled.th<{ backgroundColor?: string }>`
@@ -304,10 +277,4 @@ const TH = styled.th<{ separateItems?: boolean }>`
       display: flex;
       justify-content: space-between;
     `}
-`;
-
-const Label = styled.label`
-  display: block;
-  margin-top: 1rem;
-  font-size: ${(props) => props.theme.fontSizes.extraSmall};
 `;
