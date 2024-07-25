@@ -5,6 +5,10 @@ export const theme = {
     olivine: "#B0C592",
     beaver: "#A97C73",
     redwood: "#AF3E4D",
+    black: "#000",
+    white: "#fff",
+    gray: "#808080",
+    lightgray: "#D3D3D3",
   },
   fonts: ["sans-serif", "Roboto"],
   fontSizes: {

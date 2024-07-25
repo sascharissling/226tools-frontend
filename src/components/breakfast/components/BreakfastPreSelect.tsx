@@ -23,38 +23,48 @@ const BreakfastPreSelect = ({ setRaceBreakfast }: Props) => {
   };
 
   return (
-    <>
+    <Wrapper>
       <Label htmlFor="breakfastItemSelect">
         Add one of our preselected breakfast items, or add your own in the table
       </Label>
 
-      <select
-        name="breakfastItemSelect"
-        id="breakfastItemSelect"
-        onChange={(e) => setPreselectSelectedItem(e.target.value)}
-        defaultValue={preselectSelectedItem}
-      >
-        {preselectBreakfastItems.map((item, index) => (
-          <option key={index} value={item.food}>
-            {item.food}
-          </option>
-        ))}
-      </select>
+      <ActionWrapper>
+        <select
+          name="breakfastItemSelect"
+          id="breakfastItemSelect"
+          onChange={(e) => setPreselectSelectedItem(e.target.value)}
+          defaultValue={preselectSelectedItem}
+        >
+          {preselectBreakfastItems.map((item, index) => (
+            <option key={index} value={item.food}>
+              {item.food}
+            </option>
+          ))}
+        </select>
 
-      <button
-        onClick={handleAddPreselectBreakfastItems}
-        style={{ width: "25%" }}
-      >
-        Add
-      </button>
-    </>
+        <Button onClick={handleAddPreselectBreakfastItems}>Add</Button>
+      </ActionWrapper>
+    </Wrapper>
   );
 };
 
 export default BreakfastPreSelect;
 
+const Wrapper = styled.div`
+  width: 15rem;
+  display: grid;
+  gap: 0.5rem;
+`;
+
 const Label = styled.label`
   display: block;
   margin-top: 1rem;
   font-size: ${(props) => props.theme.fontSizes.extraSmall};
+`;
+
+const Button = styled.button``;
+
+const ActionWrapper = styled.div`
+  display: grid;
+  grid: auto / 1fr auto;
 `;

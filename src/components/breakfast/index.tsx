@@ -2,7 +2,7 @@ import { ChangeEvent, ReactElement, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import styled, { css, useTheme } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
-import Text from "../text";
+import { Heading, Text } from "../text";
 import BreakfastPreSelect from "./components/BreakfastPreSelect.tsx";
 
 const getTwoDecimals = (num: number) => parseFloat(num.toFixed(2));
@@ -121,8 +121,10 @@ const Breakfast = () => {
   };
 
   return (
-    <section>
-      <h2>Race Breakfast</h2>
+    <Section>
+      <Heading as="h2" paddingBottom={0}>
+        Race Breakfast
+      </Heading>
 
       <BreakfastPreSelect setRaceBreakfast={setRaceBreakfast} />
 
@@ -218,16 +220,13 @@ const Breakfast = () => {
           </tfoot>
         </Table>
       </TableWrapper>
-    </section>
+    </Section>
   );
 };
 
 export default Breakfast;
 
-const Table = styled.table`
-  //border-collapse: separate;
-  //border-spacing: 1rem;
-`;
+const Table = styled.table``;
 
 const TableWrapper = styled.div`
   overflow-x: auto;
@@ -277,4 +276,9 @@ const TH = styled.th<{ separateItems?: boolean }>`
       display: flex;
       justify-content: space-between;
     `}
+`;
+
+const Section = styled.section`
+  padding: 1rem;
+  border: 1px solid ${(props) => props.theme.colors.beaver};
 `;
