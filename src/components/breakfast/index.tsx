@@ -140,7 +140,7 @@ const Breakfast = () => {
               <TH>Protein</TH>
               <TH>Fat</TH>
               <TH separateItems>
-                Fibre{" "}
+                Fibre
                 <button onClick={() => setRaceBreakfast([])}>
                   Reset Table
                 </button>
