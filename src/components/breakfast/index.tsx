@@ -1,4 +1,4 @@
-import { ChangeEvent, useMemo, useState } from "react";
+import { ChangeEvent, ReactElement, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import styled, { css, useTheme } from "styled-components";
 import preselectBreakfastItems from "../../data/preselect-breakfast-items.json";
@@ -17,7 +17,16 @@ interface BreakfastItem {
   id: string;
 }
 
-const headerForm = [
+interface HeaderItem {
+  name: keyof BreakfastItem;
+  label: string;
+  placeHolder: string;
+  required?: boolean;
+  valueAsNumber: boolean;
+  sibling?: ReactElement;
+}
+
+const headerForm: HeaderItem[] = [
   {
     name: "food",
     label: "Food",
@@ -153,7 +162,7 @@ const Breakfast = () => {
 
       <form onSubmit={handleSubmit(addBreakfast)} id="breakfast-item-form" />
 
-      <table>
+      <Table>
         <thead>
           <tr>
             <TH>Food</TH>
@@ -171,7 +180,7 @@ const Breakfast = () => {
               <TD
                 key={item.name}
                 backgroundColor={theme.colors.iceBlue}
-                separateItems={item.sibling ?? false}
+                separateItems={!!item.sibling}
               >
                 <input
                   {...register(item.name, {
@@ -180,6 +189,9 @@ const Breakfast = () => {
                   })}
                   placeholder={item.placeHolder}
                   form="breakfast-item-form"
+                  style={{
+                    textAlign: item.valueAsNumber ? "right" : "left",
+                  }}
                 />
                 {item.sibling}
                 {errors[item.name] && <Text>This field is required</Text>}
@@ -207,7 +219,7 @@ const Breakfast = () => {
         </tbody>
         <tfoot>
           <tr>
-            <TotalTD>TOTAL</TotalTD>
+            <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
             <TotalTD>{breakfastTotal.calories}</TotalTD>
             <TotalTD>{breakfastTotal.carbohydrates}</TotalTD>
             <TotalTD>{breakfastTotal.protein}</TotalTD>
@@ -215,29 +227,37 @@ const Breakfast = () => {
             <TotalTD>{breakfastTotal.fibre}</TotalTD>
           </tr>
           <tr>
-            <TD>Weight (kg)</TD>
+            <TotalTH>Weight (kg)</TotalTH>
 
             <TD>
               <input
                 value={weight ?? 0}
                 onChange={handleSetWeight}
                 placeholder="kg"
+                style={{ textAlign: "right" }}
               />
             </TD>
           </tr>
           <tr>
-            <TD backgroundColor={theme.colors.lightGreen}>Carbs per kg/bw</TD>
-            <TD backgroundColor={theme.colors.lightGreen}>
-              {carbsPerKiloOfBodyweight}
-            </TD>
+            <TotalTH backgroundColor={theme.colors.lightGreen}>
+              Carbs per kg/bw
+            </TotalTH>
+            <TotalTD>{carbsPerKiloOfBodyweight}</TotalTD>
           </tr>
         </tfoot>
-      </table>
+      </Table>
     </section>
   );
 };
 
 export default Breakfast;
+
+const Table = styled.table`
+  // if innerHtml is number then text-align: right
+  td {
+    text-align: right;
+  }
+`;
 
 const TD = styled.td<{ backgroundColor?: string; separateItems?: boolean }>`
   padding: 0.5rem;
@@ -257,6 +277,14 @@ const TotalTD = styled.td`
   border: 1px solid ${(props) => props.theme.colors.redwood};
   background-color: ${(props) => props.theme.colors.lightGreen};
   font-weight: bold;
+`;
+
+const TotalTH = styled.th<{ backgroundColor?: string }>`
+  padding: 0.5rem;
+  border: 1px solid ${(props) => props.theme.colors.redwood};
+  background-color: ${(props) => props.backgroundColor ?? undefined};
+  font-weight: bold;
+  text-align: left;
 `;
 
 const TH = styled.th<{ separateItems?: boolean }>`
