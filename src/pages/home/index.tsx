@@ -1,12 +1,18 @@
-import { Heading } from "../../components/text";
-import { Link } from "react-router-dom";
+import { Heading, Text } from "../../components/text";
 import styled from "styled-components";
 
 const Home = () => {
   return (
     <Wrapper>
       <Heading as={"h1"}>226tools.com</Heading>
-      <Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>
+      <Text color={"gray"} paddingTop={1}>
+        Tools for long distance triathletes
+      </Text>
+      <Text color={"gray"}>coming soon</Text>
+      <Text color="olivine" paddingTop={4} size={"extraSmall"}>
+        Swim · Bike · Run
+      </Text>
+      {/*<Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>*/}
     </Wrapper>
   );
 };

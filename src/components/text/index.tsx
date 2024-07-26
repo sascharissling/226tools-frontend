@@ -17,11 +17,11 @@ const TextElement = styled.span<TextProps>`
   font-size: ${(props) =>
     props.size
       ? props.theme.fontSizes[props.size]
-      : props.theme.fontSizes.extraSmall};
+      : props.theme.fontSizes.small};
   color: ${(props) =>
     props.color ? props.theme.colors[props.color] : props.theme.colors.black};
   padding-top: ${(props) => props.paddingTop}rem;
-  bottom: ${(props) => props.paddingBottom}rem;
+  padding-bottom: ${(props) => props.paddingBottom}rem;
 `;
 
 interface HeaderProps extends PropsWithChildren {
