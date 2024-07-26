@@ -1,32 +1,16 @@
-import Breakfast from "./components/breakfast";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { theme } from "./theme/theme.ts";
 import GlobalStyle from "./theme/GlobalStyles.tsx";
-import { Text, Heading } from "./components/text";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes.tsx";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Main>
-        <section>
-          <Heading as="h1" paddingTop={1} paddingBottom={1}>
-            Triathlon Nutrition Calculator
-          </Heading>
-          <Text color="gray">
-            inspired by James LeBaigue's course on long distance triathlon
-            nutrition
-          </Text>
-        </section>
-
-        <Breakfast />
-      </Main>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }
 
 export default App;
-
-const Main = styled.main`
-  padding: 1em;
-`;
