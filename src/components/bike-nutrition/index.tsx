@@ -1,7 +1,8 @@
-import styled, { css } from "styled-components";
-import { Heading } from "../text";
+import styled, { css, useTheme } from "styled-components";
+import { Heading, Text } from "../text";
 import { useForm } from "react-hook-form";
 import { ReactElement, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 interface BikeNutritionItem {
   minute: number;
@@ -26,15 +27,15 @@ interface HeaderItem {
 const headerForm: HeaderItem[] = [
   {
     name: "minute",
-    label: "Food",
-    placeHolder: "Food (name)",
+    label: "Minute",
+    placeHolder: "Minute (number)",
     required: true,
     valueAsNumber: false,
   },
   {
     name: "product",
-    label: "Calories",
-    placeHolder: "Calories (g)",
+    label: "Product",
+    placeHolder: "Product name",
     valueAsNumber: true,
   },
   {
@@ -77,10 +78,20 @@ const headerForm: HeaderItem[] = [
 const BikeNutrition = () => {
   const [bikeNutrition, setBikeNutrition] = useState<BikeNutritionItem[]>([]);
   const {
-    register,
-    handleSubmit,
-    formState: { errors },
+    register: registerBike,
+    handleSubmit: handleSubmitBike,
+    formState: { errors: bikeErrors },
   } = useForm<BikeNutritionItem>();
+
+  const theme = useTheme();
+
+  const addBikeNutrition = (data: BikeNutritionItem) => {
+    const id = uuidv4();
+    setBikeNutrition((prevState) => [...prevState, { ...data, id }]);
+  };
+
+  console.log(bikeNutrition);
+
   return (
     <Section>
       <Heading as="h2" paddingBottom={0}>
@@ -89,10 +100,10 @@ const BikeNutrition = () => {
 
       <div>Todo: Bike nutrition Pre Select</div>
 
-      {/*<form*/}
-      {/*  onSubmit={handleSubmit(())}*/}
-      {/*  id="race-nutrition-item-form"*/}
-      {/*/>*/}
+      <form
+        onSubmit={handleSubmitBike(addBikeNutrition)}
+        id="bike-nutrition-item-form"
+      />
 
       <Table>
         <thead>
@@ -102,6 +113,29 @@ const BikeNutrition = () => {
                 {item.label}
                 {item.sibling}
               </TH>
+            ))}
+          </tr>
+          <tr>
+            {headerForm.map((item) => (
+              <TD
+                key={item.name}
+                backgroundColor={theme.colors.iceBlue}
+                separateItems={!!item.sibling}
+              >
+                <input
+                  {...registerBike(item.name, {
+                    required: item.required ?? false,
+                    valueAsNumber: item.valueAsNumber,
+                  })}
+                  placeholder={item.placeHolder}
+                  form="bike-nutrition-item-form"
+                  style={{
+                    textAlign: item.valueAsNumber ? "right" : "left",
+                  }}
+                />
+                {item.sibling}
+                {bikeErrors[item.name] && <Text>This field is required</Text>}
+              </TD>
             ))}
           </tr>
         </thead>
