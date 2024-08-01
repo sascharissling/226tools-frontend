@@ -1,11 +1,10 @@
 import { ChangeEvent, ReactElement, useMemo, useState } from "react";
-import { useForm } from "react-hook-form";
 import styled, { css, useTheme } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 import { Heading, Text } from "../text";
 import BreakfastPreSelect from "./components/BreakfastPreSelect.tsx";
-
-const getTwoDecimals = (num: number) => parseFloat(num.toFixed(2));
+import getTwoDecimals from "../../utils/getTwoDecimals.ts";
+import { useForm } from "react-hook-form";
 
 export interface BreakfastItem {
   food: string;
@@ -78,6 +77,7 @@ const Breakfast = () => {
   } = useForm<BreakfastItem>();
 
   const addBreakfast = (data: BreakfastItem) => {
+    console.log("running add breakfast");
     const id = uuidv4();
     setRaceBreakfast((prev) => [...prev, { ...data, id }]);
   };

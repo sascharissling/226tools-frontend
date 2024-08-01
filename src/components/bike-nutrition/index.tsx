@@ -1,10 +1,11 @@
 import styled, { css, useTheme } from "styled-components";
 import { Heading, Text } from "../text";
 import { useForm } from "react-hook-form";
-import { ReactElement, useState } from "react";
+import { ReactElement, useMemo, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import getTwoDecimals from "../../utils/getTwoDecimals.ts";
 
-interface BikeNutritionItem {
+export interface BikeNutritionItem {
   minute: number;
   product: string;
   carbohydrates: number;
@@ -21,7 +22,11 @@ interface HeaderItem {
   placeHolder: string;
   required?: boolean;
   valueAsNumber: boolean;
-  sibling?: ReactElement;
+  sibling?: (
+    handleClick: () => void,
+    text: string,
+    addProps?: any,
+  ) => ReactElement;
 }
 
 const headerForm: HeaderItem[] = [
@@ -36,7 +41,7 @@ const headerForm: HeaderItem[] = [
     name: "product",
     label: "Product",
     placeHolder: "Product name",
-    valueAsNumber: true,
+    valueAsNumber: false,
   },
   {
     name: "carbohydrates",
@@ -67,9 +72,9 @@ const headerForm: HeaderItem[] = [
     label: "Comments",
     placeHolder: "Comment (optional)",
     valueAsNumber: false,
-    sibling: (
-      <button type="submit" form="breakfast-item-form" style={{ width: "25%" }}>
-        Add
+    sibling: (handleClick, text, addProps?: any) => (
+      <button {...addProps} onClick={handleClick}>
+        {text}
       </button>
     ),
   },
@@ -78,19 +83,42 @@ const headerForm: HeaderItem[] = [
 const BikeNutrition = () => {
   const [bikeNutrition, setBikeNutrition] = useState<BikeNutritionItem[]>([]);
   const {
-    register: registerBike,
-    handleSubmit: handleSubmitBike,
-    formState: { errors: bikeErrors },
+    register,
+    handleSubmit,
+    formState: { errors },
   } = useForm<BikeNutritionItem>();
 
   const theme = useTheme();
 
   const addBikeNutrition = (data: BikeNutritionItem) => {
     const id = uuidv4();
-    setBikeNutrition((prevState) => [...prevState, { ...data, id }]);
+    console.log(data);
+    setBikeNutrition((prevState) => [
+      ...prevState,
+      { ...data, sodium: data.sodium ?? 0, caffeine: data.caffeine ?? 0, id },
+    ]);
   };
 
-  console.log(bikeNutrition);
+  const bikeTotal = useMemo(() => {
+    return {
+      carbohydrates: bikeNutrition.reduce(
+        (acc, item) => getTwoDecimals(acc + item.carbohydrates),
+        0,
+      ),
+      fluid: bikeNutrition.reduce(
+        (acc, item) => getTwoDecimals(acc + item.fluid),
+        0,
+      ),
+      sodium: bikeNutrition.reduce(
+        (acc, item) => getTwoDecimals(acc + (item.sodium ?? 0)),
+        0,
+      ),
+      caffeine: bikeNutrition.reduce(
+        (acc, item) => getTwoDecimals(acc + (item.caffeine ?? 0)),
+        0,
+      ),
+    };
+  }, [bikeNutrition]);
 
   return (
     <Section>
@@ -101,67 +129,78 @@ const BikeNutrition = () => {
       <div>Todo: Bike nutrition Pre Select</div>
 
       <form
-        onSubmit={handleSubmitBike(addBikeNutrition)}
+        onSubmit={handleSubmit(addBikeNutrition)}
         id="bike-nutrition-item-form"
       />
-
-      <Table>
-        <thead>
-          <tr>
-            {headerForm.map((item) => (
-              <TH key={item.name} separateItems={item.sibling !== undefined}>
-                {item.label}
-                {item.sibling}
-              </TH>
-            ))}
-          </tr>
-          <tr>
-            {headerForm.map((item) => (
-              <TD
-                key={item.name}
-                backgroundColor={theme.colors.iceBlue}
-                separateItems={!!item.sibling}
-              >
-                <input
-                  {...registerBike(item.name, {
-                    required: item.required ?? false,
-                    valueAsNumber: item.valueAsNumber,
-                  })}
-                  placeholder={item.placeHolder}
-                  form="bike-nutrition-item-form"
-                  style={{
-                    textAlign: item.valueAsNumber ? "right" : "left",
-                  }}
-                />
-                {item.sibling}
-                {bikeErrors[item.name] && <Text>This field is required</Text>}
-              </TD>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {bikeNutrition.map((item) => (
-            <tr key={item.id}>
-              {headerForm.map((header) => (
+      <TableWrapper>
+        <Table>
+          <thead>
+            <tr>
+              {headerForm.map((item) => (
+                <TH key={item.name} separateItems={item.sibling !== undefined}>
+                  {item.label}
+                  {item.sibling &&
+                    item.sibling(() => setBikeNutrition([]), "Reset Bike")}
+                </TH>
+              ))}
+            </tr>
+            <tr>
+              {headerForm.map((item) => (
                 <TD
-                  key={header.name}
-                  separateItems={header.sibling !== undefined}
+                  key={item.name}
+                  backgroundColor={theme.colors.iceBlue}
+                  separateItems={!!item.sibling}
                 >
-                  {item[header.name]}
+                  <input
+                    {...register(item.name, {
+                      required: item.required ?? false,
+                      valueAsNumber: item.valueAsNumber,
+                    })}
+                    placeholder={item.placeHolder}
+                    form="bike-nutrition-item-form"
+                    style={{
+                      textAlign: item.valueAsNumber ? "right" : "left",
+                    }}
+                  />
+                  {item.sibling &&
+                    item.sibling(
+                      () => console.log("add bike nutrition"),
+                      "Add",
+                      {
+                        form: "bike-nutrition-item-form",
+                        type: "submit",
+                      },
+                    )}
+                  {errors[item.name] && <Text>This field is required</Text>}
                 </TD>
               ))}
             </tr>
-          ))}
-          <tr>
-            <TotalTH>Total</TotalTH>
-            <TotalTD>1</TotalTD>
-            <TotalTD>2</TotalTD>
-            <TotalTD>3</TotalTD>
-            <TotalTD>4</TotalTD>
-            <TotalTD>5</TotalTD>
-          </tr>
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {bikeNutrition.map((item) => (
+              <tr key={item.id}>
+                {headerForm.map((header) => (
+                  <TD
+                    key={header.name}
+                    separateItems={header.sibling !== undefined}
+                  >
+                    {item[header.name]}
+                  </TD>
+                ))}
+              </tr>
+            ))}
+            <tr>
+              <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
+              <TotalTD>---</TotalTD>
+
+              <TotalTD>{bikeTotal.carbohydrates}</TotalTD>
+              <TotalTD>{bikeTotal.fluid}</TotalTD>
+              <TotalTD>{bikeTotal.sodium}</TotalTD>
+              <TotalTD>{bikeTotal.caffeine}</TotalTD>
+            </tr>
+          </tbody>
+        </Table>
+      </TableWrapper>
     </Section>
   );
 };
