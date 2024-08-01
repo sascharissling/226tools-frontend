@@ -1,7 +1,11 @@
 import { Heading, Text } from "../../components/text";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { useEnv } from "../../hooks/useEnv.ts";
 
 const Home = () => {
+  const { isDev } = useEnv();
+
   return (
     <Wrapper>
       <Heading as={"h1"}>226tools.com</Heading>
@@ -12,7 +16,7 @@ const Home = () => {
       <Text color="olivine" paddingTop={4} size={"extraSmall"}>
         Swim · Bike · Run
       </Text>
-      {/*<Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>*/}
+      {isDev && <Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>}
     </Wrapper>
   );
 };
