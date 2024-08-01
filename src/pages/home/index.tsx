@@ -12,7 +12,7 @@ const Home = () => {
       <Text color={"gray"} paddingTop={1}>
         Tools for long distance triathletes
       </Text>
-      <Text color={"gray"}>coming soon</Text>
+      <Text color={"gray"}>coming soones</Text>
       <Text color="olivine" paddingTop={4} size={"extraSmall"}>
         Swim · Bike · Run
       </Text>
