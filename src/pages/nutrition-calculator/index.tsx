@@ -2,6 +2,7 @@ import { Heading, Text } from "../../components/text";
 import Breakfast from "../../components/breakfast";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import BikeNutrition from "../../components/bike-nutrition";
 
 const NutritionCalculator = () => {
   return (
@@ -18,6 +19,7 @@ const NutritionCalculator = () => {
       </section>
 
       <Breakfast />
+      <BikeNutrition />
     </Main>
   );
 };
