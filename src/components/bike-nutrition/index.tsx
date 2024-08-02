@@ -1,17 +1,25 @@
-import styled, { css, useTheme } from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { Heading, Text } from "../text";
 import { useForm } from "react-hook-form";
-import { ReactElement, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import getTwoDecimals from "../../utils/getTwoDecimals.ts";
+import {
+  Table,
+  TableWrapper,
+  TD,
+  TH,
+  TotalTD,
+  TotalTH,
+} from "../table-elements";
 
 export interface BikeNutritionItem {
   minute: number;
   product: string;
   carbohydrates: number;
   fluid: number;
-  sodium?: number;
-  caffeine?: number;
+  sodium: number;
+  caffeine: number;
   comments?: string;
   id: string;
 }
@@ -22,11 +30,7 @@ interface HeaderItem {
   placeHolder: string;
   required?: boolean;
   valueAsNumber: boolean;
-  sibling?: (
-    handleClick: () => void,
-    text: string,
-    addProps?: any,
-  ) => ReactElement;
+  sibling?: boolean;
 }
 
 const headerForm: HeaderItem[] = [
@@ -41,18 +45,21 @@ const headerForm: HeaderItem[] = [
     name: "product",
     label: "Product",
     placeHolder: "Product name",
+    required: true,
     valueAsNumber: false,
   },
   {
     name: "carbohydrates",
     label: "Carbohydrates",
     placeHolder: "Carbohydrates (g)",
+    required: true,
     valueAsNumber: true,
   },
   {
     name: "fluid",
     label: "Fluid",
     placeHolder: "Fluid (ml)",
+    required: true,
     valueAsNumber: true,
   },
   {
@@ -72,13 +79,18 @@ const headerForm: HeaderItem[] = [
     label: "Comments",
     placeHolder: "Comment (optional)",
     valueAsNumber: false,
-    sibling: (handleClick, text, addProps?: any) => (
-      <button {...addProps} onClick={handleClick}>
-        {text}
-      </button>
-    ),
+    sibling: true,
   },
 ];
+
+const sanitizeData = (data: BikeNutritionItem) => {
+  return {
+    ...data,
+    sodium: isNaN(data.sodium) ? 0 : data.sodium,
+    caffeine: isNaN(data.caffeine) ? 0 : data.caffeine,
+    comments: data.comments ?? "---",
+  };
+};
 
 const BikeNutrition = () => {
   const [bikeNutrition, setBikeNutrition] = useState<BikeNutritionItem[]>([]);
@@ -92,11 +104,14 @@ const BikeNutrition = () => {
 
   const addBikeNutrition = (data: BikeNutritionItem) => {
     const id = uuidv4();
-    console.log(data);
     setBikeNutrition((prevState) => [
       ...prevState,
-      { ...data, sodium: data.sodium ?? 0, caffeine: data.caffeine ?? 0, id },
+      { ...sanitizeData(data), id },
     ]);
+  };
+
+  const handleRemoveBikeNutrition = (id: string) => {
+    setBikeNutrition((prevState) => prevState.filter((item) => item.id !== id));
   };
 
   const bikeTotal = useMemo(() => {
@@ -139,8 +154,11 @@ const BikeNutrition = () => {
               {headerForm.map((item) => (
                 <TH key={item.name} separateItems={item.sibling !== undefined}>
                   {item.label}
-                  {item.sibling &&
-                    item.sibling(() => setBikeNutrition([]), "Reset Bike")}
+                  {item.sibling && (
+                    <button onClick={() => setBikeNutrition([])}>
+                      Reset Table
+                    </button>
+                  )}
                 </TH>
               ))}
             </tr>
@@ -162,16 +180,12 @@ const BikeNutrition = () => {
                       textAlign: item.valueAsNumber ? "right" : "left",
                     }}
                   />
-                  {item.sibling &&
-                    item.sibling(
-                      () => console.log("add bike nutrition"),
-                      "Add",
-                      {
-                        form: "bike-nutrition-item-form",
-                        type: "submit",
-                      },
-                    )}
                   {errors[item.name] && <Text>This field is required</Text>}
+                  {item.sibling && (
+                    <button type="submit" form="bike-nutrition-item-form">
+                      Add
+                    </button>
+                  )}
                 </TD>
               ))}
             </tr>
@@ -180,11 +194,15 @@ const BikeNutrition = () => {
             {bikeNutrition.map((item) => (
               <tr key={item.id}>
                 {headerForm.map((header) => (
-                  <TD
-                    key={header.name}
-                    separateItems={header.sibling !== undefined}
-                  >
+                  <TD key={header.name} separateItems={header.sibling}>
                     {item[header.name]}
+                    {header.sibling && (
+                      <button
+                        onClick={() => handleRemoveBikeNutrition(item.id)}
+                      >
+                        Remove
+                      </button>
+                    )}
                   </TD>
                 ))}
               </tr>
@@ -192,11 +210,11 @@ const BikeNutrition = () => {
             <tr>
               <TotalTH backgroundColor={theme.colors.lightGreen}>TOTAL</TotalTH>
               <TotalTD>---</TotalTD>
-
               <TotalTD>{bikeTotal.carbohydrates}</TotalTD>
               <TotalTD>{bikeTotal.fluid}</TotalTD>
               <TotalTD>{bikeTotal.sodium}</TotalTD>
               <TotalTD>{bikeTotal.caffeine}</TotalTD>
+              <TotalTD>---</TotalTD>
             </tr>
           </tbody>
         </Table>
@@ -206,58 +224,6 @@ const BikeNutrition = () => {
 };
 
 export default BikeNutrition;
-
-const Table = styled.table``;
-
-const TableWrapper = styled.div`
-  overflow-x: auto;
-`;
-
-const TD = styled.td<{
-  backgroundColor?: string;
-  separateItems?: boolean;
-  textAlign?: string;
-}>`
-  padding: 0.5rem;
-  background-color: ${(props) => props.backgroundColor ?? undefined};
-  border: 1px solid ${(props) => props.theme.colors.olivine};
-  text-align: ${(props) => props.textAlign ?? "right"};
-
-  ${(props) =>
-    props.separateItems &&
-    css`
-      display: flex;
-      justify-content: space-between;
-    `}
-`;
-
-const TotalTD = styled.td`
-  padding: 0.5rem;
-  border: 1px solid ${(props) => props.theme.colors.redwood};
-  background-color: ${(props) => props.theme.colors.lightGreen};
-  font-weight: bold;
-  text-align: right;
-`;
-
-const TotalTH = styled.th<{ backgroundColor?: string }>`
-  padding: 0.5rem;
-  border: 1px solid ${(props) => props.theme.colors.redwood};
-  background-color: ${(props) => props.backgroundColor ?? undefined};
-  font-weight: bold;
-  text-align: left;
-`;
-
-const TH = styled.th<{ separateItems?: boolean }>`
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  text-align: left;
-
-  ${(props) =>
-    props.separateItems &&
-    css`
-      display: flex;
-      justify-content: space-between;
-    `}
-`;
 
 const Section = styled.section`
   padding: 1rem;

@@ -1,10 +1,18 @@
 import { ChangeEvent, ReactElement, useMemo, useState } from "react";
-import styled, { css, useTheme } from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 import { Heading, Text } from "../text";
 import BreakfastPreSelect from "./components/BreakfastPreSelect.tsx";
 import getTwoDecimals from "../../utils/getTwoDecimals.ts";
 import { useForm } from "react-hook-form";
+import {
+  Table,
+  TableWrapper,
+  TD,
+  TH,
+  TotalTD,
+  TotalTH,
+} from "../table-elements";
 
 export interface BreakfastItem {
   food: string;
@@ -77,7 +85,6 @@ const Breakfast = () => {
   } = useForm<BreakfastItem>();
 
   const addBreakfast = (data: BreakfastItem) => {
-    console.log("running add breakfast");
     const id = uuidv4();
     setRaceBreakfast((prev) => [...prev, { ...data, id }]);
   };
@@ -225,58 +232,6 @@ const Breakfast = () => {
 };
 
 export default Breakfast;
-
-const Table = styled.table``;
-
-const TableWrapper = styled.div`
-  overflow-x: auto;
-`;
-
-const TD = styled.td<{
-  backgroundColor?: string;
-  separateItems?: boolean;
-  textAlign?: string;
-}>`
-  padding: 0.5rem;
-  background-color: ${(props) => props.backgroundColor ?? undefined};
-  border: 1px solid ${(props) => props.theme.colors.olivine};
-  text-align: ${(props) => props.textAlign ?? "right"};
-
-  ${(props) =>
-    props.separateItems &&
-    css`
-      display: flex;
-      justify-content: space-between;
-    `}
-`;
-
-const TotalTD = styled.td`
-  padding: 0.5rem;
-  border: 1px solid ${(props) => props.theme.colors.redwood};
-  background-color: ${(props) => props.theme.colors.lightGreen};
-  font-weight: bold;
-  text-align: right;
-`;
-
-const TotalTH = styled.th<{ backgroundColor?: string }>`
-  padding: 0.5rem;
-  border: 1px solid ${(props) => props.theme.colors.redwood};
-  background-color: ${(props) => props.backgroundColor ?? undefined};
-  font-weight: bold;
-  text-align: left;
-`;
-
-const TH = styled.th<{ separateItems?: boolean }>`
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  text-align: left;
-
-  ${(props) =>
-    props.separateItems &&
-    css`
-      display: flex;
-      justify-content: space-between;
-    `}
-`;
 
 const Section = styled.section`
   padding: 1rem;
