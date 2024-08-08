@@ -12,8 +12,9 @@ import {
   TotalTD,
   TotalTH,
 } from "../table-elements";
+import RacePreselect from "./components/RacePreselect.tsx";
 
-export interface BikeNutritionItem {
+export interface RaceNutritionItem {
   minute: number;
   product: string;
   carbohydrates: number;
@@ -25,7 +26,7 @@ export interface BikeNutritionItem {
 }
 
 interface HeaderItem {
-  name: keyof BikeNutritionItem;
+  name: keyof RaceNutritionItem;
   label: string;
   placeHolder: string;
   required?: boolean;
@@ -83,7 +84,7 @@ const headerForm: HeaderItem[] = [
   },
 ];
 
-const sanitizeData = (data: BikeNutritionItem) => {
+const sanitizeData = (data: RaceNutritionItem) => {
   return {
     ...data,
     sodium: isNaN(data.sodium) ? 0 : data.sodium,
@@ -93,47 +94,47 @@ const sanitizeData = (data: BikeNutritionItem) => {
 };
 
 const BikeNutrition = () => {
-  const [bikeNutrition, setBikeNutrition] = useState<BikeNutritionItem[]>([]);
+  const [raceNutrition, setRaceNutrition] = useState<RaceNutritionItem[]>([]);
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<BikeNutritionItem>();
+  } = useForm<RaceNutritionItem>();
 
   const theme = useTheme();
 
-  const addBikeNutrition = (data: BikeNutritionItem) => {
+  const addBikeNutrition = (data: RaceNutritionItem) => {
     const id = uuidv4();
-    setBikeNutrition((prevState) => [
+    setRaceNutrition((prevState) => [
       ...prevState,
       { ...sanitizeData(data), id },
     ]);
   };
 
   const handleRemoveBikeNutrition = (id: string) => {
-    setBikeNutrition((prevState) => prevState.filter((item) => item.id !== id));
+    setRaceNutrition((prevState) => prevState.filter((item) => item.id !== id));
   };
 
   const bikeTotal = useMemo(() => {
     return {
-      carbohydrates: bikeNutrition.reduce(
+      carbohydrates: raceNutrition.reduce(
         (acc, item) => getTwoDecimals(acc + item.carbohydrates),
         0,
       ),
-      fluid: bikeNutrition.reduce(
+      fluid: raceNutrition.reduce(
         (acc, item) => getTwoDecimals(acc + item.fluid),
         0,
       ),
-      sodium: bikeNutrition.reduce(
+      sodium: raceNutrition.reduce(
         (acc, item) => getTwoDecimals(acc + (item.sodium ?? 0)),
         0,
       ),
-      caffeine: bikeNutrition.reduce(
+      caffeine: raceNutrition.reduce(
         (acc, item) => getTwoDecimals(acc + (item.caffeine ?? 0)),
         0,
       ),
     };
-  }, [bikeNutrition]);
+  }, [raceNutrition]);
 
   return (
     <Section>
@@ -141,7 +142,7 @@ const BikeNutrition = () => {
         Bike Nutrition
       </Heading>
 
-      <div>Todo: Bike nutrition Pre Select</div>
+      <RacePreselect setRaceNutrition={setRaceNutrition} />
 
       <form
         onSubmit={handleSubmit(addBikeNutrition)}
@@ -155,7 +156,7 @@ const BikeNutrition = () => {
                 <TH key={item.name} separateItems={item.sibling !== undefined}>
                   {item.label}
                   {item.sibling && (
-                    <button onClick={() => setBikeNutrition([])}>
+                    <button onClick={() => setRaceNutrition([])}>
                       Reset Table
                     </button>
                   )}
@@ -191,7 +192,7 @@ const BikeNutrition = () => {
             </tr>
           </thead>
           <tbody>
-            {bikeNutrition.map((item) => (
+            {raceNutrition.map((item) => (
               <tr key={item.id}>
                 {headerForm.map((header) => (
                   <TD key={header.name} separateItems={header.sibling}>

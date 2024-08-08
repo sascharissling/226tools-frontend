@@ -28,4 +28,6 @@ export default NutritionCalculator;
 
 const Main = styled.main`
   padding: 1em;
+  display: grid;
+  gap: 3rem;
 `;

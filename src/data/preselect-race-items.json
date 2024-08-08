@@ -1,0 +1,29 @@
+[
+  {
+    "minute": 0,
+    "product": "Maurten Gel 100",
+    "carbohydrates": 25,
+    "protein": 0,
+    "fluid": 0,
+    "sodium": 19.4,
+    "caffeine": 0
+  },
+  {
+    "minute": 0,
+    "product": "Maurten Gel 100 CAF",
+    "carbohydrates": 25,
+    "protein": 0,
+    "fluid": 0,
+    "sodium": 21.3,
+    "caffeine": 100
+  },
+  {
+    "minute": 0,
+    "product": "Maurten Gel 160",
+    "carbohydrates": 40,
+    "protein": 0,
+    "fluid": 0,
+    "sodium": 31,
+    "caffeine": 0
+  }
+]
