@@ -93,7 +93,7 @@ const PaceCalculator = () => {
             max="15"
             step="0.25"
             value={transition1}
-            onChange={(e) => setTransition1(parseFloat(e.target.value))}
+            onChange={(e) => setTransition1(Number(e.target.value))}
           />
           {transition1} min
         </label>
@@ -105,7 +105,7 @@ const PaceCalculator = () => {
             max="50"
             step="0.25"
             value={bikePace}
-            onChange={(e) => setBikePace(parseFloat(e.target.value))}
+            onChange={(e) => setBikePace(Number(e.target.value))}
           />
           {bikePace} km/h /// <strong>Total Leg Duration</strong>:{" "}
           {formatTime((lengths[selectedLength].bike / bikePace) * 60)} H
@@ -118,7 +118,7 @@ const PaceCalculator = () => {
             max="15"
             step="0.25"
             value={transition2}
-            onChange={(e) => setTransition2(parseFloat(e.target.value))}
+            onChange={(e) => setTransition2(Number(e.target.value))}
           />
           {transition2} min
         </label>
@@ -130,7 +130,7 @@ const PaceCalculator = () => {
             max="10"
             step="0.05"
             value={runPace}
-            onChange={(e) => setRunPace(parseFloat(e.target.value))}
+            onChange={(e) => setRunPace(Number(e.target.value))}
           />
           {formatMinutesToMMSS(runPace)} min/km ///{" "}
           <strong>Total Leg Duration</strong>:{" "}
