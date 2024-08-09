@@ -101,7 +101,7 @@ const PaceCalculator = () => {
           Bike Pace (km/h):
           <input
             type="range"
-            min="10"
+            min="8"
             max="50"
             step="0.25"
             value={bikePace}
