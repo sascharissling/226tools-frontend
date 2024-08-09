@@ -95,7 +95,7 @@ const PaceCalculator = () => {
             value={transition1}
             onChange={(e) => setTransition1(Number(e.target.value))}
           />
-          {transition1} min
+          {formatMinutesToMMSS(transition1)} min
         </label>
         <label>
           Bike Pace (km/h):
@@ -120,7 +120,7 @@ const PaceCalculator = () => {
             value={transition2}
             onChange={(e) => setTransition2(Number(e.target.value))}
           />
-          {transition2} min
+          {formatMinutesToMMSS(transition2)} min
         </label>
         <label>
           Run Pace (min/km):
