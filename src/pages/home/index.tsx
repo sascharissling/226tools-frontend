@@ -16,7 +16,9 @@ const Home = () => {
       <Text color="olivine" paddingTop={4} size={"extraSmall"}>
         Swim · Bike · Run
       </Text>
+      {isDev && <Link to={"/"}>Home</Link>}
       {isDev && <Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>}
+      {isDev && <Link to={"/pace-calculator"}>Pace Calculator</Link>}
     </Wrapper>
   );
 };

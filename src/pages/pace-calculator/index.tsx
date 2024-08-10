@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Discipline from "./components/Discipline.tsx";
 import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
 import formatMinutesToMMSS from "../../utils/formatMinutesToMMSS.ts";
+import { Link } from "react-router-dom";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman";
 
@@ -38,6 +39,7 @@ const PaceCalculator = () => {
 
   return (
     <Section>
+      <Link to={"/"}>Home</Link>
       <h1>Pace Calculator</h1>
       <div>
         {triathlonLengths.map((length) => (
