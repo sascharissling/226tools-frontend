@@ -19,6 +19,7 @@ const Home = () => {
       {isDev && <Link to={"/"}>Home</Link>}
       {isDev && <Link to={"/nutrition-calculator"}>Nutrition Calculator</Link>}
       {isDev && <Link to={"/pace-calculator"}>Pace Calculator</Link>}
+      {isDev && <Link to={"/events-map"}>Events Map</Link>}
     </Wrapper>
   );
 };

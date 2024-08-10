@@ -6,6 +6,7 @@ import {
 import Home from "./pages/home";
 import NutritionCalculator from "./pages/nutrition-calculator";
 import PaceCalculator from "./pages/pace-calculator";
+import EventsMap from "./pages/events-map";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ export const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path={"/nutrition-calculator"} element={<NutritionCalculator />} />
       <Route path={"/pace-calculator"} element={<PaceCalculator />} />
+      <Route path={"/events-map"} element={<EventsMap />} />
     </>,
   ),
 );
