@@ -41,6 +41,7 @@ const PaceCalculator = () => {
     <Section>
       <Link to={"/"}>Home</Link>
       <h1>Pace Calculator</h1>
+      Swim:{" "}
       <div>
         {triathlonLengths.map((length) => (
           <label key={length}>
@@ -53,6 +54,24 @@ const PaceCalculator = () => {
             {length}
           </label>
         ))}
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "100px 100px 100px",
+          gap: "1rem",
+        }}
+      >
+        <div>
+          <input value={lengths[selectedLength].swim * 1000} /> m
+        </div>
+        <div>
+          <input value={lengths[selectedLength].bike} />
+          km
+        </div>
+        <div>
+          <input value={lengths[selectedLength].run} /> km
+        </div>
       </div>
       <SliderContainer>
         <Discipline
