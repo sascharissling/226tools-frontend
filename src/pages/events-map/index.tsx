@@ -15,7 +15,7 @@ export const map = new Map({
   layers: [osmBaseLayer],
   view: new View({
     center: [0, 0],
-    zoom: 2,
+    zoom: 1,
   }),
   controls: defaults(),
   interactions: interactionDefaults({}),
@@ -46,7 +46,7 @@ const EventsMap = () => {
       <div>TODO: Filter 70.3, 140.6...</div>
       <div
         style={{
-          height: 400,
+          height: 800,
         }}
       >
         <div
