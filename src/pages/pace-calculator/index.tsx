@@ -5,19 +5,32 @@ import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
 import formatMinutesToMMSS from "../../utils/formatMinutesToMMSS.ts";
 import { Link } from "react-router-dom";
 
-type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman";
+type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 
-const triathlonLengths = ["Sprint", "Olympic", "Half Ironman", "Ironman"];
+const triathlonLengths = [
+  "Sprint",
+  "Olympic",
+  "Half Ironman",
+  "Ironman",
+  "Custom",
+];
 
 const lengths = {
   Sprint: { swim: 0.75, bike: 20, run: 5 },
   Olympic: { swim: 1.5, bike: 40, run: 10 },
   "Half Ironman": { swim: 1.9, bike: 90, run: 21.1 },
   Ironman: { swim: 3.8, bike: 180, run: 42.2 },
+  Custom: { swim: 0, bike: 0, run: 0 },
 };
 
+interface Length {
+  swim: number;
+  bike: number;
+  run: number;
+}
+
 const PaceCalculator = () => {
-  const [selectedLength, setSelectedLength] = useState<Competition>("Ironman");
+  const [selectedLength, setSelectedLength] = useState<Length>(lengths.Ironman);
   const [swimPace, setSwimPace] = useState(2);
   const [transition1, setTransition1] = useState(5);
   const [bikePace, setBikePace] = useState(30);
@@ -25,11 +38,11 @@ const PaceCalculator = () => {
   const [runPace, setRunPace] = useState(6);
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSelectedLength(event.target.value as Competition);
+    setSelectedLength(lengths[event.target.value as Competition]);
   };
 
   const totalTime = useMemo(() => {
-    const { swim, bike, run } = lengths[selectedLength];
+    const { swim, bike, run } = selectedLength;
     const swimTime = swim * 10 * swimPace;
     const bikeTime = (bike / bikePace) * 60;
     const runTime = run * runPace;
@@ -43,12 +56,12 @@ const PaceCalculator = () => {
       <h1>Pace Calculator</h1>
       Swim:{" "}
       <div>
-        {triathlonLengths.map((length) => (
+        {Object.keys(lengths).map((length) => (
           <label key={length}>
             <input
               type="radio"
               value={length}
-              checked={selectedLength === length}
+              checked={selectedLength.swim === lengths[length].swim}
               onChange={handleLengthChange}
             />
             {length}
