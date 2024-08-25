@@ -7,14 +7,6 @@ import { Link } from "react-router-dom";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 
-const triathlonLengths = [
-  "Sprint",
-  "Olympic",
-  "Half Ironman",
-  "Ironman",
-  "Custom",
-];
-
 const lengths = {
   Sprint: { swim: 0.75, bike: 20, run: 5 },
   Olympic: { swim: 1.5, bike: 40, run: 10 },
@@ -23,14 +15,10 @@ const lengths = {
   Custom: { swim: 0, bike: 0, run: 0 },
 };
 
-interface Length {
-  swim: number;
-  bike: number;
-  run: number;
-}
-
 const PaceCalculator = () => {
-  const [selectedLength, setSelectedLength] = useState<Length>(lengths.Ironman);
+  const [selectedLength, setSelectedLength] = useState<
+    Record<string, null | number>
+  >(lengths.Ironman);
   const [swimPace, setSwimPace] = useState(2);
   const [transition1, setTransition1] = useState(5);
   const [bikePace, setBikePace] = useState(30);
@@ -43,9 +31,9 @@ const PaceCalculator = () => {
 
   const totalTime = useMemo(() => {
     const { swim, bike, run } = selectedLength;
-    const swimTime = swim * 10 * swimPace;
-    const bikeTime = (bike / bikePace) * 60;
-    const runTime = run * runPace;
+    const swimTime = (swim ?? 0) * 10 * swimPace;
+    const bikeTime = ((bike ?? 0) / bikePace) * 60;
+    const runTime = (run ?? 0) * runPace;
     const totalTime = swimTime + bikeTime + runTime + transition1 + transition2;
     return formatMinutesToHHMMSS(Number(totalTime.toFixed(2)));
   }, [selectedLength, swimPace, transition1, bikePace, transition2, runPace]);
@@ -61,7 +49,7 @@ const PaceCalculator = () => {
             <input
               type="radio"
               value={length}
-              // checked={selectedLength === lengths[length]}
+              checked={selectedLength === lengths[length as Competition]}
               onChange={handleLengthChange}
             />
             {length}
@@ -76,14 +64,60 @@ const PaceCalculator = () => {
         }}
       >
         <div>
-          <input value={selectedLength.swim * 1000} /> m
+          <input
+            type="number"
+            value={
+              selectedLength.swim === null
+                ? "Swim length (m)"
+                : selectedLength.swim * 1000
+            }
+            onChange={(event) => {
+              setSelectedLength((prev) => ({
+                ...prev,
+                swim:
+                  event.target.value === ""
+                    ? null
+                    : Number(event.target.value) / 1000,
+              }));
+            }}
+          />{" "}
+          m
         </div>
         <div>
-          <input value={selectedLength.bike} />
+          <input
+            type="number"
+            value={
+              selectedLength.bike === null
+                ? "Bike length (km)"
+                : selectedLength.bike
+            }
+            onChange={(event) => {
+              setSelectedLength((prev) => ({
+                ...prev,
+                bike:
+                  event.target.value === "" ? null : Number(event.target.value),
+              }));
+            }}
+          />
           km
         </div>
         <div>
-          <input value={selectedLength.run} /> km
+          <input
+            type="number"
+            value={
+              selectedLength.run === null
+                ? "Run length (km)"
+                : selectedLength.run
+            }
+            onChange={(event) => {
+              setSelectedLength((prev) => ({
+                ...prev,
+                run:
+                  event.target.value === "" ? null : Number(event.target.value),
+              }));
+            }}
+          />
+          km
         </div>
       </div>
       <SliderContainer>
@@ -96,7 +130,7 @@ const PaceCalculator = () => {
           step={0.05}
           unit="min/100m"
           formattedValue={formatMinutesToMMSS(swimPace)}
-          totalTime={selectedLength.swim * 10 * swimPace}
+          totalTime={(selectedLength.swim ?? 0) * 10 * swimPace}
         />
         <Discipline
           label="Transition 1"
@@ -116,7 +150,7 @@ const PaceCalculator = () => {
           max={55}
           step={0.25}
           unit="km/h"
-          totalTime={(selectedLength.bike / bikePace) * 60}
+          totalTime={((selectedLength.bike ?? 0) / bikePace) * 60}
         />
         <Discipline
           label="Transition 2"
@@ -137,7 +171,7 @@ const PaceCalculator = () => {
           step={0.05}
           unit="min/km"
           formattedValue={formatMinutesToMMSS(runPace)}
-          totalTime={selectedLength.run * runPace}
+          totalTime={(selectedLength.run ?? 0) * runPace}
         />
       </SliderContainer>
       <TotalTime>Total Time: {totalTime} H</TotalTime>
