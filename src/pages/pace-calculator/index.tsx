@@ -16,14 +16,16 @@ const lengths = {
 };
 
 const PaceCalculator = () => {
-  const [selectedLength, setSelectedLength] = useState<
-    Record<string, null | number>
-  >(lengths.Ironman);
+  const [selectedLength, setSelectedLength] = useState<Record<string | number>>(
+    lengths.Ironman,
+  );
   const [swimPace, setSwimPace] = useState(2);
   const [transition1, setTransition1] = useState(5);
   const [bikePace, setBikePace] = useState(30);
   const [transition2, setTransition2] = useState(5);
   const [runPace, setRunPace] = useState(6);
+
+  console.log(selectedLength);
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSelectedLength(lengths[event.target.value as Competition]);
@@ -38,6 +40,11 @@ const PaceCalculator = () => {
     return formatMinutesToHHMMSS(Number(totalTime.toFixed(2)));
   }, [selectedLength, swimPace, transition1, bikePace, transition2, runPace]);
 
+  const compareLengths = (
+    a: Record<string, number>,
+    b: Record<string, number>,
+  ) => a.swim === b.swim && a.bike === b.bike && a.run === b.run;
+
   return (
     <Section>
       <Link to={"/"}>Home</Link>
@@ -49,7 +56,10 @@ const PaceCalculator = () => {
             <input
               type="radio"
               value={length}
-              checked={selectedLength === lengths[length as Competition]}
+              checked={compareLengths(
+                selectedLength,
+                lengths[length as Competition],
+              )}
               onChange={handleLengthChange}
             />
             {length}
