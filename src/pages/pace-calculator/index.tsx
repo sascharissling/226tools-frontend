@@ -25,8 +25,6 @@ const PaceCalculator = () => {
   const [transition2, setTransition2] = useState(5);
   const [runPace, setRunPace] = useState(6);
 
-  console.log(selectedLength);
-
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSelectedLength(lengths[event.target.value as Competition]);
   };
