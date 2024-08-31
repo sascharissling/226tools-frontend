@@ -54,10 +54,13 @@ const PaceCalculator = () => {
     paces.run,
   ]);
 
-  const compareLengths = (a: Length, b: Length, lengthName: string) => {
+  const getIsChecked = (a: Length, b: Length, lengthName: string) => {
     if (lengthName === "Custom") {
-      return !Object.values(lengths).some(
+      const isCustom = !Object.values(lengths).some(
         (l) => a.swim === l.swim && a.bike === l.bike && a.run === l.run,
+      );
+      return (
+        isCustom || (a.swim === b.swim && a.bike === b.bike && a.run === b.run)
       );
     }
     return a.swim === b.swim && a.bike === b.bike && a.run === b.run;
@@ -88,7 +91,7 @@ const PaceCalculator = () => {
             <input
               type="radio"
               value={competition}
-              checked={compareLengths(
+              checked={getIsChecked(
                 selectedLength,
                 lengths[competition as Competition],
                 competition,
