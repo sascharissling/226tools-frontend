@@ -85,6 +85,7 @@ const Discipline = ({ value, name, setValue, legLength }: DisciplineProps) => {
           setValue((prev) => ({ ...prev, [name]: +e.target.value }))
         }
         {...getAttributes(name)}
+        style={{ width: "30%" }}
       />
       {getFormattedValue(name, value)}{" "}
       {getTotalLegTime(name, legLength, value) && (
