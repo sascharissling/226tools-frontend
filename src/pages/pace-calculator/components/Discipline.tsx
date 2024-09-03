@@ -14,7 +14,7 @@ const getAttributes = (name: string) => {
         label: "Swim Pace",
       };
     case "bike":
-      return { min: 5, max: 60, step: 0.25, unit: "km/h", label: "Bike Pace" };
+      return { min: 5, max: 60, step: 0.05, unit: "km/h", label: "Bike Pace" };
     case "run":
       return { min: 1, max: 15, step: 0.05, unit: "min/km", label: "Run Pace" };
     case "transition1":
