@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useEnv } from "../../hooks/useEnv.ts";
 import styled from "styled-components";
 import Logo from "../logo";
 import hamburgerSvg from "../../assets/hamburger.svg";
-import { devices } from "../../theme/theme.ts";
+import { breakpoints, devices } from "../../theme/theme.ts";
 
 const HEADER_HEIGHT = "3rem";
 
@@ -22,6 +22,17 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    // if browser is resized larger than breakpoint.md, close the menu
+    console.log("running");
+    const handleResize = () => {
+      if (window.innerWidth > breakpoints.md) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+  });
 
   return (
     <HeaderBar>
