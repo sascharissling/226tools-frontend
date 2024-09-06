@@ -18,7 +18,16 @@ const GlobalStyle = createGlobalStyle`
     h4, h5, h6 {
         margin: 0;
         padding: 0;
-    } 
+    }
+
+    a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.black};
+
+        &:hover {
+            color: ${({ theme }) => theme.colors.gray};
+        }
+    }
 `;
 
 export default GlobalStyle;

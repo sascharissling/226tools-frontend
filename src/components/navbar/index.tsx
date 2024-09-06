@@ -115,15 +115,6 @@ const UL = styled.ul`
 
 const LI = styled.li`
   list-style: none;
-
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.black};
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.gray};
-    }
-  }
 `;
 
 const HamburgerImage = styled.img`
