@@ -6,6 +6,8 @@ import Logo from "../logo";
 import hamburgerSvg from "../../assets/hamburger.svg";
 import { devices } from "../../theme/theme.ts";
 
+const HEADER_HEIGHT = "3rem";
+
 const routes = [
   { name: "Home", path: "/" },
   { name: "Pace Calculator", path: "/pace-calculator" },
@@ -84,8 +86,9 @@ const Navigation = styled.nav<{ isMenuOpen: boolean }>`
   height: calc(100vh - 3rem);
   position: absolute;
   left: 0;
-  top: 3rem;
+  top: ${HEADER_HEIGHT};
   width: 100%;
+  z-index: 1000;
   background: ${({ theme }) => theme.colors.whiteLighter};
 
   @media ${devices.md} {
@@ -112,6 +115,15 @@ const UL = styled.ul`
 
 const LI = styled.li`
   list-style: none;
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.black};
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.gray};
+    }
+  }
 `;
 
 const HamburgerImage = styled.img`
