@@ -158,6 +158,12 @@ const DisciplinesContainer = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0 1rem;
+
+  @media ${devices.md} {
+    flex-direction: row;
+    input {
+    }
+  }
 `;
 
 const LengthsContainer = styled.div`
@@ -183,10 +189,11 @@ const LengthsContainer = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 1rem;
 
   @media ${devices.md} {
     flex-direction: column;
+    gap: 0;
   }
 `;
