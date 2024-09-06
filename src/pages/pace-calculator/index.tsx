@@ -181,12 +181,12 @@ const LengthsContainer = styled.div`
 `;
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-bottom: 1rem;
+
   @media ${devices.md} {
-    flex-direction: column;  
-    }
+    flex-direction: column;
   }
-    `;
+`;
