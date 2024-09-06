@@ -2,7 +2,6 @@ import { useState, ChangeEvent, useMemo } from "react";
 import styled from "styled-components";
 import Discipline from "./components/Discipline.tsx";
 import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
-import { Link } from "react-router-dom";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
@@ -76,7 +75,6 @@ const PaceCalculator = () => {
 
   return (
     <Section>
-      <Link to={"/"}>Home</Link>
       <h1>Pace Calculator</h1>
 
       <div
