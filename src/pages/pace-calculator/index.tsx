@@ -2,6 +2,7 @@ import { useState, ChangeEvent, useMemo } from "react";
 import styled from "styled-components";
 import Discipline from "./components/Discipline.tsx";
 import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
+import { devices } from "../../theme/theme.ts";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
@@ -76,49 +77,39 @@ const PaceCalculator = () => {
   return (
     <Section>
       <h1>Pace Calculator</h1>
-
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          margin: "1rem 0 1rem",
-        }}
-      >
-        {Object.keys(lengths).map((competition) => (
-          <label key={competition}>
-            <input
-              type="radio"
-              value={competition}
-              checked={getIsChecked(
-                selectedLength,
-                lengths[competition as Competition],
-                competition,
-              )}
-              onChange={handleLengthChange}
-            />
-            {competition}
-          </label>
-        ))}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-        }}
-      >
-        {Object.keys(selectedLength).map((key) => (
-          <label key={key}>
-            <input
-              type="number"
-              name={key}
-              value={selectedLength[key as keyof Length]}
-              placeholder={`${key} length`}
-              onChange={handleLegChange}
-            />
-            {key === "swim" ? "m" : "km"}
-          </label>
-        ))}
-      </div>
+      <Wrapper>
+        <DisciplinesContainer>
+          {Object.keys(lengths).map((competition) => (
+            <label key={competition}>
+              <input
+                type="radio"
+                value={competition}
+                checked={getIsChecked(
+                  selectedLength,
+                  lengths[competition as Competition],
+                  competition,
+                )}
+                onChange={handleLengthChange}
+              />
+              {competition}
+            </label>
+          ))}
+        </DisciplinesContainer>
+        <LengthsContainer>
+          {Object.keys(selectedLength).map((key) => (
+            <label key={key}>
+              <input
+                type="number"
+                name={key}
+                value={selectedLength[key as keyof Length]}
+                placeholder={`${key} length`}
+                onChange={handleLegChange}
+              />
+              {key === "swim" ? "m" : "km"}
+            </label>
+          ))}
+        </LengthsContainer>
+      </Wrapper>
       <SliderContainer>
         {Object.keys(paces).map((key) => (
           <Discipline
@@ -160,3 +151,42 @@ const TotalTime = styled.div`
   margin-top: 1rem;
   font-weight: bold;
 `;
+
+const DisciplinesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 1rem;
+`;
+
+const LengthsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 1rem;
+  input {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+
+  @media ${devices.md} {
+    flex-direction: row;
+    input {
+      width: 6rem;
+      margin-right: 0.5rem;
+    }
+  }
+`;
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 1rem;
+  @media ${devices.md} {
+    flex-direction: column;  
+    }
+  }
+    `;
