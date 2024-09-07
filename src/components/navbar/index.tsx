@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useEnv } from "../../hooks/useEnv.ts";
 import styled from "styled-components";
 import Logo from "../logo";
-import hamburgerSvg from "../../assets/hamburger.svg";
 import { breakpoints, devices } from "../../theme/theme.ts";
+import MenuButton from "./components/MenuButton.tsx";
 
 const HEADER_HEIGHT = "3rem";
 
@@ -38,9 +38,7 @@ const NavBar = () => {
     <HeaderBar>
       <Inner>
         <Logo />
-        <HamburgerButton onClick={toggleMenu}>
-          <HamburgerImage src={hamburgerSvg} alt="Menu" />
-        </HamburgerButton>
+        <MenuButton onClick={toggleMenu} isOpen={isMenuOpen} />
         <Navigation isMenuOpen={isMenuOpen}>
           <UL>
             {routes.map((route) => {
@@ -79,19 +77,6 @@ const Inner = styled.div`
   justify-content: space-between;
 `;
 
-const HamburgerButton = styled.button`
-  display: block;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: transparent;
-
-  @media ${devices.md} {
-    display: none;
-  }
-`;
-
 const Navigation = styled.nav<{ isMenuOpen: boolean }>`
   display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
   height: calc(100vh - 3rem);
@@ -126,9 +111,4 @@ const UL = styled.ul`
 
 const LI = styled.li`
   list-style: none;
-`;
-
-const HamburgerImage = styled.img`
-  width: 1rem;
-  height: 1.5rem;
 `;

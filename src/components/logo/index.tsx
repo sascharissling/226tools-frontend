@@ -1,4 +1,4 @@
-import logoSvg from "./components/logo.svg";
+import logoSvg from "../../assets/logo.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
