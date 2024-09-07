@@ -8,9 +8,14 @@ interface TextProps extends PropsWithChildren {
   size?: keyof Theme["fontSizes"];
   paddingTop?: number;
   paddingBottom?: number;
+  align?: "left" | "center" | "right";
 }
 export const Text = (props: TextProps) => {
-  return <TextElement {...props}>{props.children}</TextElement>;
+  return (
+    <TextElement {...props} align={props.align ?? "left"}>
+      {props.children}
+    </TextElement>
+  );
 };
 
 const TextElement = styled.span<TextProps>`
@@ -22,6 +27,7 @@ const TextElement = styled.span<TextProps>`
     props.color ? props.theme.colors[props.color] : props.theme.colors.black};
   padding-top: ${(props) => props.paddingTop}rem;
   padding-bottom: ${(props) => props.paddingBottom}rem;
+  text-align: ${(props) => props.align};
 `;
 
 interface HeaderProps extends PropsWithChildren {
