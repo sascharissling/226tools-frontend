@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useEnv } from "../../hooks/useEnv.ts";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Logo from "../logo";
 import { breakpoints, devices } from "../../theme/theme.ts";
 import MenuButton from "./components/MenuButton.tsx";
@@ -13,6 +13,7 @@ const routes = [
   { name: "Pace Calculator", path: "/pace-calculator" },
   { name: "Nutrition Calculator", path: "/nutrition-calculator", isDev: true },
   { name: "Events Map", path: "/events-map", isDev: true },
+  { name: "Race Trace", path: "/race-trace", isDev: true, isGold: true },
 ];
 
 const NavBar = () => {
@@ -44,7 +45,7 @@ const NavBar = () => {
                 return null;
               }
               return (
-                <LI>
+                <LI key={route.path} isGold={route.isGold}>
                   <Link to={route.path} onClick={toggleMenu}>
                     {route.name}
                   </Link>
@@ -107,6 +108,15 @@ const UL = styled.ul`
   }
 `;
 
-const LI = styled.li`
+const LI = styled.li<{ isGold?: boolean }>`
+  ${(props) =>
+    props.isGold === true &&
+    css`
+      a {
+        background-color: gold;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+      }
+    `}
   list-style: none;
 `;

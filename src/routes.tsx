@@ -9,6 +9,7 @@ import PaceCalculator from "./pages/pace-calculator";
 import EventsMap from "./pages/events-map";
 import MainLayout from "./MainLayout.tsx";
 import Imprint from "./pages/imprint";
+import RaceTracePage from "./pages/race-trace";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ export const router = createBrowserRouter(
             />
             <Route path={"/events-map"} element={<EventsMap />} />
             <Route path={"/imprint"} element={<Imprint />} />
+            <Route path={"/race-trace"} element={<RaceTracePage />} />
           </>
         )}
       </Route>
