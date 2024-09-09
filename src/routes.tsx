@@ -15,13 +15,18 @@ export const router = createBrowserRouter(
     <>
       <Route path="/" element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-        <Route
-          path={"/nutrition-calculator"}
-          element={<NutritionCalculator />}
-        />
         <Route path={"/pace-calculator"} element={<PaceCalculator />} />
-        <Route path={"/events-map"} element={<EventsMap />} />
-        <Route path={"/imprint"} element={<Imprint />} />
+        {process.env.NODE_ENV === "development" && (
+          <>
+            {" "}
+            <Route
+              path={"/nutrition-calculator"}
+              element={<NutritionCalculator />}
+            />
+            <Route path={"/events-map"} element={<EventsMap />} />
+            <Route path={"/imprint"} element={<Imprint />} />
+          </>
+        )}
       </Route>
     </>,
   ),
