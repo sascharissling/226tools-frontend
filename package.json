@@ -18,6 +18,7 @@
     "@uppy/progress-bar": "^4.0.0",
     "@uppy/react": "^4.0.2",
     "dotenv": "^16.4.5",
+    "fit-file-parser": "^1.20.0",
     "ol": "^10.0.0",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
