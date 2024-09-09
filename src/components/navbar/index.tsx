@@ -24,8 +24,6 @@ const NavBar = () => {
   };
 
   useEffect(() => {
-    // if browser is resized larger than breakpoint.md, close the menu
-    console.log("running");
     const handleResize = () => {
       if (window.innerWidth > breakpoints.md) {
         setIsMenuOpen(false);

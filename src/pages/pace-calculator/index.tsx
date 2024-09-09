@@ -132,7 +132,7 @@ const PaceCalculator = () => {
 
 export default PaceCalculator;
 
-const Section = styled.section`
+const Section = styled.main`
   margin: 1rem;
   padding: 1rem;
   border: 1px solid ${(props) => props.theme.colors.lightgray};

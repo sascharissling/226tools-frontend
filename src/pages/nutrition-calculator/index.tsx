@@ -6,7 +6,7 @@ import BikeNutrition from "../../components/bike-nutrition";
 const NutritionCalculator = () => {
   return (
     <Main>
-      <section>
+      <main>
         <Heading as="h1" paddingTop={1} paddingBottom={1}>
           Triathlon Nutrition Calculator
         </Heading>
@@ -14,7 +14,7 @@ const NutritionCalculator = () => {
           inspired by James LeBaigue's course on long distance triathlon
           nutrition
         </Text>
-      </section>
+      </main>
 
       <Breakfast />
       <BikeNutrition />

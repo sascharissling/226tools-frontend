@@ -41,7 +41,7 @@ const EventsMap = () => {
   }, [map]);
 
   return (
-    <div>
+    <main>
       <h1>Events Map</h1>
       <div>TODO: Filter 70.3, 140.6...</div>
       <div
@@ -59,7 +59,7 @@ const EventsMap = () => {
           ref={mapRef}
         ></div>
       </div>
-    </div>
+    </main>
   );
 };
 

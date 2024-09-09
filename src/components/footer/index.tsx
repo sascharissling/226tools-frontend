@@ -1,9 +1,26 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-import { useFooterContext } from "../../contexts/footer-context";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
-  const { shouldPlaceAtBottom } = useFooterContext();
+  const [shouldPlaceAtBottom, setShouldPlaceAtBottom] = useState(false);
+
+  useEffect(() => {
+    const mainEl = document.querySelector("main");
+    if (!mainEl) {
+      return;
+    }
+    const handlePositioning = () => {
+      setShouldPlaceAtBottom(mainEl.clientHeight < window.innerHeight);
+    };
+
+    handlePositioning();
+    window.addEventListener("resize", handlePositioning);
+
+    return () => {
+      window.removeEventListener("resize", handlePositioning);
+    };
+  }, [setShouldPlaceAtBottom]);
 
   return (
     <FooterComponent shouldPlaceAtBottom={shouldPlaceAtBottom}>
