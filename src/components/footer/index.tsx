@@ -32,7 +32,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterComponent = styled.footer<{ shouldPlaceAtBottom: boolean }>`
-  background-color: ${(props) => props.theme.colors.olivine};
+  background-color: ${(props) => props.theme.colors.lightgray};
   color: ${(props) => props.theme.colors.secondary};
   padding: 1rem;
   text-align: center;

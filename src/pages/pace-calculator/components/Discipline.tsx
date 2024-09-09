@@ -2,6 +2,8 @@ import formatMinutesToHHMMSS from "../../../utils/formatMinutesToHHMMSS.ts";
 import { Paces } from "../index.tsx";
 import { Dispatch, SetStateAction } from "react";
 import formatMinutesToMMSS from "../../../utils/formatMinutesToMMSS.ts";
+import styled from "styled-components";
+import { devices } from "../../../theme/theme.ts";
 
 const getAttributes = (name: string) => {
   switch (name) {
@@ -76,23 +78,44 @@ interface DisciplineProps {
 }
 const Discipline = ({ value, name, setValue, legLength }: DisciplineProps) => {
   return (
-    <label>
-      {getAttributes(name).label}:
-      <input
+    <Label>
+      <span>{getAttributes(name).label}:</span>
+      <RangePicker
         type="range"
         value={value}
         onChange={(e) =>
           setValue((prev) => ({ ...prev, [name]: +e.target.value }))
         }
         {...getAttributes(name)}
-        style={{ width: "30%" }}
       />
-      {getFormattedValue(name, value)}{" "}
-      {getTotalLegTime(name, legLength, value) && (
-        <strong>({getTotalLegTime(name, legLength, value)} h)</strong>
-      )}
-    </label>
+      <span>
+        {getFormattedValue(name, value)}{" "}
+        {getTotalLegTime(name, legLength, value) && (
+          <strong>({getTotalLegTime(name, legLength, value)} h)</strong>
+        )}
+      </span>
+    </Label>
   );
 };
 
 export default Discipline;
+
+const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+
+  @media ${devices.md} {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 6rem 18rem max-content;
+  }
+`;
+
+const RangePicker = styled.input`
+  width: 100%;
+
+  @media ${devices.md} {
+    //width: 50%;
+    //max-width: 20rem;
+  }
+`;
