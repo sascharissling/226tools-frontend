@@ -126,6 +126,12 @@ const PaceCalculator = () => {
         ))}
       </SliderContainer>
       <TotalTime>Total Time: {totalTime} H</TotalTime>
+      <FootNote>
+        Inspired by{" "}
+        <a href="https://www.triathloncalculators.com/" target="_blank">
+          https://www.triathloncalculators.com/
+        </a>
+      </FootNote>
     </Section>
   );
 };
@@ -138,6 +144,12 @@ const Section = styled.main`
   border: 1px solid ${(props) => props.theme.colors.lightgray};
   border-radius: 0.5rem;
   background-color: ${(props) => props.theme.colors.whiteLighter};
+`;
+
+const FootNote = styled.div`
+  color: ${(props) => props.theme.colors.gray};
+  font-size: 0.5rem;
+  margin-top: 2rem;
 `;
 
 const SliderContainer = styled.div`

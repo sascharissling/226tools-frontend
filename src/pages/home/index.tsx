@@ -1,15 +1,7 @@
 import { Heading, Text } from "../../components/text";
 import styled from "styled-components";
-import { useFooterContext } from "../../contexts/footer-context";
-import { useEffect } from "react";
 
 const Home = () => {
-  const { setShouldPlaceAtBottom } = useFooterContext();
-
-  useEffect(() => {
-    setShouldPlaceAtBottom(true);
-  });
-
   return (
     <Wrapper>
       <Heading as={"h1"}>226tools.com</Heading>
