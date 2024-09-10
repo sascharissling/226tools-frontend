@@ -18,8 +18,16 @@ const MainLayout = () => {
 
   useEffect(() => {
     if (!cookieConsent) {
-      ReactGA.initialize("G-NOPE");
+      // @ts-expect-error TODO: How to fix this?
+      window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true;
+      return;
     }
+    // @ts-expect-error TODO: How to fix this?
+    window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = false;
+    ReactGA.event({
+      category: "cooke consent",
+      action: "consent",
+    });
   }, [cookieConsent]);
 
   return (
@@ -30,9 +38,7 @@ const MainLayout = () => {
       <CookieConsent
         enableDeclineButton
         cookieName="226toolsCookieAccepted"
-        onDecline={() => {
-          alert("nay!");
-        }}
+        onDecline={() => console.log("todo cookie decline")}
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>
