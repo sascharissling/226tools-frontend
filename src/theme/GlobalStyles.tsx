@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { devices } from "./theme.ts";
 
 export const FOOTER_HEIGHT_REM = 3.5;
 export const HEADER_HEIGHT_REM = 3.5;
@@ -63,6 +64,13 @@ const GlobalStyle = createGlobalStyle`
 
         &:hover {
             color: ${({ theme }) => theme.colors.gray};
+        }
+    }
+    
+    main {
+        @media ${devices.md} {
+            max-width: 55rem;
+            margin: 0 auto;
         }
     }
 `;

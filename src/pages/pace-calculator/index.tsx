@@ -110,7 +110,7 @@ const PaceCalculator = () => {
   };
 
   return (
-    <Main>
+    <main>
       <Meta />
       <HeaderGroup
         as="h1"
@@ -189,7 +189,7 @@ const PaceCalculator = () => {
       </Section>
 
       <FAQ faqs={faqs} />
-    </Main>
+    </main>
   );
 };
 
@@ -277,12 +277,5 @@ const Wrapper = styled.div`
   @media ${devices.md} {
     flex-direction: column;
     gap: 0;
-  }
-`;
-
-const Main = styled.main`
-  @media ${devices.md} {
-    max-width: 50rem;
-    margin: 0 auto;
   }
 `;
