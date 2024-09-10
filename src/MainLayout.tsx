@@ -3,7 +3,8 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import { CookieConsent, getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from "react-ga4";
-import { useEffect } from "react";
+import { CSSProperties, useEffect } from "react";
+import { theme } from "./theme/theme.ts";
 
 ReactGA.initialize(import.meta.env.VITE_GA_ID, {
   gaOptions: {
@@ -36,6 +37,12 @@ const MainLayout = () => {
       <Outlet />
       <Footer />
       <CookieConsent
+        buttonStyle={{
+          background: "#fff",
+          color: theme.colors.beaver,
+        }}
+        declineButtonStyle={{ background: theme.colors.beaver, color: "#fff" }}
+        style={cookieConsentStyle}
         enableDeclineButton
         cookieName="226toolsCookieAccepted"
         onDecline={() => console.log("todo cookie decline")}
@@ -46,3 +53,11 @@ const MainLayout = () => {
   );
 };
 export default MainLayout;
+
+const cookieConsentStyle: CSSProperties = {
+  background: theme.colors.beaver,
+  color: "#fff",
+  fontSize: "14px",
+  padding: "1rem",
+  zIndex: 999,
+};
