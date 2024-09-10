@@ -28,6 +28,30 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    h5 {
+        font-size: 0.875rem;
+    }
+    
+    h6 {
+        font-size: 0.75rem;
+    }
+    
     p {
         margin: 0 0 1rem 0;
         padding: 0;
