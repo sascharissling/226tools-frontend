@@ -5,13 +5,21 @@ import { CookieConsent, getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 
+ReactGA.initialize(import.meta.env.VITE_GA_ID, {
+  gaOptions: {
+    testMode: true,
+  },
+});
+ReactGA.send("pageview");
+
 const MainLayout = () => {
   const cookieConsent =
     getCookieConsentValue("226toolsCookieAccepted") === "true";
 
   useEffect(() => {
-    ReactGA.initialize(import.meta.env.VITE_GA_ID);
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    if (!cookieConsent) {
+      ReactGA.initialize("G-NOPE");
+    }
   }, []);
 
   return (
