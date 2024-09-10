@@ -88,8 +88,14 @@ const PaceCalculator = () => {
           content="Free triathlon pace calculator for Ironman, Half Ironman, Olympic, and Sprint triathlons. Calculate swim, bike, and run splits to plan the perfect race strategy. Ideal for beginners and experienced triathletes."
         />
       </Helmet>
-      <Section>
+      <hgroup>
         <h1>Triathlon Pace Calculator</h1>
+        <p style={{ color: "gray" }}>
+          Optimize Your Ironman, Half Ironman, Olympic, and Sprint Triathlon
+          Strategy
+        </p>
+      </hgroup>
+      <Section $hasBackground $hasBorder>
         <Wrapper>
           <DisciplinesContainer>
             {Object.keys(lengths).map((competition) => (
@@ -146,18 +152,43 @@ const PaceCalculator = () => {
           </a>
         </FootNote>
       </Section>
+      <Section>
+        <article>
+          <p>
+            Planning your race pace is one of the most crucial aspects of
+            preparing for a triathlon, whether you're racing in a Sprint,
+            Olympic, Half Ironman, or full Ironman. Our free triathlon pace
+            calculator helps you determine the ideal pacing for your swim, bike,
+            and run splits, allowing you to plan a well-executed race strategy
+            and improve your overall performance.
+          </p>
+        </article>
+      </Section>
     </main>
   );
 };
 
 export default PaceCalculator;
 
-const Section = styled.section`
+const Section = styled.section<{
+  $hasBackground?: boolean;
+  $hasBorder?: boolean;
+}>`
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid ${(props) => props.theme.colors.lightgray};
   border-radius: 0.5rem;
-  background-color: ${(props) => props.theme.colors.whiteLighter};
+
+  ${(props) =>
+    props.$hasBackground &&
+    `
+    background-color: ${props.theme.colors.whiteLighter};
+  `}
+
+  ${(props) =>
+    props.$hasBorder &&
+    `
+        border: 1px solid ${props.theme.colors.lightgray};
+    `}
 `;
 
 const FootNote = styled.div`
