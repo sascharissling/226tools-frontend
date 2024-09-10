@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     main {
-        min-height: calc(100vh - ${FOOTER_HEIGHT_REM + HEADER_HEIGHT_REM}rem);
+        min-height: calc(100vh - ${FOOTER_HEIGHT_REM + HEADER_HEIGHT_REM + 1}rem);
 
     }
     

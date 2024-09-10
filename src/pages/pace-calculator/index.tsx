@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Discipline from "./components/Discipline.tsx";
 import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
 import { devices } from "../../theme/theme.ts";
+import { Helmet } from "react-helmet";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
@@ -76,8 +77,19 @@ const PaceCalculator = () => {
 
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Triathlon Pace Calculator | How to Pace for Ironman, Half Ironman,
+          Olympic Distance, and Sprint Triathlons
+        </title>
+        <meta
+          name="description"
+          content="Free triathlon pace calculator for Ironman, Half Ironman, Olympic, and Sprint triathlons. Calculate swim, bike, and run splits to plan the perfect race strategy. Ideal for beginners and experienced triathletes."
+        />
+      </Helmet>
       <Section>
-        <h1>Pace Calculator</h1>
+        <h1>Triathlon Pace Calculator</h1>
         <Wrapper>
           <DisciplinesContainer>
             {Object.keys(lengths).map((competition) => (
