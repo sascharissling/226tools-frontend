@@ -6,41 +6,11 @@ import { devices } from "../../theme/theme.ts";
 import FAQ from "../../components/faq";
 import Meta from "./components/Meta.tsx";
 import HeaderGroup from "../../components/header-group";
+import { faqs } from "./data/faqs.ts";
+import Content from "./components/Content.tsx";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
-const faqs = [
-  {
-    question: "How accurate is the triathlon pace calculator?",
-    answer:
-      "The pace calculator gives you a good estimate based on your input data. However, factors like weather, terrain, and race-day conditions can affect your actual race times.",
-  },
-  {
-    question: "Can I use this calculator for other triathlon distances?",
-    answer:
-      "Yes! You can select from common distances like Sprint, Olympic, Half Ironman, and Ironman, or enter custom distances for other events.",
-  },
-  {
-    question: "What is a good pace for an Ironman?",
-    answer:
-      "A 'good' pace is different for every athlete. Generally, pacing should be conservative on the swim and bike to save energy for the marathon run. You should aim to stick to your training zones and focus on maintaining a steady effort throughout.",
-  },
-  {
-    question: "How can I improve my transition times?",
-    answer:
-      "Practice makes perfect. Practicing your transitions during training, such as quickly switching from your wetsuit to bike gear or bike shoes to running shoes, can help shave valuable seconds off your overall time.",
-  },
-  {
-    question: "How should I pace myself during a half-Ironman?",
-    answer:
-      "In a Half Ironman, pacing is key to finishing strong. Keep your swim relaxed, maintain a conservative effort on the bike (about 70-75% of your FTP), and start your run at a comfortable pace, gradually building speed if you're feeling good.",
-  },
-  {
-    question: "What factors can affect my race-day pacing?",
-    answer:
-      "Several factors can influence your pacing, including race-day weather (wind, temperature), course terrain (hilly or flat), and nutrition/hydration strategy. It's important to adjust your plan based on these conditions.",
-  },
-];
 
 const lengths: Record<Competition, Length> = {
   Sprint: { swim: 750, bike: 20, run: 5 },
@@ -175,19 +145,7 @@ const PaceCalculator = () => {
           </a>
         </FootNote>
       </Section>
-      <Section>
-        <article>
-          <p>
-            Planning your race pace is one of the most crucial aspects of
-            preparing for a triathlon, whether you're racing in a Sprint,
-            Olympic, Half Ironman, or full Ironman. Our free triathlon pace
-            calculator helps you determine the ideal pacing for your swim, bike,
-            and run splits, allowing you to plan a well-executed race strategy
-            and improve your overall performance.
-          </p>
-        </article>
-      </Section>
-
+      <Content />
       <FAQ faqs={faqs} />
     </main>
   );

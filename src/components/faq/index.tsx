@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { Text } from "../text";
+import plusSvg from "../../assets/plus.svg";
+import minusSvg from "../../assets/minus.svg";
 
 interface Props {
   faqs: {
@@ -13,9 +15,9 @@ const FAQ = ({ faqs }: Props) => {
   return (
     <Section $hasBackground $hasBorder>
       <h2 style={{ paddingBottom: "1rem" }}>FAQs</h2>
-      {faqs.map((faq, index) => (
+      {faqs.map((faq) => (
         <>
-          <CollapsibleItem key={index} faq={faq} />
+          <CollapsibleItem key={faq.question} faq={faq} />
           <HR />
         </>
       ))}
@@ -37,15 +39,24 @@ const CollapsibleItem = ({
 
   return (
     <div>
-      <Question onClick={toggleOpen}>{faq.question}</Question>
+      <Question $isOpen={isOpen} onClick={toggleOpen}>
+        {faq.question}
+        <Image src={isOpen ? minusSvg : plusSvg} />
+      </Question>
       {isOpen && (
-        <Text paddingBottom={1} size="extraSmall">
+        <Text paddingBottom={10} size="extraSmall">
           {faq.answer}
         </Text>
       )}
     </div>
   );
 };
+
+const Image = styled.img`
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+`;
 
 const Section = styled.section<{
   $hasBackground?: boolean;
@@ -68,12 +79,20 @@ const Section = styled.section<{
     `}
 `;
 
-const Question = styled.h4`
+const Question = styled.h4<{ $isOpen?: boolean }>`
   cursor: pointer;
-  margin: 0 0 1rem 0;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+
+  ${(props) =>
+    props.$isOpen &&
+    `
+    color: ${props.theme.colors.gray};
+    padding-bottom: 0.5rem;
+  `}
 `;
 
 const HR = styled.hr`
-  margin: 0.5remrem 0;
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
 `;

@@ -25,8 +25,8 @@ const TextElement = styled.span<TextProps>`
       : props.theme.fontSizes.small};
   color: ${(props) =>
     props.color ? props.theme.colors[props.color] : props.theme.colors.black};
-  padding-top: ${(props) => props.paddingTop}rem;
-  padding-bottom: ${(props) => props.paddingBottom}rem;
+  padding-top: ${(props) => props.paddingTop ?? 0}rem;
+  padding-bottom: ${(props) => props.paddingBottom ?? 0}rem;
   text-align: ${(props) => props.align};
 `;
 
