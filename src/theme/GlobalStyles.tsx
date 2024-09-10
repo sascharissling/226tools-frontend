@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: ${(props) => props.theme.fonts.join(",")};
     }
     
+    main {
+        min-height: 100vh;
+    }
+    
     h1,
     h2,
     h3,

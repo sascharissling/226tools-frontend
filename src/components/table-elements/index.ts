@@ -7,17 +7,17 @@ export const TableWrapper = styled.div`
 `;
 
 export const TD = styled.td<{
-  backgroundColor?: string;
-  separateItems?: boolean;
-  textAlign?: string;
+  $backgroundColor?: string;
+  $separateItems?: boolean;
+  $textAlign?: string;
 }>`
   padding: 0.5rem;
-  background-color: ${(props) => props.backgroundColor ?? undefined};
+  background-color: ${(props) => props.$backgroundColor ?? undefined};
   border: 1px solid ${(props) => props.theme.colors.olivine};
-  text-align: ${(props) => props.textAlign ?? "right"};
+  text-align: ${(props) => props.$textAlign ?? "right"};
 
   ${(props) =>
-    props.separateItems &&
+    props.$separateItems &&
     css`
       display: flex;
       justify-content: space-between;

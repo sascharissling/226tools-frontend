@@ -1,31 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 import instagramSvg from "../../assets/instagram.svg";
 import githubSvg from "../../assets/github.svg";
 
 const Footer = () => {
-  const [shouldPlaceAtBottom, setShouldPlaceAtBottom] = useState(false);
-
-  useEffect(() => {
-    const mainEl = document.querySelector("main");
-    if (!mainEl) {
-      return;
-    }
-    const handlePositioning = () => {
-      setShouldPlaceAtBottom(mainEl.clientHeight < window.innerHeight);
-    };
-
-    handlePositioning();
-    window.addEventListener("resize", handlePositioning);
-
-    return () => {
-      window.removeEventListener("resize", handlePositioning);
-    };
-  }, [setShouldPlaceAtBottom]);
-
   return (
-    <FooterComponent shouldPlaceAtBottom={shouldPlaceAtBottom}>
+    <FooterComponent>
       <EmptySpace />
       <Link to={"/imprint"}>Imprint</Link>
       <SocialContainer>
@@ -42,27 +22,17 @@ const Footer = () => {
 
 export default Footer;
 
-const FooterComponent = styled.footer<{ shouldPlaceAtBottom: boolean }>`
+const FooterComponent = styled.footer`
   background-color: ${(props) => props.theme.colors.lightgray};
   color: ${(props) => props.theme.colors.secondary};
   padding: 0 1rem;
   text-align: center;
   width: 100%;
   align-items: center;
-
+  height: 50px;
   display: grid;
   grid-template-columns: 1fr 60% 1fr;
   grid-template-areas: "empty link social";
-
-  ${(props) =>
-    props.shouldPlaceAtBottom
-      ? css`
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 50px;
-        `
-      : ""};
 `;
 
 const SocialLink = styled.a`

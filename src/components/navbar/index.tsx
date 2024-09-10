@@ -38,14 +38,14 @@ const NavBar = () => {
       <Inner>
         <Logo />
         <MenuButton onClick={toggleMenu} isOpen={isMenuOpen} />
-        <Navigation isMenuOpen={isMenuOpen}>
+        <Navigation $isMenuOpen={isMenuOpen}>
           <UL>
             {routes.map((route) => {
               if (route.isDev && !isDev) {
                 return null;
               }
               return (
-                <LI key={route.path} isGold={route.isGold}>
+                <LI key={route.path} $isGold={route.isGold}>
                   <Link to={route.path} onClick={toggleMenu}>
                     {route.name}
                   </Link>
@@ -76,8 +76,8 @@ const Inner = styled.div`
   justify-content: space-between;
 `;
 
-const Navigation = styled.nav<{ isMenuOpen: boolean }>`
-  display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
+const Navigation = styled.nav<{ $isMenuOpen: boolean }>`
+  display: ${({ $isMenuOpen }) => ($isMenuOpen ? "flex" : "none")};
   height: calc(100vh - 3rem);
   position: absolute;
   left: 0;
@@ -108,9 +108,9 @@ const UL = styled.ul`
   }
 `;
 
-const LI = styled.li<{ isGold?: boolean }>`
+const LI = styled.li<{ $isGold?: boolean }>`
   ${(props) =>
-    props.isGold === true &&
+    props.$isGold === true &&
     css`
       a {
         background-color: gold;

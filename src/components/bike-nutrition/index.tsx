@@ -167,8 +167,8 @@ const BikeNutrition = () => {
               {headerForm.map((item) => (
                 <TD
                   key={item.name}
-                  backgroundColor={theme.colors.iceBlue}
-                  separateItems={!!item.sibling}
+                  $backgroundColor={theme.colors.iceBlue}
+                  $separateItems={!!item.sibling}
                 >
                   <input
                     {...register(item.name, {
@@ -195,7 +195,7 @@ const BikeNutrition = () => {
             {raceNutrition.map((item) => (
               <tr key={item.id}>
                 {headerForm.map((header) => (
-                  <TD key={header.name} separateItems={header.sibling}>
+                  <TD key={header.name} $separateItems={header.sibling}>
                     {item[header.name]}
                     {header.sibling && (
                       <button

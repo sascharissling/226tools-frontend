@@ -25,16 +25,16 @@ const MenuButton = ({
             width="50"
             rotate={isOpen ? "45" : "0"}
             height="5"
-            isOpen={isOpen}
-            position="top"
+            $isOpen={isOpen}
+            $position="top"
           ></Bar>
           <Bar
             x="0"
             y="22.5"
             width="50"
             height="5"
-            isOpen={isOpen}
-            position="middle"
+            $isOpen={isOpen}
+            $position="middle"
             opacity={isOpen ? "0" : "1"}
           ></Bar>
           <Bar
@@ -43,8 +43,8 @@ const MenuButton = ({
             rotate={isOpen ? "-45" : "0"}
             width="50"
             height="5"
-            isOpen={isOpen}
-            position="bottom"
+            $isOpen={isOpen}
+            $position="bottom"
           ></Bar>
         </g>
       </svg>
@@ -69,21 +69,21 @@ const Button = styled.button`
   }
 `;
 
-const Bar = styled.rect<{ position: string; isOpen: boolean }>`
+const Bar = styled.rect<{ $position: string; $isOpen: boolean }>`
   fill: black;
   transition: all 0.5s ease;
   transform-origin: center;
 
-  ${({ position, isOpen }) => {
-    if (position === "top" && isOpen) {
+  ${({ $position, $isOpen }) => {
+    if ($position === "top" && $isOpen) {
       return css`
         transform: rotate(45deg);
       `;
-    } else if (position === "bottom" && isOpen) {
+    } else if ($position === "bottom" && $isOpen) {
       return css`
         transform: rotate(-45deg);
       `;
-    } else if (position === "middle" && isOpen) {
+    } else if ($position === "middle" && $isOpen) {
       return css`
         transition: opacity 0.5s ease;
         opacity: 0;

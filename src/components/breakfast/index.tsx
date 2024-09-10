@@ -158,8 +158,8 @@ const Breakfast = () => {
               {headerForm.map((item) => (
                 <TD
                   key={item.name}
-                  backgroundColor={theme.colors.iceBlue}
-                  separateItems={!!item.sibling}
+                  $backgroundColor={theme.colors.iceBlue}
+                  $separateItems={!!item.sibling}
                 >
                   <input
                     {...register(item.name, {
@@ -182,12 +182,12 @@ const Breakfast = () => {
           <tbody>
             {raceBreakfast.map((item, index) => (
               <tr key={index}>
-                <TD textAlign="left">{item.food}</TD>
+                <TD $textAlign="left">{item.food}</TD>
                 <TD>{item.calories}</TD>
                 <TD>{item.carbohydrates}</TD>
                 <TD>{item.protein}</TD>
                 <TD>{item.fat}</TD>
-                <TD separateItems>
+                <TD $separateItems>
                   {item.fibre}
                   <button onClick={() => handleRemoveBreakfastItem(item.id)}>
                     Remove
