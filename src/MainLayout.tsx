@@ -20,7 +20,7 @@ const MainLayout = () => {
     if (!cookieConsent) {
       ReactGA.initialize("G-NOPE");
     }
-  }, []);
+  }, [cookieConsent]);
 
   return (
     <>
