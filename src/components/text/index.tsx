@@ -30,7 +30,7 @@ const TextElement = styled.span<TextProps>`
   text-align: ${(props) => props.align};
 `;
 
-interface HeaderProps extends PropsWithChildren {
+export interface HeaderProps extends PropsWithChildren {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   paddingTop?: number;
   paddingBottom?: number;

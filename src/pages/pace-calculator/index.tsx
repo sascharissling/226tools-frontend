@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Discipline from "./components/Discipline.tsx";
 import formatMinutesToHHMMSS from "../../utils/formatMinutesToHHMMSS.ts";
 import { devices } from "../../theme/theme.ts";
-import { Helmet } from "react-helmet";
 import FAQ from "../../components/faq";
+import Meta from "./components/Meta.tsx";
+import HeaderGroup from "../../components/header-group";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
@@ -110,24 +111,13 @@ const PaceCalculator = () => {
 
   return (
     <main>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Triathlon Pace Calculator | How to Pace for Ironman, Half Ironman,
-          Olympic Distance, and Sprint Triathlons
-        </title>
-        <meta
-          name="description"
-          content="Free triathlon pace calculator for Ironman, Half Ironman, Olympic, and Sprint triathlons. Calculate swim, bike, and run splits to plan the perfect race strategy. Ideal for beginners and experienced triathletes."
-        />
-      </Helmet>
-      <hgroup>
-        <h1>Triathlon Pace Calculator</h1>
-        <p style={{ color: "gray" }}>
-          Optimize Your Ironman, Half Ironman, Olympic, and Sprint Triathlon
-          Strategy
-        </p>
-      </hgroup>
+      <Meta />
+      <HeaderGroup
+        as="h1"
+        headline="Triathlon Pace Calculator"
+        subHeadline="Optimize Your Ironman, Half Ironman, Olympic, and Sprint Triathlon
+          Strategy"
+      />
       <Section $hasBackground $hasBorder>
         <Wrapper>
           <DisciplinesContainer>
