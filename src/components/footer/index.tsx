@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import instagramSvg from "../../assets/instagram.svg";
 import githubSvg from "../../assets/github.svg";
+import { FOOTER_HEIGHT_REM } from "../../theme/GlobalStyles.tsx";
 
 const Footer = () => {
   return (
@@ -29,7 +30,7 @@ const FooterComponent = styled.footer`
   text-align: center;
   width: 100%;
   align-items: center;
-  height: 50px;
+  height: ${FOOTER_HEIGHT_REM}rem;
   display: grid;
   grid-template-columns: 1fr 60% 1fr;
   grid-template-areas: "empty link social";

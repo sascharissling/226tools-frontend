@@ -5,8 +5,7 @@ import styled, { css } from "styled-components";
 import Logo from "../logo";
 import { breakpoints, devices } from "../../theme/theme.ts";
 import MenuButton from "./components/MenuButton.tsx";
-
-const HEADER_HEIGHT = "3rem";
+import { HEADER_HEIGHT_REM } from "../../theme/GlobalStyles.tsx";
 
 const routes = [
   { name: "Home", path: "/" },
@@ -64,7 +63,7 @@ export default NavBar;
 const HeaderBar = styled.header`
   width: 100%;
   background: ${({ theme }) => theme.colors.whiteLighter};
-  height: 3rem;
+  height: ${HEADER_HEIGHT_REM}rem;
 `;
 
 const Inner = styled.div`
@@ -81,7 +80,7 @@ const Navigation = styled.nav<{ $isMenuOpen: boolean }>`
   height: calc(100vh - 3rem);
   position: absolute;
   left: 0;
-  top: ${HEADER_HEIGHT};
+  top: ${HEADER_HEIGHT_REM}rem;
   width: 100%;
   z-index: 1000;
   background: ${({ theme }) => theme.colors.whiteLighter};

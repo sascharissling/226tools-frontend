@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+export const FOOTER_HEIGHT_REM = 3.5;
+export const HEADER_HEIGHT_REM = 3.5;
+
 const GlobalStyle = createGlobalStyle`
     *,
     *::after,
@@ -13,7 +16,8 @@ const GlobalStyle = createGlobalStyle`
     }
     
     main {
-        min-height: 100vh;
+        min-height: calc(100vh - ${FOOTER_HEIGHT_REM + HEADER_HEIGHT_REM}rem);
+
     }
     
     h1,

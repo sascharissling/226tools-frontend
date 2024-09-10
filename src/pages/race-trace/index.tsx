@@ -1,21 +1,7 @@
 import styled from "styled-components";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
+// @ts-expect-error - no types available
 import FitParser from "fit-file-parser";
-
-const toRadians = (degrees: number) => (degrees * Math.PI) / 180;
-
-const projectLatLng = (
-  lat: number,
-  lon: number,
-  canvasWidth: number,
-  canvasHeight: number,
-) => {
-  const x = (lon + 180) * (canvasWidth / 360); // Converts longitude to X position
-  const latRad = toRadians(lat);
-  const mercN = Math.log(Math.tan(Math.PI / 4 + latRad / 2));
-  const y = canvasHeight / 2 - (canvasWidth * mercN) / (2 * Math.PI); // Converts latitude to Y position
-  return { x, y };
-};
 
 const RaceTracePage = () => {
   const [files, setFiles] = useState<File[]>([]);

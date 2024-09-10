@@ -75,70 +75,72 @@ const PaceCalculator = () => {
   };
 
   return (
-    <Section>
-      <h1>Pace Calculator</h1>
-      <Wrapper>
-        <DisciplinesContainer>
-          {Object.keys(lengths).map((competition) => (
-            <label key={competition}>
-              <input
-                type="radio"
-                value={competition}
-                checked={getIsChecked(
-                  selectedLength,
-                  lengths[competition as Competition],
-                  competition,
-                )}
-                onChange={handleLengthChange}
-              />
-              {competition}
-            </label>
+    <main>
+      <Section>
+        <h1>Pace Calculator</h1>
+        <Wrapper>
+          <DisciplinesContainer>
+            {Object.keys(lengths).map((competition) => (
+              <label key={competition}>
+                <input
+                  type="radio"
+                  value={competition}
+                  checked={getIsChecked(
+                    selectedLength,
+                    lengths[competition as Competition],
+                    competition,
+                  )}
+                  onChange={handleLengthChange}
+                />
+                {competition}
+              </label>
+            ))}
+          </DisciplinesContainer>
+          <LengthsContainer>
+            {Object.keys(selectedLength).map((key) => (
+              <label key={key}>
+                <input
+                  type="number"
+                  name={key}
+                  value={selectedLength[key as keyof Length]}
+                  placeholder={`${key} length`}
+                  onChange={handleLegChange}
+                />
+                {key === "swim" ? "m" : "km"}
+              </label>
+            ))}
+          </LengthsContainer>
+        </Wrapper>
+        <SliderContainer>
+          {Object.keys(paces).map((key) => (
+            <Discipline
+              key={key}
+              value={paces[key as keyof Paces]}
+              name={key}
+              setValue={setPaces}
+              legLength={selectedLength[key as keyof Length] ?? 0}
+              totalTime={
+                ((selectedLength[key as keyof Length] ?? 0) / 100) *
+                paces[key as keyof Paces]
+              }
+            />
           ))}
-        </DisciplinesContainer>
-        <LengthsContainer>
-          {Object.keys(selectedLength).map((key) => (
-            <label key={key}>
-              <input
-                type="number"
-                name={key}
-                value={selectedLength[key as keyof Length]}
-                placeholder={`${key} length`}
-                onChange={handleLegChange}
-              />
-              {key === "swim" ? "m" : "km"}
-            </label>
-          ))}
-        </LengthsContainer>
-      </Wrapper>
-      <SliderContainer>
-        {Object.keys(paces).map((key) => (
-          <Discipline
-            key={key}
-            value={paces[key as keyof Paces]}
-            name={key}
-            setValue={setPaces}
-            legLength={selectedLength[key as keyof Length] ?? 0}
-            totalTime={
-              ((selectedLength[key as keyof Length] ?? 0) / 100) *
-              paces[key as keyof Paces]
-            }
-          />
-        ))}
-      </SliderContainer>
-      <TotalTime>Total Time: {totalTime} H</TotalTime>
-      <FootNote>
-        Inspired by{" "}
-        <a href="https://www.triathloncalculators.com/" target="_blank">
-          https://www.triathloncalculators.com/
-        </a>
-      </FootNote>
-    </Section>
+        </SliderContainer>
+        <TotalTime>Total Time: {totalTime} H</TotalTime>
+        <FootNote>
+          Inspired by{" "}
+          <a href="https://www.triathloncalculators.com/" target="_blank">
+            https://www.triathloncalculators.com/
+          </a>
+        </FootNote>
+      </Section>
+    </main>
   );
 };
 
 export default PaceCalculator;
 
-const Section = styled.main`
+const Section = styled.section`
   margin: 1rem;
   padding: 1rem;
   border: 1px solid ${(props) => props.theme.colors.lightgray};
