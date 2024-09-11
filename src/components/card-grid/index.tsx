@@ -53,7 +53,7 @@ const Card = ({
 }) => {
   const content = (
     <CardContainer>
-      <CardImage src={img} alt={title} />
+      <CardImage src={img} alt={title} loading="eager" />
       <CardContent>
         <h3>{title}</h3>
         <CardDescription>{description}</CardDescription>

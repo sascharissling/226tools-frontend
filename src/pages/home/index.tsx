@@ -2,9 +2,9 @@ import { Text } from "../../components/text";
 import styled from "styled-components";
 import HeaderGroup from "../../components/header-group";
 import CardGrid from "../../components/card-grid";
-import transitionUmageUrl from "../../assets/im-transition.jpg";
-import nutritionItems from "../../assets/nutrition-items.jpeg";
-import australiaImg from "../../assets/australia.jpg";
+import transitionImageUrl from "../../assets/im-transition.webp";
+import nutritionItems from "../../assets/nutrition-items.webp";
+import australiaImg from "../../assets/australia.webp";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
         <CardGrid
           content={[
             {
-              img: transitionUmageUrl,
+              img: transitionImageUrl,
               title: "Pace Calculator",
               to: "/pace-calculator",
               description:
