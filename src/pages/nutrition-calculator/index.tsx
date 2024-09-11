@@ -7,10 +7,10 @@ const NutritionCalculator = () => {
   return (
     <Main>
       <div>
-        <Heading as="h1" paddingTop={1} paddingBottom={1}>
+        <Heading as="h1" $paddingTop={1} $paddingBottom={1}>
           Triathlon Nutrition Calculator
         </Heading>
-        <Text color="gray">
+        <Text $color="gray">
           inspired by James LeBaigue's course on long distance triathlon
           nutrition
         </Text>

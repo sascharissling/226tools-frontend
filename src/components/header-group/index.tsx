@@ -14,10 +14,10 @@ const HeaderGroup = ({
 }) => {
   return (
     <HGROUP $align={align}>
-      <Heading as={as} paddingTop={1} paddingBottom={0.5}>
+      <Heading as={as} $paddingTop={1} $paddingBottom={0.5}>
         {headline}
       </Heading>
-      <Text color={"gray"} paddingTop={0}>
+      <Text $color={"gray"} $paddingTop={0}>
         {subHeadline}
       </Text>
     </HGROUP>

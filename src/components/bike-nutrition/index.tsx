@@ -138,7 +138,7 @@ const BikeNutrition = () => {
 
   return (
     <Section>
-      <Heading as="h2" paddingBottom={0}>
+      <Heading as="h2" $paddingBottom={0}>
         Bike Nutrition
       </Heading>
 

@@ -129,7 +129,7 @@ const Breakfast = () => {
 
   return (
     <Section>
-      <Heading as="h2" paddingBottom={0}>
+      <Heading as="h2" $paddingBottom={0}>
         Race Breakfast
       </Heading>
 

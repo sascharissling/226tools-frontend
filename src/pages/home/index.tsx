@@ -40,7 +40,12 @@ const Home = () => {
             },
           ]}
         />
-        <Text color="olivine" paddingTop={4} size={"extraSmall"} align="center">
+        <Text
+          $color="olivine"
+          $paddingTop={4}
+          $size={"extraSmall"}
+          $align="center"
+        >
           Swim · Bike · Run
         </Text>
       </Wrapper>

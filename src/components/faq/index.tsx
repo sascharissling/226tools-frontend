@@ -44,7 +44,7 @@ const CollapsibleItem = ({
         <Image src={isOpen ? minusSvg : plusSvg} />
       </Question>
       {isOpen && (
-        <Text paddingBottom={10} size="extraSmall">
+        <Text $paddingBottom={10} $size="extraSmall">
           {faq.answer}
         </Text>
       )}
