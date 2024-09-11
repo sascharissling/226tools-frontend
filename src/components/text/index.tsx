@@ -24,7 +24,7 @@ const TextElement = styled.span<TextProps>`
       ? props.theme.fontSizes[props.$size]
       : props.theme.fontSizes.small};
   color: ${(props) =>
-    props.color ? props.theme.colors[props.color] : props.theme.colors.black};
+    props.$color ? props.theme.colors[props.$color] : props.theme.colors.black};
   padding-top: ${(props) => props.$paddingTop ?? 0}rem;
   padding-bottom: ${(props) => props.$paddingBottom ?? 0}rem;
   text-align: ${(props) => props.$align};
@@ -34,6 +34,7 @@ export interface HeaderProps extends PropsWithChildren {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   $paddingTop?: number;
   $paddingBottom?: number;
+  $color?: keyof Theme["colors"];
 }
 
 export const Heading = (props: HeaderProps) => {
@@ -42,7 +43,7 @@ export const Heading = (props: HeaderProps) => {
 
 const HeadlineComponent = styled.h1<HeaderProps>`
   color: ${(props) =>
-    props.color ? props.theme.colors[props.color] : props.theme.colors.black};
+    props.$color ? props.theme.colors[props.$color] : props.theme.colors.black};
   padding-top: ${(props) => props.$paddingTop}rem;
   padding-bottom: ${(props) => props.$paddingBottom}rem;
 `;

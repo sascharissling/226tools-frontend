@@ -19,7 +19,6 @@
     "@uppy/react": "^4.0.2",
     "dotenv": "^16.4.5",
     "fit-file-parser": "^1.20.0",
-    "fit-file-parser-typescript": "^1.9.4",
     "i": "^0.3.7",
     "npm": "^10.8.3",
     "ol": "^10.0.0",

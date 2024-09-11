@@ -35,7 +35,7 @@ const LinkWrapper = styled.div`
 
 const FooterComponent = styled.footer`
   background-color: ${(props) => props.theme.colors.lightgray};
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.gray};
   padding: 0 1rem;
   text-align: center;
   width: 100%;
