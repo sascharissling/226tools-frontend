@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
-// @ts-expect-error - no types available
 import FitParser from "fit-file-parser";
 
 const RaceTracePage = () => {
   const [files, setFiles] = useState<File[]>([]);
-  const [localFileURL, setLocalFileURL] = useState<string | null>(null);
   const [progress, setProgress] = useState<number>(0);
   const [data, setData] = useState<any>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -32,18 +30,9 @@ const RaceTracePage = () => {
 
       reader.onload = (e) => {
         if (e.target?.result) {
-          setLocalFileURL(e.target.result as string);
+          const fitParser = new FitParser();
 
-          const fitParser = new FitParser({
-            force: true,
-            speedUnit: "km/h",
-            lengthUnit: "m",
-            temperatureUnit: "celsius",
-            elapsedRecordField: true,
-            mode: "list",
-          });
-
-          fitParser.parse(e.target.result, (error: any, data: any) => {
+          fitParser.parse(e.target.result as ArrayBuffer, (error, data) => {
             if (error) {
               console.error(error);
             } else {
@@ -150,14 +139,7 @@ const RaceTracePage = () => {
       <input type="file" onChange={handleFileChange} accept={".fit"} />
       <button onClick={onFileUpload}>Upload!</button>
       <progress value={progress} max="100"></progress>
-      {localFileURL && (
-        <div>
-          <h3>Local File Preview:</h3>
-          <a href={localFileURL} download="uploaded-file">
-            Download File
-          </a>
-        </div>
-      )}
+
       {data && (
         <div>
           <h3>File Data:</h3>
