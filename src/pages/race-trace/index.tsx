@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
-import FitParser from "fit-file-parser";
+import FitParser, { FitFileData } from "fit-file-parser";
 
 const RaceTracePage = () => {
   const [files, setFiles] = useState<File[]>([]);
@@ -47,7 +47,7 @@ const RaceTracePage = () => {
     }
   };
 
-  const drawLine = (records: any[]) => {
+  const drawLine = (records: FitFileData["records"]) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -140,12 +140,6 @@ const RaceTracePage = () => {
       <button onClick={onFileUpload}>Upload!</button>
       <progress value={progress} max="100"></progress>
 
-      {data && (
-        <div>
-          <h3>File Data:</h3>
-          <pre>{JSON.stringify(data)}</pre>
-        </div>
-      )}
       <canvas
         ref={canvasRef}
         width={400}
