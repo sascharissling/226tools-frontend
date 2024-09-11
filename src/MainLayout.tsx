@@ -6,11 +6,7 @@ import ReactGA from "react-ga4";
 import { CSSProperties, useEffect } from "react";
 import { theme } from "./theme/theme.ts";
 
-ReactGA.initialize(import.meta.env.VITE_GA_ID, {
-  gaOptions: {
-    testMode: true,
-  },
-});
+ReactGA.initialize(import.meta.env.VITE_GA_ID);
 ReactGA.send("pageview");
 
 const MainLayout = () => {

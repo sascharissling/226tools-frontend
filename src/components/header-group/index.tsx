@@ -5,13 +5,15 @@ const HeaderGroup = ({
   as,
   headline,
   subHeadline,
+  align = "left",
 }: {
   as: HeaderProps["as"];
   headline: string;
   subHeadline: string;
+  align?: "center" | "left" | "right";
 }) => {
   return (
-    <HGROUP>
+    <HGROUP $align={align}>
       <Heading as={as} paddingTop={1} paddingBottom={0.5}>
         {headline}
       </Heading>
@@ -24,6 +26,7 @@ const HeaderGroup = ({
 
 export default HeaderGroup;
 
-const HGROUP = styled.hgroup`
+const HGROUP = styled.hgroup<{ $align: string }>`
   padding: 0 1rem;
+  text-align: ${(props) => props.$align};
 `;
