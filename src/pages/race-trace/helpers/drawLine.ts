@@ -70,9 +70,10 @@ export const drawLine = (
 
       if (i === 0) {
         ctx.beginPath();
-        ctx.arc(x1, y1, 7, 0, 2 * Math.PI);
+        ctx.arc(x1, y1, 5, 0, 2 * Math.PI);
         ctx.stroke();
-        ctx.direction = "ltr";
+        ctx.fillStyle = colors[fileIndex];
+        ctx.fill();
         ctx.moveTo(x1, y1); // Move to the start point again to avoid drawing a line from the center of the circle
         // ctx.closePath();
       }
@@ -81,13 +82,13 @@ export const drawLine = (
       ctx.strokeStyle = colors[fileIndex];
       ctx.quadraticCurveTo(x1, y1, controlX, controlY);
 
-      // Draw end point (filled circle) for the last record
+      // Draw end point (rectangle) for the last record
       if (i === records.length - 2) {
         ctx.stroke();
         ctx.beginPath();
-        ctx.arc(x2, y2, 3, 0, 2 * Math.PI);
-        ctx.fill();
+        ctx.rect(x2 - 2, y2 - 2, 6, 6);
         ctx.fillStyle = colors[fileIndex];
+        ctx.fill();
       }
     }
 
