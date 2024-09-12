@@ -84,12 +84,7 @@ const RaceTracePage = () => {
           <button onClick={onFileUpload}>Upload!</button>
           <progress value={progress} max="100"></progress>
 
-          <canvas
-            ref={canvasRef}
-            width={400}
-            height={300}
-            // style={{ border: "1px solid black" }}
-          />
+          {data && <canvas ref={canvasRef} width={400} height={300} />}
         </div>
       </Section>
     </main>
