@@ -1,15 +1,24 @@
 import { FitFileData } from "fit-file-parser";
 
+export const clearCanvas = (
+  ctx: CanvasRenderingContext2D | null,
+  canvas: HTMLCanvasElement | null,
+) => {
+  if (!ctx || !canvas) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+};
+
 export const drawLine = (
   data: FitFileData[],
+  colors: string[],
   ctx: CanvasRenderingContext2D | null,
   canvas: HTMLCanvasElement | null,
 ) => {
   if (!ctx || !canvas) return;
 
-  const colorArray = ["blue", "red", "green", "purple", "orange", "black"];
+  clearCanvas(ctx, canvas);
 
-  data.forEach((fitFileData, index) => {
+  data.forEach((fitFileData, fileIndex) => {
     const records = fitFileData.records;
 
     // Find the bounding box (min/max latitude and longitude)
@@ -38,22 +47,49 @@ export const drawLine = (
     const scaleY =
       (canvas.height - 2 * padding) / (maxLatAdjusted - minLatAdjusted);
 
-    ctx.beginPath();
-    ctx.strokeStyle = colorArray[index];
     ctx.lineWidth = 5;
 
-    records.forEach((record, index) => {
-      const x = padding + (record.position_long - minLonAdjusted) * scaleX;
-      const y =
-        canvas.height -
-        (padding + (record.position_lat - minLatAdjusted) * scaleY);
+    for (let i = 0; i < records.length - 1; i++) {
+      const currentRecord = records[i];
+      const nextRecord = records[i + 1];
 
-      if (index === 0) {
-        ctx.moveTo(x, y);
-      } else {
-        ctx.lineTo(x, y);
+      const x1 =
+        padding + (currentRecord.position_long - minLonAdjusted) * scaleX;
+      const y1 =
+        canvas.height -
+        (padding + (currentRecord.position_lat - minLatAdjusted) * scaleY);
+
+      const x2 = padding + (nextRecord.position_long - minLonAdjusted) * scaleX;
+      const y2 =
+        canvas.height -
+        (padding + (nextRecord.position_lat - minLatAdjusted) * scaleY);
+
+      // Calculate control points for Bezier curve (midpoint between two points)
+      const controlX = (x1 + x2) / 2;
+      const controlY = (y1 + y2) / 2;
+
+      if (i === 0) {
+        ctx.beginPath();
+        ctx.arc(x1, y1, 7, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.direction = "ltr";
+        ctx.moveTo(x1, y1); // Move to the start point again to avoid drawing a line from the center of the circle
+        // ctx.closePath();
       }
-    });
+
+      // Draw the Bezier curve instead of straight line
+      ctx.strokeStyle = colors[fileIndex];
+      ctx.quadraticCurveTo(x1, y1, controlX, controlY);
+
+      // Draw end point (filled circle) for the last record
+      if (i === records.length - 2) {
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(x2, y2, 3, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.fillStyle = colors[fileIndex];
+      }
+    }
 
     ctx.stroke();
   });
