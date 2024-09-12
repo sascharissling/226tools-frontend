@@ -148,8 +148,8 @@ const Content = () => {
             </li>
           </ol>
           <Text>
-            <strong>Remember:</strong> a long distance race is won by who slows
-            down the least.
+            <strong>Remember:</strong> a long distance race is not won by the
+            fastest, but by who slows down the least.
           </Text>
         </Tips>
       </article>
