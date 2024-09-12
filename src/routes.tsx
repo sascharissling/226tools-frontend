@@ -20,7 +20,6 @@ export const router = createBrowserRouter(
         <Route path={"/imprint"} element={<Imprint />} />
         {process.env.NODE_ENV === "development" && (
           <>
-            {" "}
             <Route
               path={"/nutrition-calculator"}
               element={<NutritionCalculator />}
