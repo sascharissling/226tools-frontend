@@ -17,6 +17,7 @@ export const router = createBrowserRouter(
       <Route path="/" element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path={"/pace-calculator"} element={<PaceCalculator />} />
+        <Route path={"/imprint"} element={<Imprint />} />
         {process.env.NODE_ENV === "development" && (
           <>
             {" "}
@@ -25,7 +26,6 @@ export const router = createBrowserRouter(
               element={<NutritionCalculator />}
             />
             <Route path={"/events-map"} element={<EventsMap />} />
-            <Route path={"/imprint"} element={<Imprint />} />
             <Route path={"/race-trace"} element={<RaceTracePage />} />
           </>
         )}
