@@ -16,9 +16,9 @@ const Home = () => {
         />
         <CardGrid content={homeCards} />
         <Text
-          $color="olivine"
+          $color="lightgray"
           $paddingTop={4}
-          $size={"extraSmall"}
+          $size="extraSmall"
           $align="center"
         >
           Swim · Bike · Run

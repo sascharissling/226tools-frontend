@@ -8,6 +8,7 @@ import duration from "dayjs/plugin/duration";
 dayjs.extend(duration);
 
 import jsPDF from "jspdf";
+import Button from "../../components/button";
 
 const allowedColors = [
   "#FF6F61",
@@ -130,7 +131,9 @@ const RaceTracePage = () => {
       </Section>
       <Section>
         <input type="file" onChange={handleFileChange} accept=".fit" multiple />
-        <button onClick={onFileUpload}>Upload!</button>
+        <Button style="primary" onClick={onFileUpload}>
+          Upload!
+        </Button>
         <progress value={progress} max="100"></progress>
         {data && (
           <ul>
@@ -181,15 +184,15 @@ const RaceTracePage = () => {
                   value={times[index]}
                   onChange={(e) => handleTimeChange(index, e.target.value)}
                 />
-                <button onClick={() => handleRemoveFile(index)}>remove</button>
+                <Button onClick={() => handleRemoveFile(index)}>remove</Button>
               </li>
             ))}
           </ul>
         )}
         {data && <canvas ref={canvasRef} width={400} height={300} />}
-        <button onClick={() => generateDocument(canvasRef.current!, times)}>
+        <Button onClick={() => generateDocument(canvasRef.current!, times)}>
           Download PDF
-        </button>
+        </Button>
       </Section>
     </main>
   );

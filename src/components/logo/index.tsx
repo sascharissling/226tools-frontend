@@ -1,18 +1,27 @@
-import logoSvg from "../../assets/logo.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <Link to={"/"}>
-      <Image src={logoSvg} />
-    </Link>
+    <CustomLink to={"/"}>
+      <Name>226tools.com</Name>
+    </CustomLink>
   );
 };
 
 export default Logo;
 
-const Image = styled.img`
-  width: 10rem;
-  height: 3rem;
+const Name = styled.div`
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+`;
+
+const CustomLink = styled(Link)`
+  color: ${(props) => props.theme.colors.primary};
+  &:hover {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.primaryDarker};
+  }
 `;

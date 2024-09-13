@@ -7,9 +7,14 @@ export const theme = {
     redwood: "#AF3E4D",
     black: "#000",
     white: "#fff",
-    gray: "#808080",
+    ////////// NEW THEME COLORS //////////
+    primary: "#02a0ff",
+    primaryDarker: "#0068a5",
+    goldAccent: "#FFD700",
     lightgray: "#D3D3D3",
+    gray: "#808080",
     whiteLighter: "#f8f8f8",
+    darkGray: "#383838",
   },
   fonts: ["Lato", "sans-serif"],
   fontSizes: {

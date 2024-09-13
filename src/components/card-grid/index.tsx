@@ -55,7 +55,7 @@ const Card = ({
     <CardContainer>
       <CardImage src={img} alt={title} loading="eager" />
       <CardContent>
-        <h3>{title}</h3>
+        <CardHeader>{title}</CardHeader>
         <CardDescription>{description}</CardDescription>
       </CardContent>
       {comingSoon && <ComingSoonPill>Coming Soon</ComingSoonPill>}
@@ -68,15 +68,20 @@ const Card = ({
   return content;
 };
 
+const CardHeader = styled.h3`
+  font-size: 1.25rem;
+  margin: 0;
+  color: ${(props) => props.theme.colors.primary};
+  font-weight: 700;
+`;
+
 const CardContainer = styled.div`
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
   position: relative;
+  background: ${(props) => props.theme.colors.white};
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
 
   &:hover {
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
-
     img {
       filter: brightness(0.8);
     }
@@ -96,14 +101,15 @@ const CardContent = styled.div`
 `;
 
 const CardDescription = styled.p`
-  color: ${(props) => props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.darkGray};
   margin-top: 0.5rem;
   font-size: 0.875rem;
 `;
 
 const ComingSoonPill = styled.div`
-  background-color: gold;
-  color: ${(props) => props.theme.colors.gray};
+  background-color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.white};
+  text-transform: uppercase;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   width: fit-content;

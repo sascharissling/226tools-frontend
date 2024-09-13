@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useEnv } from "../../hooks/useEnv.ts";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Logo from "../logo";
 import { breakpoints, devices } from "../../theme/theme.ts";
 import MenuButton from "./components/MenuButton.tsx";
 import { HEADER_HEIGHT_REM } from "../../theme/GlobalStyles.tsx";
+import Button from "../button/index.tsx";
 
 const routes = [
   { name: "Home", path: "/" },
@@ -44,10 +44,14 @@ const NavBar = () => {
                 return null;
               }
               return (
-                <LI key={route.path} $isGold={route.isGold}>
-                  <Link to={route.path} onClick={toggleMenu}>
+                <LI key={route.path}>
+                  <Button
+                    letterSpacing
+                    style={route.isGold ? "primary" : "nav-link"}
+                    to={route.path}
+                  >
                     {route.name}
-                  </Link>
+                  </Button>
                 </LI>
               );
             })}
@@ -62,8 +66,8 @@ export default NavBar;
 
 const HeaderBar = styled.header`
   width: 100%;
-  background: ${({ theme }) => theme.colors.whiteLighter};
   height: ${HEADER_HEIGHT_REM}rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
 `;
 
 const Inner = styled.div`
@@ -83,7 +87,6 @@ const Navigation = styled.nav<{ $isMenuOpen: boolean }>`
   top: ${HEADER_HEIGHT_REM}rem;
   width: 100%;
   z-index: 1000;
-  background: ${({ theme }) => theme.colors.whiteLighter};
 
   @media ${devices.md} {
     position: initial;
@@ -103,19 +106,10 @@ const UL = styled.ul`
 
   @media ${devices.md} {
     flex-direction: row;
-    justify-content: start;
+    justify-content: end;
   }
 `;
 
-const LI = styled.li<{ $isGold?: boolean }>`
-  ${(props) =>
-    props.$isGold === true &&
-    css`
-      a {
-        background-color: gold;
-        padding: 0.25rem;
-        border-radius: 0.25rem;
-      }
-    `}
+const LI = styled.li`
   list-style: none;
 `;
