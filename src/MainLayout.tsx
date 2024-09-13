@@ -27,7 +27,7 @@ const MainLayout = () => {
       category: "cooke consent",
       action: "consent",
     });
-  }, [cookieConsent]);
+  }, [cookieConsent, isDev]);
 
   return (
     <>
