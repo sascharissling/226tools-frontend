@@ -8,7 +8,7 @@ export const homeCards = [
     title: "Pace Calculator",
     to: "/pace-calculator",
     description:
-      "Optimize Your Ironman, Half Ironman, Olympic, and Sprint Triathlon Strategy",
+      "Calculate your next race outcome with your current or desired training numbers",
   },
   {
     img: nutritionItems,

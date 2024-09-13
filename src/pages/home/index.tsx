@@ -1,19 +1,14 @@
 import { Text } from "../../components/text";
 import styled from "styled-components";
-import HeaderGroup from "../../components/header-group";
 import CardGrid from "../../components/card-grid";
 import { homeCards } from "./data/homeCards.ts";
+import Hero from "./components/Hero.tsx";
 
 const Home = () => {
   return (
     <main>
+      <Hero />
       <Wrapper>
-        <HeaderGroup
-          as="h1"
-          headline="226tools.com"
-          subHeadline="Tools for long distance triathletes"
-          align="center"
-        />
         <CardGrid content={homeCards} />
         <Text
           $color="lightgray"

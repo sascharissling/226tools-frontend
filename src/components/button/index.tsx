@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 interface Props extends Omit<ComponentProps<"button">, "style"> {
   children: ReactNode;
-  style?: "primary" | "secondary" | "link" | "nav-link";
+  style?: "primary" | "secondary" | "link" | "nav-link" | "link-button";
   to?: string;
   href?: string;
   lowercase?: boolean;
@@ -52,7 +52,7 @@ const Button = ({
 export default Button;
 
 const ButtonComponent = styled.button<{
-  $style: "primary" | "secondary" | "link" | "nav-link";
+  $style: "primary" | "secondary" | "link" | "nav-link" | "link-button";
   $lowercase?: boolean;
   $letterSpacing?: boolean;
 }>`
@@ -81,7 +81,7 @@ const ButtonComponent = styled.button<{
 `;
 
 const LinkComponent = styled(Link)<{
-  $style: "primary" | "secondary" | "link" | "nav-link";
+  $style: "primary" | "secondary" | "link" | "nav-link" | "link-button";
   $lowercase?: boolean;
   $letterSpacing?: boolean;
 }>`
@@ -113,6 +113,19 @@ const LinkComponent = styled(Link)<{
     css`
       text-transform: none;
     `};
+
+  ${(props) =>
+    props.$style === "link-button" &&
+    css`
+      background-color: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.white};
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      border-radius: 0.625rem;
+    `}
 
   &:hover {
     color: ${(props) => props.theme.colors.primaryDarker};
