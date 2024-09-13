@@ -5,20 +5,22 @@ import { CookieConsent, getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from "react-ga4";
 import { CSSProperties, useEffect } from "react";
 import { theme } from "./theme/theme.ts";
-
-ReactGA.initialize(import.meta.env.VITE_GA_ID);
-ReactGA.send("pageview");
+import { useEnv } from "./hooks/useEnv.ts";
 
 const MainLayout = () => {
+  const { isDev } = useEnv();
   const cookieConsent =
     getCookieConsentValue("226toolsCookieAccepted") === "true";
 
   useEffect(() => {
-    if (!cookieConsent) {
+    if (!cookieConsent || isDev) {
       // @ts-expect-error TODO: How to fix this?
       window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true;
       return;
     }
+
+    ReactGA.initialize(import.meta.env.VITE_GA_ID);
+    ReactGA.send("pageview");
     // @ts-expect-error TODO: How to fix this?
     window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = false;
     ReactGA.event({
