@@ -11,7 +11,7 @@ export const theme = {
     lightgray: "#D3D3D3",
     whiteLighter: "#f8f8f8",
   },
-  fonts: ["sans-serif", "Roboto"],
+  fonts: ["Lato", "sans-serif"],
   fontSizes: {
     extraSmall: "0.75em",
     small: "1em",
