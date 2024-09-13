@@ -64,7 +64,7 @@ const Button = styled.button`
   width: 1.25rem;
   height: 1.25rem;
 
-  @media ${devices.md} {
+  @media ${devices.lg} {
     display: none;
   }
 `;

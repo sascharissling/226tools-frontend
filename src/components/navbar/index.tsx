@@ -73,6 +73,7 @@ const HeaderBar = styled.header`
 const Inner = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
   margin: 0 auto;
   gap: 3rem;
   padding: 0 1rem;
@@ -87,8 +88,9 @@ const Navigation = styled.nav<{ $isMenuOpen: boolean }>`
   top: ${HEADER_HEIGHT_REM}rem;
   width: 100%;
   z-index: 1000;
+  background-color: ${({ theme }) => theme.colors.white};
 
-  @media ${devices.md} {
+  @media ${devices.lg} {
     position: initial;
     display: block;
     height: 100%;
@@ -104,7 +106,7 @@ const UL = styled.ul`
   width: 100%;
   padding: 0;
 
-  @media ${devices.md} {
+  @media ${devices.lg} {
     flex-direction: row;
     justify-content: end;
   }
