@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useEnv } from "../../hooks/useEnv.ts";
 import styled from "styled-components";
 import Logo from "../logo";
@@ -18,10 +18,12 @@ const routes = [
 const NavBar = () => {
   const { isDev } = useEnv();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isMenuOpen);
+  // const toggleMenu = () => {
+  //   setIsMenuOpen((prev) => !prev);
+  // };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,6 +51,7 @@ const NavBar = () => {
                     letterSpacing
                     style={route.isGold ? "primary" : "nav-link"}
                     to={route.path}
+                    onClick={toggleMenu}
                   >
                     {route.name}
                   </Button>

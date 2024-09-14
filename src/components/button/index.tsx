@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ComponentProps, ReactNode } from "react";
+import { ComponentProps, MouseEventHandler, ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 interface Props extends Omit<ComponentProps<"button">, "style"> {
@@ -27,6 +27,9 @@ const Button = ({
         $style={style}
         $lowercase={lowercase}
         $letterSpacing={letterSpacing}
+        onClick={
+          rest.onClick as unknown as MouseEventHandler<HTMLAnchorElement>
+        }
       >
         {children}
       </LinkComponent>
