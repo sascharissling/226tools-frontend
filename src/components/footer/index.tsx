@@ -34,8 +34,8 @@ const LinkWrapper = styled.div`
 `;
 
 const FooterComponent = styled.footer`
-  background-color: ${(props) => props.theme.colors.lightgray};
-  color: ${(props) => props.theme.colors.gray};
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.darkGray};
   padding: 0 1rem;
   text-align: center;
   width: 100%;
@@ -71,7 +71,7 @@ const SocialImage = styled.img`
 const MadeWith = styled.div`
   text-align: center;
   grid-area: madeWith;
-  color: ${(props) => props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.darkGray};
 
   @media ${devices.md} {
     text-align: left;
