@@ -8,8 +8,8 @@ export const theme = {
     black: "#000",
     white: "#fff",
     ////////// NEW THEME COLORS //////////
-    primary: "#02a0ff",
-    primaryDarker: "#0068a5",
+    primary: "#007BC7",
+    primaryDarker: "#005E99",
     goldAccent: "#FFD700",
     lightgray: "#D3D3D3",
     gray: "#808080",
