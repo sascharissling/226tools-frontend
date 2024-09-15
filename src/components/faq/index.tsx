@@ -41,7 +41,10 @@ const CollapsibleItem = ({
     <div>
       <Question $isOpen={isOpen} onClick={toggleOpen}>
         {faq.question}
-        <Image src={isOpen ? minusSvg : plusSvg} />
+        <Image
+          src={isOpen ? minusSvg : plusSvg}
+          alt={isOpen ? "minus icon" : "plus icon"}
+        />
       </Question>
       {isOpen && (
         <Text $paddingBottom={10} $size="extraSmall">
