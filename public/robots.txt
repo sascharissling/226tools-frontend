@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.226tools.com/sitemap.xml
