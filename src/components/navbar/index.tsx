@@ -18,10 +18,6 @@ const routes = [
 const NavBar = () => {
   const { isDev } = useEnv();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
-  // const toggleMenu = () => {
-  //   setIsMenuOpen((prev) => !prev);
-  // };
 
   const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
 

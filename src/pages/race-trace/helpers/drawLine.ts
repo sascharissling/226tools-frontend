@@ -56,13 +56,10 @@ export const drawLine = (
       const x1 =
         padding + (currentRecord.position_long - minLonAdjusted) * scaleX;
       const y1 =
-        canvas.height -
-        (padding + (currentRecord.position_lat - minLatAdjusted) * scaleY);
+        padding + (maxLatAdjusted - currentRecord.position_lat) * scaleY;
 
       const x2 = padding + (nextRecord.position_long - minLonAdjusted) * scaleX;
-      const y2 =
-        canvas.height -
-        (padding + (nextRecord.position_lat - minLatAdjusted) * scaleY);
+      const y2 = padding + (maxLatAdjusted - nextRecord.position_lat) * scaleY;
 
       // Calculate control points for Bezier curve (midpoint between two points)
       const controlX = (x1 + x2) / 2;
@@ -75,7 +72,6 @@ export const drawLine = (
         ctx.fillStyle = colors[fileIndex];
         ctx.fill();
         ctx.moveTo(x1, y1); // Move to the start point again to avoid drawing a line from the center of the circle
-        // ctx.closePath();
       }
 
       // Draw the Bezier curve instead of straight line
