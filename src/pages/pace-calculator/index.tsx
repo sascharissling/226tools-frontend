@@ -99,7 +99,7 @@ const PaceCalculator = () => {
         subHeadline="Optimize Your Ironman, Half Ironman, Olympic, and Sprint Triathlon
           Strategy"
       />
-      <Section $hasBackground $hasBorder>
+      <Section>
         <Wrapper>
           {/*<Heading as="h3">Competition Selection</Heading>*/}
           <DisciplinesContainer>
@@ -172,25 +172,9 @@ const PaceCalculator = () => {
 
 export default PaceCalculator;
 
-const Section = styled.section<{
-  $hasBackground?: boolean;
-  $hasBorder?: boolean;
-}>`
-  margin: 1rem;
+const Section = styled.section`
   padding: 1rem;
   border-radius: 0.5rem;
-
-  ${(props) =>
-    props.$hasBackground &&
-    `
-    background-color: ${props.theme.colors.whiteLighter};
-  `}
-
-  ${(props) =>
-    props.$hasBorder &&
-    `
-        border: 1px solid ${props.theme.colors.lightgray};
-    `}
 `;
 
 const FootNote = styled.div`

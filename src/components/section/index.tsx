@@ -7,16 +7,4 @@ export const Section = styled.section<{
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-
-  ${(props) =>
-    props.$hasBackground &&
-    `
-    background-color: ${props.theme.colors.whiteLighter};
-  `}
-
-  ${(props) =>
-    props.$hasBorder &&
-    `
-        border: 1px solid ${props.theme.colors.lightgray};
-    `}
 `;
