@@ -109,11 +109,10 @@ export default Discipline;
 const Label = styled.label`
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 
   @media ${devices.md} {
     display: grid;
-    gap: 0.5rem;
-    //grid-template-columns: 6rem 18rem max-content;
   }
 `;
 
