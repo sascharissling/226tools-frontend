@@ -96,10 +96,11 @@ const PaceCalculator = () => {
       />
       <Section $hasBackground $hasBorder>
         <Wrapper>
+          {/*<Heading as="h3">Competition Selection</Heading>*/}
           <DisciplinesContainer>
             {Object.keys(lengths).map((competition) => (
-              <label key={competition}>
-                <input
+              <CompetitionLabel key={competition}>
+                <RadioInput
                   type="radio"
                   value={competition}
                   checked={getIsChecked(
@@ -110,21 +111,28 @@ const PaceCalculator = () => {
                   onChange={handleLengthChange}
                 />
                 {competition}
-              </label>
+              </CompetitionLabel>
             ))}
           </DisciplinesContainer>
+          {/*<Heading as="h3" $paddingTop={1}>*/}
+          {/*  Competition Lengths*/}
+          {/*</Heading>*/}
           <LengthsContainer>
             {Object.keys(selectedLength).map((key) => (
-              <label key={key}>
-                <input
+              <InputLabel key={key}>
+                {key === "swim"
+                  ? "Swim (m)"
+                  : key === "bike"
+                    ? "Bike (km)"
+                    : "Run (km)"}
+                <CompetitionInput
                   type="number"
                   name={key}
                   value={selectedLength[key as keyof Length]}
                   placeholder={`${key} length`}
                   onChange={handleLegChange}
                 />
-                {key === "swim" ? "m" : "km"}
-              </label>
+              </InputLabel>
             ))}
           </LengthsContainer>
         </Wrapper>
@@ -201,34 +209,22 @@ const TotalTime = styled.div`
 const DisciplinesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0 1rem;
 
   @media ${devices.md} {
     flex-direction: row;
-    input {
-    }
   }
 `;
 
 const LengthsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0 1rem;
-  input {
-    width: 4rem;
-    margin-right: 0.5rem;
-  }
 
   @media ${devices.md} {
     flex-direction: row;
-    input {
-      width: 6rem;
-      margin-right: 0.5rem;
-    }
   }
 `;
 
@@ -242,4 +238,36 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 0;
   }
+`;
+
+const RadioInput = styled.input`
+  width: 1.25rem;
+  height: 1.25rem;
+
+  &:checked {
+    background-color: ${(props) => props.theme.colors.primary};
+  }
+`;
+
+const CompetitionLabel = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+const CompetitionInput = styled.input`
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: ${(props) => props.theme.colors.darkGray};
+  font-size: 1rem;
+  line-height: 2rem;
+`;
+
+const InputLabel = styled.label`
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
 `;
