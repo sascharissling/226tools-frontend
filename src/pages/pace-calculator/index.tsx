@@ -263,6 +263,7 @@ const CompetitionInput = styled.input`
   color: ${(props) => props.theme.colors.darkGray};
   font-size: 1rem;
   line-height: 2rem;
+  padding: 0 0 0 0.5rem;
 `;
 
 const InputLabel = styled.label`
