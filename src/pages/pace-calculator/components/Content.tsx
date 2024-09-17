@@ -14,7 +14,7 @@ const Content = () => {
           your overall performance.
         </Text>
         <Tips>
-          <h3>Tips for Triathlon Race Day Pacing</h3>
+          <h2>Tips for Triathlon Race Day Pacing</h2>
           <ol>
             <li>
               <Text>
@@ -51,7 +51,7 @@ const Content = () => {
           </ol>
         </Tips>
         <Tips>
-          <h3>Pacing Strategies for Different Triathlon Distances</h3>
+          <h2>Pacing Strategies for Different Triathlon Distances</h2>
           <ol>
             <li>
               <Text>

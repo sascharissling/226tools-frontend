@@ -14,7 +14,7 @@ interface Props {
 const FAQ = ({ faqs }: Props) => {
   return (
     <Section $hasBackground $hasBorder>
-      <h2 style={{ paddingBottom: "1rem" }}>FAQs</h2>
+      <h3 style={{ paddingBottom: "1rem" }}>FAQs</h3>
       {faqs.map((faq) => (
         <>
           <CollapsibleItem key={faq.question} faq={faq} />
