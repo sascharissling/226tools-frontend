@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import formatMinutesToMMSS from "../../../utils/formatMinutesToMMSS.ts";
 import styled from "styled-components";
 import { devices } from "../../../theme/theme.ts";
+import ReactGA from "react-ga4";
 
 const getAttributes = (name: string) => {
   switch (name) {
@@ -83,9 +84,14 @@ const Discipline = ({ value, name, setValue, legLength }: DisciplineProps) => {
       <RangePicker
         type="range"
         value={value}
-        onChange={(e) =>
-          setValue((prev) => ({ ...prev, [name]: +e.target.value }))
-        }
+        onChange={(e) => {
+          setValue((prev) => ({ ...prev, [name]: +e.target.value }));
+          ReactGA.event({
+            category: "pace-calculator",
+            action: "change-leg",
+            label: e.target.value,
+          });
+        }}
         {...getAttributes(name)}
       />
       <span>

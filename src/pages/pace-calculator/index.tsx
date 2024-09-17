@@ -40,6 +40,11 @@ const PaceCalculator = () => {
   });
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
+    ReactGA.event({
+      category: "pace-calculator",
+      action: "change-length",
+      label: event.target.name,
+    });
     setSelectedLength(lengths[event.target.value as Competition]);
   };
 
