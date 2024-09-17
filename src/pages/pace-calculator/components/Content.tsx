@@ -24,7 +24,6 @@ const Content = () => {
                 power data to ensure you're staying within your target zones.
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Practice in Training:</strong> Your race-day pacing
@@ -33,7 +32,6 @@ const Content = () => {
                 workouts or longer training sessions.
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Don’t Neglect Transitions:</strong> Transition times can
@@ -42,7 +40,6 @@ const Content = () => {
                 your overall time.
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Nutrition and Hydration:</strong> For longer events like
@@ -77,7 +74,6 @@ const Content = () => {
                 </ul>
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Olympic Distance Pacing:</strong> An Olympic triathlon
@@ -99,7 +95,6 @@ const Content = () => {
                 </ul>
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Half Ironman Pacing:</strong> Pacing is critical in a
@@ -122,7 +117,6 @@ const Content = () => {
                 </ul>
               </Text>
             </li>
-            <br />
             <li>
               <Text>
                 <strong>Ironman Pacing:</strong> The full Ironman is all about
@@ -182,4 +176,7 @@ const Section = styled.section<{
 
 const Tips = styled.div`
   margin-top: 2rem;
+  li {
+    margin: 1rem;
+  }
 `;

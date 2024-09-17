@@ -194,7 +194,7 @@ const Section = styled.section<{
 `;
 
 const FootNote = styled.div`
-  color: ${(props) => props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.darkGray};
   font-size: 0.5rem;
   margin-top: 2rem;
 `;
