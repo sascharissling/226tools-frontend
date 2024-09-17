@@ -107,15 +107,17 @@ const Label = styled.label`
   @media ${devices.md} {
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: 6rem 18rem max-content;
+    //grid-template-columns: 6rem 18rem max-content;
   }
 `;
 
 const RangePicker = styled.input`
   width: 100%;
+  height: 0.25rem;
+  cursor: pointer;
 
   @media ${devices.md} {
-    //width: 50%;
-    //max-width: 20rem;
+    width: 50%;
+    max-width: 50rem;
   }
 `;
