@@ -11,6 +11,7 @@ const Footer = () => {
       <MadeWith>Made with ☕️ in Cologne 🇩🇪</MadeWith>
       <LinkWrapper>
         <Link to={"/imprint"}>Imprint</Link>
+        <Link to={"/privacy-policy"}>Privacy Policy</Link>
       </LinkWrapper>
       <SocialContainer>
         <SocialLink href={"https://instagram.com/430legsup"} target="_blank">
@@ -31,6 +32,7 @@ const LinkWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 `;
 
 const FooterComponent = styled.footer`

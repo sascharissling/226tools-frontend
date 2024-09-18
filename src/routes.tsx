@@ -10,6 +10,7 @@ import EventsMap from "./pages/events-map";
 import MainLayout from "./MainLayout.tsx";
 import Imprint from "./pages/imprint";
 import RaceTracePage from "./pages/race-trace";
+import PrivacyPolicy from "./pages/privacy-policy";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ export const router = createBrowserRouter(
         <Route path="/" element={<Home />} />
         <Route path={"/pace-calculator"} element={<PaceCalculator />} />
         <Route path={"/imprint"} element={<Imprint />} />
+        <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
         {process.env.NODE_ENV === "development" && (
           <>
             <Route
