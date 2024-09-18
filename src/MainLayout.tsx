@@ -14,7 +14,6 @@ const MainLayout = () => {
 
   useEffect(() => {
     if (!cookieConsent || isDev) {
-      // @ts-expect-error TODO: How to fix this?
       window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true;
       return;
     }
@@ -22,7 +21,6 @@ const MainLayout = () => {
     ReactGA.initialize(import.meta.env.VITE_GA_ID);
     ReactGA.send("pageview");
 
-    // @ts-expect-error TODO: How to fix this?
     window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = false;
     ReactGA.event({
       category: "cooke consent",
@@ -45,7 +43,6 @@ const MainLayout = () => {
         enableDeclineButton
         cookieName="226toolsCookieAccepted"
         onDecline={() =>
-          // @ts-expect-error TODO: How to fix this?
           (window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true)
         }
       >
