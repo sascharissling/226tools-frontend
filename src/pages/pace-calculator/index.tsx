@@ -156,7 +156,7 @@ const PaceCalculator = () => {
             />
           ))}
         </SliderContainer>
-        <TotalTime>Total Time: {totalTime} H</TotalTime>
+        <TotalTime>Total Time: {totalTime}</TotalTime>
         <FootNote>
           Inspired by{" "}
           <a href="https://www.triathloncalculators.com/" target="_blank">
@@ -193,6 +193,12 @@ const SliderContainer = styled.div`
 const TotalTime = styled.div`
   margin-top: 1rem;
   font-weight: bold;
+  width: 100%;
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
 `;
 
 const DisciplinesContainer = styled.div`

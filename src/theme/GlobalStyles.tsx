@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
     
     main {
         @media ${devices.md} {
-            max-width: 90rem;
+            max-width: 70rem;
             margin: 0 auto;
         }
     }

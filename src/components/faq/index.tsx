@@ -38,6 +38,8 @@ const CollapsibleItem = ({
 const Section = styled.section`
   padding: 1rem;
   border-radius: 0.5rem;
+
+  border: 1px solid ${(props) => props.theme.colors.lightgray};
 `;
 
 const Question = styled.h4`
