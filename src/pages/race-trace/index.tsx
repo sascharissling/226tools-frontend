@@ -85,7 +85,7 @@ const RaceTracePage = () => {
                   .duration(totalTime, "seconds")
                   .format("HH:mm:ss");
                 setData((prevData) =>
-                  prevData ? [...prevData, data] : [data],
+                  prevData ? [...prevData, data] : [data]
                 );
                 setColors((prevColors) => [...prevColors, allowedColors[0]]);
                 setTimes((prevTimes) => [...prevTimes, formattedTime]);
@@ -144,7 +144,7 @@ const RaceTracePage = () => {
                 </strong>
                 - Start Time:{" "}
                 {dayjs(fitFileData.activity?.timestamp).format(
-                  "HH:mm:ss DD/MM/YYYY",
+                  "HH:mm:ss DD/MM/YYYY"
                 )}
                 <div>
                   {allowedColors.map((color) => (
