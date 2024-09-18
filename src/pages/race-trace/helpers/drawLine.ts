@@ -144,7 +144,7 @@ function simplifyDouglasPeucker(points, tolerance) {
 }
 
 // Main simplifyRoute function to simplify the route data
-function simplifyRoute(records, tolerance) {
+function simplifyRoute(records: FitFileRecord[], tolerance: number) {
   // Assuming each record contains position_lat and position_long
   return simplifyDouglasPeucker(records, tolerance);
 }

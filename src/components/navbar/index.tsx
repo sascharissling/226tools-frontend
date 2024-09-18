@@ -10,6 +10,7 @@ import Button from "../button/index.tsx";
 const routes = [
   { name: "Home", path: "/" },
   { name: "Pace Calculator", path: "/pace-calculator" },
+  { name: "Blog", path: "/blog", isDev: true },
   { name: "Nutrition Calculator", path: "/nutrition-calculator", isDev: true },
   { name: "Events Map", path: "/events-map", isDev: true },
   { name: "Race Trace", path: "/race-trace", isDev: true, isGold: true },

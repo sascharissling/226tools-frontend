@@ -11,6 +11,8 @@ import MainLayout from "./MainLayout.tsx";
 import Imprint from "./pages/imprint";
 import RaceTracePage from "./pages/race-trace";
 import PrivacyPolicy from "./pages/privacy-policy";
+import Blog from "./pages/blog/index.tsx";
+import Article from "./pages/blog/components/Article.tsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +24,12 @@ export const router = createBrowserRouter(
         <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
         {process.env.NODE_ENV === "development" && (
           <>
+            <Route path={"/blog"} element={<Blog />} />
+            <Route path="/blog" element={<Blog />}>
+              <Route path=":articleSlug" element={<Article />} />
+            </Route>
+            <Route path={"/events-map"} element={<EventsMap />} />
+            <Route path={"/race-trace"} element={<RaceTracePage />} />
             <Route
               path={"/nutrition-calculator"}
               element={<NutritionCalculator />}
@@ -31,6 +39,6 @@ export const router = createBrowserRouter(
           </>
         )}
       </Route>
-    </>,
-  ),
+    </>
+  )
 );
