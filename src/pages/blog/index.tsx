@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link, Outlet, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import { Section } from "../../components/section";
-import ReactMarkdown from "react-markdown";
+import { Link, Outlet } from "react-router-dom";
+import styled from "styled-components";
 
 const articles = [
   {
@@ -16,25 +13,11 @@ const articles = [
 ];
 
 const Blog = () => {
-  const { slug } = useParams();
-  const [content, setContent] = useState("");
-
-  useEffect(() => {
-    const fetchContent = async () => {
-      try {
-        const response = await fetch(`/src/pages/blog/content/${slug}.md`);
-        const text = await response.text();
-        setContent(text);
-      } catch (error) {
-        console.error("Error fetching blog content:", error);
-      }
-    };
-
-    fetchContent();
-  }, [slug]);
-
   return (
-    <main>
+    <BlogWrapper>
+      <main>
+        <Outlet />
+      </main>
       <aside>
         <h1>Blog</h1>
         <ul>
@@ -45,9 +28,15 @@ const Blog = () => {
           ))}
         </ul>
       </aside>
-      <Outlet />
-    </main>
+    </BlogWrapper>
   );
 };
 
 export default Blog;
+
+const BlogWrapper = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 70vw;
+  margin: auto auto;
+`;
