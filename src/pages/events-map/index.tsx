@@ -1,66 +1,180 @@
-import { Map } from "ol";
+import { useEffect, useRef, useState } from "react";
+import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
-import View from "ol/View";
-import { defaults } from "ol/control/defaults";
-import { defaults as interactionDefaults } from "ol/interaction/defaults";
-import { useEffect, useRef } from "react";
-const osmBaseLayer = new TileLayer({
-  visible: true,
-  source: new OSM(),
-});
+import { fromLonLat } from "ol/proj";
+import Feature from "ol/Feature";
+import Point from "ol/geom/Point";
+import VectorSource from "ol/source/Vector";
+import VectorLayer from "ol/layer/Vector";
+import { Circle as CircleStyle, Fill, Style } from "ol/style";
+import Overlay from "ol/Overlay";
+import styled from "styled-components";
+import "ol/ol.css";
 
-export const map = new Map({
-  target: "map",
-  layers: [osmBaseLayer],
-  view: new View({
-    center: [0, 0],
-    zoom: 1,
-  }),
-  controls: defaults(),
-  interactions: interactionDefaults({}),
-});
-
-export function useMap() {
-  const mapRef = useRef<Map>();
-  if (!mapRef.current) {
-    mapRef.current = map;
-  }
-  return mapRef.current;
-}
+const fetchEventsData = async () => {
+  const response = await fetch("/path/to/events.json");
+  const data = await response.json();
+  return data;
+};
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const map = useMap();
+  const map = useRef<Map>();
+  const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
-    if (mapRef.current) {
-      map.setTarget(mapRef.current);
-      map.updateSize();
+    const getData = async () => {
+      const data = await fetchEventsData();
+      setEvents(data);
+
+      const vectorSource = new VectorSource();
+
+      data.forEach((event) => {
+        const { coordinates, data: eventData } = event;
+        const feature = new Feature({
+          geometry: new Point(fromLonLat(coordinates)),
+          eventData,
+        });
+        vectorSource.addFeature(feature);
+      });
+
+      const vectorLayer = new VectorLayer({
+        source: vectorSource,
+        style: new Style({
+          image: new CircleStyle({
+            radius: 10,
+            fill: new Fill({
+              color: "#FF0000", // Bright red for visibility
+            }),
+          }),
+        }),
+      });
+
+      // Add the vector layer to the map
+      map.current.addLayer(vectorLayer);
+      console.log("Vector layer added:", vectorLayer);
+
+      // Zoom to fit all the features
+      const extent = vectorSource.getExtent();
+      console.log("Extent of vector source:", extent);
+      map.current.getView().fit(extent, {
+        size: map.current.getSize(),
+        padding: [50, 50, 50, 50], // Optional padding
+        maxZoom: 12, // Set max zoom level to avoid zooming too close
+      });
+
+      // Create an overlay to show event information
+      const overlay = new Overlay({
+        element: document.getElementById("popup")!,
+        autoPan: true,
+        autoPanAnimation: {
+          duration: 250,
+        },
+      });
+      map.current.addOverlay(overlay);
+
+      // Display event information on hover
+      map.current.on("pointermove", (event) => {
+        const feature = map.current?.forEachFeatureAtPixel(
+          event.pixel,
+          (feature) => feature
+        );
+        if (feature) {
+          const coordinates = feature.getGeometry().getCoordinates();
+          const eventData = feature.get("eventData");
+          const content = document.getElementById("popup-content")!;
+          content.innerHTML = `
+            <strong>${eventData[0]}</strong><br>
+            Date: ${eventData[1]}<br>
+            <a href="${eventData[2]}" target="_blank">Link</a><br>
+            <img src="${eventData[3]}" alt="Event Image" style="width:100px;height:auto;"><br>
+            ${eventData.slice(4).join("<br>")}
+          `;
+          overlay.setPosition(coordinates);
+        } else {
+          overlay.setPosition(undefined);
+        }
+      });
+    };
+
+    if (!map.current && mapRef.current) {
+      // Initialize the map
+      map.current = new Map({
+        target: mapRef.current,
+        layers: [
+          new TileLayer({
+            source: new OSM(),
+          }),
+        ],
+        view: new View({
+          center: fromLonLat([0, 0]), // Initial center of the map
+          zoom: 2,
+        }),
+      });
+
+      getData();
     }
-  }, [map]);
+  }, []);
 
   return (
     <main>
       <h1>Events Map</h1>
-      <div>TODO: Filter 70.3, 140.6...</div>
-      <div
-        style={{
-          height: 800,
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            height: "100%",
-            width: "100%",
-            background: "white",
-          }}
-          ref={mapRef}
-        ></div>
+      <div style={{ height: 800 }}>
+        <MapContainer ref={mapRef}></MapContainer>
+        <Popup id="popup">
+          <PopupContent id="popup-content"></PopupContent>
+        </Popup>
       </div>
     </main>
   );
 };
 
 export default EventsMap;
+
+const MapContainer = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: white;
+`;
+
+const Popup = styled.div`
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 200px;
+
+  &:after,
+  &:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+
+  &:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-top-color: #ccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+`;
+
+const PopupContent = styled.div``;
