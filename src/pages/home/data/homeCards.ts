@@ -11,16 +11,16 @@ export const homeCards = [
       "Calculate your next race outcome with your current or desired training numbers",
   },
   {
+    img: australiaImg,
+    title: "Race Map",
+    to: "/events-map",
+    description: "Filter and find races on the globe",
+  },
+  {
     img: nutritionItems,
     title: "Nutrition Calculator",
     description:
       "Nail your Race Day Nutrition with our sophisticated Nutrition calculator",
-    comingSoon: true,
-  },
-  {
-    img: australiaImg,
-    title: "Race Map",
-    description: "Filter and find races on the globe",
     comingSoon: true,
   },
 ];
