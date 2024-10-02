@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
@@ -12,6 +12,7 @@ import Overlay from "ol/Overlay";
 import styled from "styled-components";
 import "ol/ol.css";
 import races from "./events.json";
+import { Coordinate } from "ol/coordinate";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -77,7 +78,7 @@ const EventsMap = () => {
             <img src="${eventData[3]}" alt="Event Image" style="width:100px;height:auto;"><br>
             ${eventData.slice(4).join("<br>")}
           `;
-          overlay.setPosition(coordinates);
+          overlay.setPosition(coordinates as unknown as Coordinate);
         } else {
           overlay.setPosition(undefined);
         }
@@ -108,10 +109,10 @@ const EventsMap = () => {
       <h1>Events Map</h1>
       <div style={{ height: 800 }}>
         <MapContainer ref={mapRef}></MapContainer>
-        <Popup id="popup">
-          <PopupContent id="popup-content"></PopupContent>
-        </Popup>
       </div>
+      <Popup id="popup">
+        <PopupContent id="popup-content"></PopupContent>
+      </Popup>
     </main>
   );
 };
