@@ -68,15 +68,17 @@ const EventsMap = () => {
           (feature) => feature,
         );
         if (feature) {
-          const coordinates = feature.getGeometry();
+          const coordinates = feature.getGeometry()?.getCoordinates();
           const eventData = feature.get("eventData");
           const content = document.getElementById("popup-content")!;
           content.innerHTML = `
-            <strong>${eventData[0]}</strong><br>
+            <strong>${eventData[3]}</strong><br>
+            ${eventData[4]}, ${eventData[5]}<br>
+            <br>
             Date: ${eventData[1]}<br>
-            <a href="${eventData[2]}" target="_blank">Link</a><br>
-            <img src="${eventData[3]}" alt="Event Image" style="width:100px;height:auto;"><br>
-            ${eventData.slice(4).join("<br>")}
+            Swim: ${eventData[11]}<br>
+            Bike: ${eventData[12]}<br>
+            Run: ${eventData[13]}<br>
           `;
           overlay.setPosition(coordinates as unknown as Coordinate);
         } else {
@@ -109,10 +111,10 @@ const EventsMap = () => {
       <h1>Events Map</h1>
       <div style={{ height: 800 }}>
         <MapContainer ref={mapRef}></MapContainer>
+        <Popup id="popup">
+          <PopupContent id="popup-content"></PopupContent>
+        </Popup>
       </div>
-      <Popup id="popup">
-        <PopupContent id="popup-content"></PopupContent>
-      </Popup>
     </main>
   );
 };
