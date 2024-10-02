@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect, useRef } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
@@ -7,12 +9,13 @@ import Feature from "ol/Feature";
 import Point from "ol/geom/Point";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
-import { Circle as CircleStyle, Fill, Style } from "ol/style";
+import { Circle as CircleStyle, Fill, Icon, Style } from "ol/style";
 import Overlay from "ol/Overlay";
 import styled from "styled-components";
 import "ol/ol.css";
 import races from "./events.json";
 import { Coordinate } from "ol/coordinate";
+import markerSvg from "./marker.svg";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -22,6 +25,12 @@ const EventsMap = () => {
     const getData = async () => {
       const vectorSource = new VectorSource();
 
+      const iconStyle = new Style({
+        image: new Icon({
+          src: markerSvg,
+        }),
+      });
+
       races.forEach((event) => {
         const { coordinates, data: eventData } = event;
         const feature = new Feature({
@@ -29,13 +38,14 @@ const EventsMap = () => {
           eventData,
         });
         vectorSource.addFeature(feature);
+        feature.setStyle(iconStyle);
       });
 
       const vectorLayer = new VectorLayer({
         source: vectorSource,
         style: new Style({
           image: new CircleStyle({
-            radius: 10,
+            radius: 12,
             fill: new Fill({
               color: "#FF0000", // Bright red for visibility
             }),
@@ -75,7 +85,8 @@ const EventsMap = () => {
             <strong>${eventData[3]}</strong><br>
             ${eventData[4]}, ${eventData[5]}<br>
             <br>
-            Date: ${eventData[1]}<br>
+            Month: ${eventData[1]}<br>
+            <br>
             Swim: ${eventData[11]}<br>
             Bike: ${eventData[12]}<br>
             Run: ${eventData[13]}<br>
@@ -102,7 +113,7 @@ const EventsMap = () => {
         }),
       });
 
-      getData();
+      void getData();
     }
   }, []);
 

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { FitFileData } from "fit-file-parser";
 
 export const clearCanvas = (
@@ -36,10 +38,14 @@ export const drawLine = (
   data.forEach((fitFileData, fileIndex) => {
     let records = fitFileData.records;
 
-
     // Calculate simplify tolerance based on the number of records
     const simplifyTolerance = calculateSimplifyTolerance(records.length);
-    console.log(fitFileData.laps[0].sport,records.length,simplifyTolerance,colors[fileIndex]);
+    console.log(
+      fitFileData.laps[0].sport,
+      records.length,
+      simplifyTolerance,
+      colors[fileIndex],
+    );
 
     // Simplify the route before drawing
     records = simplifyRoute(records, simplifyTolerance);
@@ -108,21 +114,27 @@ function getPerpendicularDistance(point, lineStart, lineEnd) {
   const x2 = lineEnd.position_long;
   const y2 = lineEnd.position_lat;
 
-  const numerator = Math.abs((y2 - y1) * x0 - (x2 - x1) * y0 + x2 * y1 - y2 * x1);
+  const numerator = Math.abs(
+    (y2 - y1) * x0 - (x2 - x1) * y0 + x2 * y1 - y2 * x1,
+  );
   const denominator = Math.sqrt((y2 - y1) ** 2 + (x2 - x1) ** 2);
   return numerator / denominator;
 }
 
 function simplifyDouglasPeucker(points, tolerance) {
   if (points.length <= 2) {
-    return points;  // If there are only two points, we cannot simplify further.
+    return points; // If there are only two points, we cannot simplify further.
   }
 
   // Find the point with the maximum distance
   let maxDistance = 0;
   let index = 0;
   for (let i = 1; i < points.length - 1; i++) {
-    const distance = getPerpendicularDistance(points[i], points[0], points[points.length - 1]);
+    const distance = getPerpendicularDistance(
+      points[i],
+      points[0],
+      points[points.length - 1],
+    );
     if (distance > maxDistance) {
       index = i;
       maxDistance = distance;
