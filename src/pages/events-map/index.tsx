@@ -126,6 +126,31 @@ const EventsMap = () => {
           <PopupContent id="popup-content"></PopupContent>
         </Popup>
       </div>
+      <section>
+        <h1>Explore All Global Triathlon Events on Our Interactive Map</h1>
+        <p>
+          Looking for your next Triathlon challenge? Our comprehensive Triathlon
+          events map helps you find races across the globe. Whether you're a
+          seasoned triathlete or a first-time competitor, easily navigate and
+          discover Triathlon competitions in North America, Europe, Asia,
+          Australia, and beyond. From iconic destinations like Kona and Cozumel
+          to new and emerging race locations, this map covers every Triathlon
+          triathlon, including full-distance and Middle Distance events.
+        </p>
+        <p>
+          Filter by date, region, or race type to find the perfect event that
+          matches your goals and training schedule. Stay updated with race
+          information, registration details, and travel tips for each Triathlon
+          location.
+        </p>
+        <p>
+          So far we only cover Ironman events and need to extend our Database
+        </p>
+        <p>
+          We want to include way more events and filtering for Oly, Half and
+          Full.
+        </p>
+      </section>
     </main>
   );
 };
