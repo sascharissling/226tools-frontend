@@ -72,8 +72,7 @@ const EventsMap = () => {
       });
       map.current?.addOverlay(overlay);
 
-      // Display event information on click
-      map.current?.on("click", (event) => {
+      const handlePopup = (event) => {
         const feature = map.current?.forEachFeatureAtPixel(
           event.pixel,
           (feature) => feature,
@@ -96,7 +95,9 @@ const EventsMap = () => {
         } else {
           overlay.setPosition(undefined);
         }
-      });
+      };
+      // Display event information on click
+      map.current?.on("pointermove", handlePopup);
     };
 
     if (!map.current && mapRef.current) {
