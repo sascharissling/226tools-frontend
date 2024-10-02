@@ -74,7 +74,7 @@ const EventsMap = () => {
       map.current?.addOverlay(overlay);
 
       // Display event information on hover
-      map.current?.on("pointermove", (event) => {
+      map.current?.on("click", (event) => {
         const feature = map.current?.forEachFeatureAtPixel(
           event.pixel,
           (feature) => feature,
