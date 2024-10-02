@@ -11,26 +11,17 @@ import { Circle as CircleStyle, Fill, Style } from "ol/style";
 import Overlay from "ol/Overlay";
 import styled from "styled-components";
 import "ol/ol.css";
-
-const fetchEventsData = async () => {
-  const response = await fetch("/path/to/events.json");
-  const data = await response.json();
-  return data;
-};
+import races from "./events.json";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
   const map = useRef<Map>();
-  const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
     const getData = async () => {
-      const data = await fetchEventsData();
-      setEvents(data);
-
       const vectorSource = new VectorSource();
 
-      data.forEach((event) => {
+      races.forEach((event) => {
         const { coordinates, data: eventData } = event;
         const feature = new Feature({
           geometry: new Point(fromLonLat(coordinates)),
@@ -52,13 +43,11 @@ const EventsMap = () => {
       });
 
       // Add the vector layer to the map
-      map.current.addLayer(vectorLayer);
-      console.log("Vector layer added:", vectorLayer);
+      map.current?.addLayer(vectorLayer);
 
       // Zoom to fit all the features
       const extent = vectorSource.getExtent();
-      console.log("Extent of vector source:", extent);
-      map.current.getView().fit(extent, {
+      map.current?.getView().fit(extent, {
         size: map.current.getSize(),
         padding: [50, 50, 50, 50], // Optional padding
         maxZoom: 12, // Set max zoom level to avoid zooming too close
@@ -68,20 +57,17 @@ const EventsMap = () => {
       const overlay = new Overlay({
         element: document.getElementById("popup")!,
         autoPan: true,
-        autoPanAnimation: {
-          duration: 250,
-        },
       });
-      map.current.addOverlay(overlay);
+      map.current?.addOverlay(overlay);
 
       // Display event information on hover
-      map.current.on("pointermove", (event) => {
+      map.current?.on("pointermove", (event) => {
         const feature = map.current?.forEachFeatureAtPixel(
           event.pixel,
-          (feature) => feature
+          (feature) => feature,
         );
         if (feature) {
-          const coordinates = feature.getGeometry().getCoordinates();
+          const coordinates = feature.getGeometry();
           const eventData = feature.get("eventData");
           const content = document.getElementById("popup-content")!;
           content.innerHTML = `
