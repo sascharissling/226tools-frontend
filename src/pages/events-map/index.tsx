@@ -146,7 +146,10 @@ const EventsMap = () => {
           location.
         </p>
         <p>
-          So far we only cover Ironman events and need to extend our Database
+          So far I only cover Ironman and Challenge events and need to extend my
+          Database with many local races. I am working on it. I want to automate
+          it, but its hard, since Ironman just works with a google spreadsheed
+          and Challgne does not expose their Races in a fetcheable manner.
         </p>
         <p>
           We want to include way more events and filtering for Oly, Half and

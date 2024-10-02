@@ -1690,5 +1690,320 @@
     "bike": "Rolling",
     "run": "Flat",
     "date": "July"
+  },
+  {
+    "location": "Florianópolis, Brazil",
+    "coordinates": [-48.5480507, -27.5953778],
+    "type": "Middle",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
+  },
+  {
+    "location": "Canberra, Australia",
+    "coordinates": [149.1300092, -35.2801901],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "November"
+  },
+  {
+    "location": "Salinas, Ecuador",
+    "coordinates": [-80.959802, -2.208917],
+    "type": "Middle",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "December"
+  },
+  {
+    "location": "Eilat, Israel (Israman)",
+    "coordinates": [34.9532867, 29.55805],
+    "type": "Long & Middle",
+    "swim": "Sea",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "January"
+  },
+  {
+    "location": "Wanaka, New Zealand",
+    "coordinates": [169.1191295, -44.69833],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "February"
+  },
+  {
+    "location": "Malaysia",
+    "coordinates": [101.975766, 4.210484],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "March"
+  },
+  {
+    "location": "Puerto Varas, Chile",
+    "coordinates": [-72.983773, -41.319215],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "March"
+  },
+  {
+    "location": "Mogán, Gran Canaria, Spain",
+    "coordinates": [-15.734576, 27.833209],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "April"
+  },
+  {
+    "location": "Cerrado, Brazil",
+    "coordinates": [-49.2531, -16.6799],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "April"
+  },
+  {
+    "location": "Taiwan",
+    "coordinates": [120.960515, 23.69781],
+    "type": "Long & Middle",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "April"
+  },
+  {
+    "location": "Cesenatico, Italy",
+    "coordinates": [12.406215, 44.200074],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
+  },
+  {
+    "location": "Fréjus, France",
+    "coordinates": [6.735028, 43.4325],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "May"
+  },
+  {
+    "location": "Šamorín, Slovakia (The Championship)",
+    "coordinates": [17.308935, 48.027926],
+    "type": "Middle",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
+  },
+  {
+    "location": "St Pölten, Austria",
+    "coordinates": [15.625624, 48.204664],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "May"
+  },
+  {
+    "location": "Gunsan-Saemangeum, Korea",
+    "coordinates": [126.717917, 35.978603],
+    "type": "Long",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "June"
+  },
+  {
+    "location": "Salou, Spain",
+    "coordinates": [1.133207, 41.077164],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
+  },
+  {
+    "location": "Wales, UK",
+    "coordinates": [-3.783712, 51.62144],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "June"
+  },
+  {
+    "location": "Geraardsbergen, Belgium",
+    "coordinates": [3.875702, 50.770092],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "June"
+  },
+  {
+    "location": "Gdańsk, Poland",
+    "coordinates": [18.646638, 54.352024],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
+  },
+  {
+    "location": "Walchsee, Austria",
+    "coordinates": [12.339045, 47.64199],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "June"
+  },
+  {
+    "location": "Cagnes-sur-Mer, France",
+    "coordinates": [7.1473, 43.6632],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
+  },
+  {
+    "location": "Roth, Germany",
+    "coordinates": [11.0865, 49.2474],
+    "type": "Long",
+    "swim": "Canal",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
+  },
+  {
+    "location": "Cap Quebec, Canada",
+    "coordinates": [-71.208221, 46.803283],
+    "type": "Middle",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "July"
+  },
+  {
+    "location": "London, UK",
+    "coordinates": [-0.1276474, 51.5073219],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "July"
+  },
+  {
+    "location": "Turku, Finland",
+    "coordinates": [22.267, 60.4518],
+    "type": "Middle",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "July"
+  },
+  {
+    "location": "Sandefjord, Norway",
+    "coordinates": [10.216533, 59.13118],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "August"
+  },
+  {
+    "location": "Almere-Amsterdam, Netherlands",
+    "coordinates": [5.209, 52.3508],
+    "type": "Long & Middle",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
+  },
+  {
+    "location": "Sanremo, Italy",
+    "coordinates": [7.777882, 43.8171],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "September"
+  },
+  {
+    "location": "Coquimbo-La Serena, Chile",
+    "coordinates": [-71.2519, -29.9078],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
+  },
+  {
+    "location": "Istanbul, Turkey",
+    "coordinates": [28.9784, 41.0082],
+    "type": "Olympic",
+    "swim": "Sea",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
+  },
+  {
+    "location": "Samarkand, Uzbekistan",
+    "coordinates": [66.972, 39.6542],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "September"
+  },
+  {
+    "location": "Vieux Boucau, France",
+    "coordinates": [-1.4049, 43.7853],
+    "type": "Middle",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
+  },
+  {
+    "location": "Peguera Mallorca, Spain",
+    "coordinates": [2.4418, 39.525],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "October"
+  },
+  {
+    "location": "Barcelona, Spain",
+    "coordinates": [2.1734, 41.3851],
+    "type": "Olympic",
+    "swim": "Sea",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
+  },
+  {
+    "location": "Egnazia, Italy",
+    "coordinates": [17.366, 40.858],
+    "type": "Middle",
+    "swim": "Sea",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "October"
   }
 ]
