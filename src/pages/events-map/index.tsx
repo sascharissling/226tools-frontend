@@ -121,12 +121,12 @@ const EventsMap = () => {
 
   return (
     <main>
-      <div style={{ height: 800 }}>
+      <MapWrapper style={{ height: 800 }}>
         <MapContainer ref={mapRef}></MapContainer>
         <Popup id="popup">
           <PopupContent id="popup-content"></PopupContent>
         </Popup>
-      </div>
+      </MapWrapper>
       <Section>
         <Heading as="h1" $paddingBottom={1}>
           Explore All Global Triathlon Events on Our Interactive Map
@@ -159,6 +159,10 @@ const EventsMap = () => {
 };
 
 export default EventsMap;
+
+const MapWrapper = styled.div`
+  max-height: 60vh;
+`;
 
 const MapContainer = styled.div`
   position: relative;
