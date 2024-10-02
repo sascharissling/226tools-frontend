@@ -1,5460 +1,1694 @@
 [
   {
-    "name": "02",
     "location": "Kwa Zulu Natal",
-    "coordinates": [
-      27.8698213,
-      -26.5118079
-    ],
-    "data": [
-      "02",
-      "June",
-      "2024",
-      "IRONMAN-70.3",
-      "Durban",
-      "Africa",
-      "South Africa",
-      "Kwa Zulu Natal",
-      "ISUZU",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "72",
-      "72",
-      "DUR",
-      "https://www.ironman.com/im703-durban",
-      "https://cdn1.sportngin.com/attachments/photo/1b23-133726690/703Durban.jpg"
-    ]
+    "coordinates": [27.8698213, -26.5118079],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "29",
     "location": "Bahrain, Middle East",
-    "coordinates": [
-      50.5288614,
-      26.1859384
-    ],
-    "data": [
-      "29",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Middle East Championship Bahrain",
-      "Asia",
-      "Bahrain",
-      "Bahrain, Middle East",
-      "",
-      "",
-      "Register with Flex90",
-      "Bay",
-      "Flat",
-      "Flat",
-      "72",
-      "73",
-      "BAH",
-      "https://www.ironman.com/im703-bahrain",
-      "https://cdn1.sportngin.com/attachments/photo/ee25-133727343/703Bahrain.jpg"
-    ]
+    "coordinates": [50.5288614, 26.1859384],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "18",
     "location": "Bangsaen, Thailand",
-    "coordinates": [
-      100.94944733260057,
-      13.27809185
-    ],
-    "data": [
-      "18",
-      "February",
-      "2024",
-      "IRONMAN-70.3",
-      "Bangsaen, Thailand",
-      "Asia",
-      "Thailand",
-      "Bangsaen, Thailand",
-      "Toyota",
-      "MAMA",
-      "Closed",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "85",
-      "76",
-      "BKK",
-      "https://www.ironman.com/im703-bangsaen",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/504d-195542230/IM703-Bangsaen.jpg"
-    ]
+    "coordinates": [100.94944733260057, 13.27809185],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "February"
   },
   {
-    "name": "00",
     "location": "Davao City, Philippines",
-    "coordinates": [
-      125.6080623,
-      7.0648306
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "Davao Philippines",
-      "Asia",
-      "Philippines",
-      "Davao City, Philippines",
-      "",
-      "Aboitiz",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "92",
-      "82",
-      "DVO",
-      "https://www.ironman.com/im703-davao-philippines",
-      "https://cdn4.sportngin.com/attachments/photo/e079-133728363/703Dava.jpg"
-    ]
+    "coordinates": [125.6080623, 7.0648306],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "19",
     "location": "Desaru Coast, Malaysia",
-    "coordinates": [
-      104.2623299,
-      1.536381
-    ],
-    "data": [
-      "19",
-      "May",
-      "2024",
-      "IRONMAN-70.3",
-      "Desaru Coast",
-      "Asia",
-      "Malaysia",
-      "Desaru Coast, Malaysia",
-      "",
-      "",
-      "Closed",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "82",
-      "82",
-      "JHB",
-      "https://www.ironman.com/im703-desaru-coast",
-      "https://cdn4.sportngin.com/attachments/photo/384c-133728425/703DesaruCoast.jpg"
-    ]
+    "coordinates": [104.2623299, 1.536381],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "27",
     "location": "India",
-    "coordinates": [
-      78.6677428,
-      22.3511148
-    ],
-    "data": [
-      "27",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Goa",
-      "Asia",
-      "India",
-      "India",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "82",
-      "78",
-      "GOI",
-      "https://www.ironman.com/im703-goa",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/c175-186071203/Goa_Races_Search_Thumbnail_large.jpg"
-    ]
+    "coordinates": [78.6677428, 22.3511148],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "16",
     "location": "Goseong, Korea",
-    "coordinates": [
-      128.322233,
-      34.9732784
-    ],
-    "data": [
-      "16",
-      "June",
-      "2024",
-      "IRONMAN-70.3",
-      "Goseong",
-      "Asia",
-      "Korea",
-      "Goseong, Korea",
-      "",
-      "",
-      "Closed",
-      "Ocean",
-      "Rolling",
-      "Hilly",
-      "73",
-      "68",
-      "PUS",
-      "https://www.ironman.com/im703-goseong",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/0408-197838511/2024_GOSEONG_IRONMAN_RACE_CARD.JPG"
-    ]
+    "coordinates": [128.322233, 34.9732784],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Hilly",
+    "date": "June"
   },
   {
-    "name": "12",
     "location": "Langkawi, Malaysia",
-    "coordinates": [
-      99.7928634,
-      6.3700386
-    ],
-    "data": [
-      "12",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Langkawi",
-      "Asia",
-      "Malaysia",
-      "Langkawi, Malaysia",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "88",
-      "82",
-      "LGK",
-      "https://www.ironman.com/im703-langkawi",
-      "https://cdn1.sportngin.com/attachments/photo/d28e-133729797/703Langkawi.jpg"
-    ]
+    "coordinates": [99.7928634, 6.3700386],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "08",
     "location": "Muscat, Oman",
-    "coordinates": [
-      58.3829448,
-      23.5882019
-    ],
-    "data": [
-      "08",
-      "February",
-      "2025",
-      "IRONMAN-70.3",
-      "Oman",
-      "Asia",
-      "Oman",
-      "Muscat, Oman",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "75",
-      "75",
-      "MCT",
-      "https://www.ironman.com/im703-oman",
-      "https://cdn3.sportngin.com/attachments/photo/7f83-133922685/703Oman.jpg"
-    ]
+    "coordinates": [58.3829448, 23.5882019],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "February"
   },
   {
-    "name": "09",
     "location": "Subic Bay, Philippines",
-    "coordinates": [
-      120.23397993795183,
-      14.78497865
-    ],
-    "data": [
-      "09",
-      "June",
-      "2024",
-      "IRONMAN-70.3",
-      "Subic Bay",
-      "Asia",
-      "Philippines",
-      "Subic Bay, Philippines",
-      "",
-      "",
-      "Closed",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "92",
-      "82",
-      "CRK",
-      "https://www.ironman.com/im703-subic-bay-philippines",
-      "https://cdn3.sportngin.com/attachments/photo/fce9-133730705/703UbicBay.jpg"
-    ]
+    "coordinates": [120.23397993795183, 14.78497865],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "11",
     "location": "Da Nang, Viet Nam",
-    "coordinates": [
-      108.212,
-      16.068
-    ],
-    "data": [
-      "11",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Viet Nam",
-      "Asia",
-      "Viet Nam",
-      "Da Nang, Viet Nam",
-      "VinFast",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "84",
-      "86",
-      "DAD",
-      "https://www.ironman.com/im703-vietnam",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/809f-200246080/IRMDN2024_350x350_large.jpg"
-    ]
+    "coordinates": [108.212, 16.068],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "18",
     "location": "Aix-en-Provence, France",
-    "coordinates": [
-      5.4474738,
-      43.5298424
-    ],
-    "data": [
-      "18",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Aix-en-Provence",
-      "Europe",
-      "France",
-      "Aix-en-Provence, France",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "68",
-      "61",
-      "MRS",
-      "https://www.ironman.com/im703-aix-en-provence",
-      "https://cdn4.sportngin.com/attachments/photo/71d0-167092423/703_AIX.JPG"
-    ]
+    "coordinates": [5.4474738, 43.5298424],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "10",
     "location": "Alcúdia, Mallorca, Spain",
-    "coordinates": [
-      3.1139499,
-      39.8158938
-    ],
-    "data": [
-      "10",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Alcúdia-Mallorca",
-      "Europe",
-      "Spain",
-      "Alcúdia, Mallorca, Spain",
-      "Zafiro",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "77",
-      "63",
-      "PMI",
-      "https://www.ironman.com/im703-mallorca",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/6f2f-191265318/Dise_o_sin_t_tulo.jpg"
-    ]
+    "coordinates": [3.1139499, 39.8158938],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "19",
     "location": "Cascais, Portugal",
-    "coordinates": [
-      -9.4204495,
-      38.6968919
-    ],
-    "data": [
-      "19",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Portugal - Cascais",
-      "Europe",
-      "Portugal",
-      "Cascais, Portugal",
-      "",
-      "",
-      "Sold Out - Notify Me",
-      "Bay",
-      "Hilly",
-      "Rolling",
-      "65",
-      "62",
-      "LIS",
-      "https://www.ironman.com/im703-cascais",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/c61b-189069670/IM703Cascais-RaceCard.jpg"
-    ]
+    "coordinates": [-9.4204495, 38.6968919],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "22",
     "location": "Elsinore, Denmark",
-    "coordinates": [
-      12.6130073,
-      56.0348739
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Elsinore",
-      "Europe",
-      "Denmark",
-      "Elsinore, Denmark",
-      "",
-      "",
-      "Register with Flex90",
-      "Bay",
-      "Rolling",
-      "Flat",
-      "69",
-      "63",
-      "CPH",
-      "https://www.ironman.com/im703-elsinore",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3668-195425543/IM_70.3_Elsinore.jpg"
-    ]
+    "coordinates": [12.6130073, 56.0348739],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "29",
     "location": "Lahti, Finland",
-    "coordinates": [
-      25.6613764,
-      60.9826014
-    ],
-    "data": [
-      "29",
-      "June",
-      "2024",
-      "IRONMAN-70.3",
-      "Lahti",
-      "Europe",
-      "Finland",
-      "Lahti, Finland",
-      "",
-      "",
-      "Discontinued",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "68",
-      "64",
-      "HEL",
-      "https://www.ironman.com/im703-finland",
-      "https://cdn3.sportngin.com/attachments/photo/da7b-133762774/703LahtiFinland.jpg"
-    ]
+    "coordinates": [25.6613764, 60.9826014],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "04",
     "location": "Gdynia, Poland",
-    "coordinates": [
-      18.604027892041863,
-      54.52333035
-    ],
-    "data": [
-      "04",
-      "August",
-      "2024",
-      "IRONMAN-70.3",
-      "Gdynia",
-      "Europe",
-      "Poland",
-      "Gdynia, Poland",
-      "Enea",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Bay",
-      "Rolling",
-      "Rolling",
-      "77",
-      "66",
-      "GDN",
-      "https://www.ironman.com/im703-gdynia",
-      "https://cdn4.sportngin.com/attachments/photo/95e9-133762495/703Gdynia.jpg"
-    ]
+    "coordinates": [18.604027892041863, 54.52333035],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "August"
   },
   {
-    "name": "21",
     "location": "Emilia-Romagna, Italy",
-    "coordinates": [
-      11.039437,
-      44.525696
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Italy Emilia-Romagna",
-      "Europe",
-      "Italy",
-      "Emilia-Romagna, Italy",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "77",
-      "72",
-      "BLQ",
-      "https://www.ironman.com/im703-emilia-romagna",
-      "https://cdn1.sportngin.com/attachments/photo/a3e1-133762489/703EmiliaRomagna.jpg"
-    ]
+    "coordinates": [11.039437, 44.525696],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "06",
     "location": "Jönköping, Sweden",
-    "coordinates": [
-      14.165719,
-      57.7825634
-    ],
-    "data": [
-      "06",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Jonkoping European Championship",
-      "Europe",
-      "Sweden",
-      "Jönköping, Sweden",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "72",
-      "68",
-      "JKG",
-      "https://www.ironman.com/im703-jonkoping",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/23de-195425528/IM70.3_J_nk_ping.jpg"
-    ]
+    "coordinates": [14.165719, 57.7825634],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "25",
     "location": "Kraichgau, Baden-Württemberg, Germany",
-    "coordinates": [
-      8.822265,
-      49.1441149
-    ],
-    "data": [
-      "25",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Kraichgau",
-      "Europe",
-      "Germany",
-      "Kraichgau, Baden-Württemberg, Germany",
-      "",
-      "KraichgauEnergie",
-      "Registration Now Open",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "72",
-      "73",
-      "FKB",
-      "https://www.ironman.com/im703-kraichgau",
-      "https://cdn4.sportngin.com/attachments/photo/37f7-166855507/IM703Kraichgau.jpg"
-    ]
+    "coordinates": [8.822265, 49.1441149],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "29",
     "location": "Vendėe, France",
-    "coordinates": [
-      -1.29144634801388,
-      46.67577325
-    ],
-    "data": [
-      "29",
-      "June",
-      "2024",
-      "IRONMAN-70.3",
-      "Les Sables d'Olonne-Vendée",
-      "Europe",
-      "France",
-      "Vendėe, France",
-      "",
-      "",
-      "Closed - Notify Me",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "75",
-      "66",
-      "NTE",
-      "https://www.ironman.com/im703-les-sables-dolonne",
-      "https://cdn1.sportngin.com/attachments/photo/71e3-183149575/SABLES.jpg"
-    ]
+    "coordinates": [-1.29144634801388, 46.67577325],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "13",
     "location": "Region Moselle, Luxembourg",
-    "coordinates": [
-      5.6703979,
-      49.7349869
-    ],
-    "data": [
-      "13",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Luxembourg Remich-Région Moselle",
-      "Europe",
-      "Luxembourg",
-      "Region Moselle, Luxembourg",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Rolling",
-      "Flat",
-      "77",
-      "73",
-      "LUX",
-      "https://www.ironman.com/im703-luxembourg",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/499e-199685619/IM703LUX_racecard.jpg"
-    ]
+    "coordinates": [5.6703979, 49.7349869],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "27",
     "location": "Marbella, Spain",
-    "coordinates": [
-      -4.88562,
-      36.508976
-    ],
-    "data": [
-      "27",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Marbella",
-      "Europe",
-      "Spain",
-      "Marbella, Spain",
-      "",
-      "",
-      "Sold Out - Special Entries Available",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "70",
-      "61",
-      "AGP",
-      "https://www.ironman.com/im703-marbella",
-      "https://cdn1.sportngin.com/attachments/photo/c601-133762969/703Marbella.jpg"
-    ]
+    "coordinates": [-4.88562, 36.508976],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "29",
     "location": "Nice, France",
-    "coordinates": [
-      7.2683912,
-      43.7009358
-    ],
-    "data": [
-      "29",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Nice",
-      "Europe",
-      "France",
-      "Nice, France",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "75",
-      "72",
-      "NCE",
-      "https://www.ironman.com/im703-nice",
-      "https://cdn1.sportngin.com/attachments/photo/d526-183149461/NICE_70.3.jpg"
-    ]
+    "coordinates": [7.2683912, 43.7009358],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "01",
     "location": "Rapperswil-Jona, Switzerland",
-    "coordinates": [
-      8.859650859230019,
-      47.2298277
-    ],
-    "data": [
-      "01",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Switzerland",
-      "Europe",
-      "Switzerland",
-      "Rapperswil-Jona, Switzerland",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "68",
-      "63",
-      "ZRH",
-      "https://www.ironman.com/im703-switzerland",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/90b9-166851675/703Switzerland.jpg"
-    ]
+    "coordinates": [8.859650859230019, 47.2298277],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "24",
     "location": "Vichy, France",
-    "coordinates": [
-      3.4203712,
-      46.1239268
-    ],
-    "data": [
-      "24",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Vichy",
-      "Europe",
-      "France",
-      "Vichy, France",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Flat",
-      "83",
-      "77",
-      "LYS",
-      "https://www.ironman.com/im703-vichy",
-      "https://cdn1.sportngin.com/attachments/photo/a307-133793193/703Vichy.jpg"
-    ]
+    "coordinates": [3.4203712, 46.1239268],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "22",
     "location": "Westfriesland, Netherlands",
-    "coordinates": [
-      5.7337039,
-      52.7210004
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Westfriesland",
-      "Europe",
-      "Netherlands",
-      "Westfriesland, Netherlands",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Flat",
-      "Flat",
-      "68",
-      "63",
-      "AMS",
-      "https://www.ironman.com/im703-westfriesland",
-      "https://cdn2.sportngin.com/attachments/photo/8901-133793410/703Westfriesland.jpg"
-    ]
+    "coordinates": [5.7337039, 52.7210004],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "15",
     "location": "Dorset, England",
-    "coordinates": [
-      -2.34473226124306,
-      50.79683685
-    ],
-    "data": [
-      "15",
-      "September",
-      "2024",
-      "IRONMAN-70.3",
-      "Weymouth",
-      "Europe",
-      "United Kingdom",
-      "Dorset, England",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "59",
-      "63",
-      "SOU",
-      "https://www.ironman.com/im703-weymouth",
-      "https://cdn4.sportngin.com/attachments/photo/d513-133793420/703Weymouth.jpg"
-    ]
+    "coordinates": [-2.34473226124306, 50.79683685],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "08",
     "location": "Warsaw, Poland",
-    "coordinates": [
-      21.071432235636493,
-      52.2337172
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Warsaw",
-      "Europe",
-      "Poland",
-      "Warsaw, Poland",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "65",
-      "WAW",
-      "https://www.ironman.com/im703-warsaw",
-      "https://cdn4.sportngin.com/attachments/photo/b0ef-150934832/Warsaw_Race_Card_350x350.jpg"
-    ]
+    "coordinates": [21.071432235636493, 52.2337172],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "31",
     "location": "Zell am See, Austria",
-    "coordinates": [
-      12.7963165,
-      47.3239636
-    ],
-    "data": [
-      "31",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Zell am See-Kaprun",
-      "Europe",
-      "Austria",
-      "Zell am See, Austria",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "66",
-      "63",
-      "SZG",
-      "https://www.ironman.com/im703-zell-am-see",
-      "https://cdn2.sportngin.com/attachments/photo/6577-167092458/IM703ZellamSeeKaprun.png"
-    ]
+    "coordinates": [12.7963165, 47.3239636],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "29",
     "location": "Augusta, Georgia",
-    "coordinates": [
-      -81.9748429,
-      33.4709714
-    ],
-    "data": [
-      "29",
-      "September",
-      "2024",
-      "IRONMAN-70.3",
-      "Augusta",
-      "North America",
-      "United States",
-      "Augusta, Georgia",
-      "",
-      "",
-      "2024 Canceled",
-      "River",
-      "Rolling",
-      "Flat",
-      "80",
-      "73",
-      "AGS",
-      "https://www.ironman.com/im703-augusta",
-      "https://cdn1.sportngin.com/attachments/photo/fc8b-133826841/703Augusta.jpg"
-    ]
+    "coordinates": [-81.9748429, 33.4709714],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "14",
     "location": "Boulder, Colorado",
-    "coordinates": [
-      -105.270545,
-      40.0149856
-    ],
-    "data": [
-      "14",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Boulder",
-      "North America",
-      "United States",
-      "Boulder, Colorado",
-      "",
-      "",
-      "Register with Flex90",
-      "Reservoir",
-      "Hilly",
-      "Hilly",
-      "78",
-      "62",
-      "DEN",
-      "https://www.ironman.com/im703-boulder",
-      "https://cdn3.sportngin.com/attachments/photo/b45f-133826906/703Boulder.jpg"
-    ]
+    "coordinates": [-105.270545, 40.0149856],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "June"
   },
   {
-    "name": "27",
     "location": "Calgary, Alberta",
-    "coordinates": [
-      -114.057541,
-      51.0456064
-    ],
-    "data": [
-      "27",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Calgary",
-      "North America",
-      "Canada",
-      "Calgary, Alberta",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Hilly",
-      "Flat",
-      "73",
-      "70",
-      "YYC",
-      "https://www.ironman.com/im703-calgary",
-      "https://cdn1.sportngin.com/attachments/photo/edc8-133826942/703Calgary.jpg"
-    ]
+    "coordinates": [-114.057541, 51.0456064],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "18",
     "location": "Chattanooga, Tennessee",
-    "coordinates": [
-      -85.3094883,
-      35.0457219
-    ],
-    "data": [
-      "18",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Chattanooga",
-      "North America",
-      "United States",
-      "Chattanooga, Tennessee",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Rolling",
-      "Rolling",
-      "71",
-      "72",
-      "CHA",
-      "https://www.ironman.com/im703-chattanooga",
-      "https://cdn2.sportngin.com/attachments/photo/5112-133827134/703Chattanooga.jpg"
-    ]
+    "coordinates": [-85.3094883, 35.0457219],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "21",
     "location": "Cozumel, Mexico",
-    "coordinates": [
-      -86.92069058377268,
-      20.4320599
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Cozumel",
-      "North America",
-      "Mexico",
-      "Cozumel, Mexico",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "81",
-      "84",
-      "CZM",
-      "https://www.ironman.com/im703-cozumel",
-      "https://cdn1.sportngin.com/attachments/photo/4f4b-153551977/COZUMEL_Card.jpg"
-    ]
+    "coordinates": [-86.92069058377268, 20.4320599],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "08",
     "location": "Cambridge, Maryland",
-    "coordinates": [
-      -76.0763177,
-      38.5714624
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Eagleman",
-      "North America",
-      "United States",
-      "Cambridge, Maryland",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Flat",
-      "Flat",
-      "80",
-      "75",
-      "BWI",
-      "https://www.ironman.com/im703-eagleman",
-      "https://cdn3.sportngin.com/attachments/photo/26ca-133827824/703Eagleman.jpg"
-    ]
+    "coordinates": [-76.0763177, 38.5714624],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "15",
     "location": "Haines City, Florida",
-    "coordinates": [
-      -81.6287423,
-      28.1067315
-    ],
-    "data": [
-      "15",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "Florida",
-      "North America",
-      "United States",
-      "Haines City, Florida",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "71",
-      "71",
-      "MCO",
-      "https://www.ironman.com/im703-florida",
-      "https://cdn1.sportngin.com/attachments/photo/8a5a-133827861/703FloridaGalveston.jpg"
-    ]
+    "coordinates": [-81.6287423, 28.1067315],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "December"
   },
   {
-    "name": "10",
     "location": "Panama City Beach, Florida",
-    "coordinates": [
-      -85.805386,
-      30.1765914
-    ],
-    "data": [
-      "10",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Gulf Coast",
-      "North America",
-      "United States",
-      "Panama City Beach, Florida",
-      "Visit Panama City Beach",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "78",
-      "71",
-      "ECP",
-      "https://www.ironman.com/im703-gulf-coast",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/03b1-195012017/70.3_Gulf_Coast_Race_Card_large.jpg"
-    ]
+    "coordinates": [-85.805386, 30.1765914],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "08",
     "location": "Indian Wells, California",
-    "coordinates": [
-      -116.338303,
-      33.7217965
-    ],
-    "data": [
-      "08",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "Indian Wells La Quinta",
-      "North America",
-      "United States",
-      "Indian Wells, California",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Flat",
-      "Rolling",
-      "65",
-      "57",
-      "PSP",
-      "https://www.ironman.com/im703-indian-wells",
-      "https://cdn1.sportngin.com/attachments/photo/12e4-133828144/703IndianWells.jpg"
-    ]
+    "coordinates": [-116.338303, 33.7217965],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "December"
   },
   {
-    "name": "00",
     "location": "Los Cabos, Mexico",
-    "coordinates": [
-      -100.936442,
-      21.166121
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "Los Cabos",
-      "North America",
-      "Mexico",
-      "Los Cabos, Mexico",
-      "",
-      "",
-      "Closed",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "77",
-      "84",
-      "SJD",
-      "https://www.ironman.com/im703-los-cabos",
-      "https://cdn2.sportngin.com/attachments/photo/cadf-133832545/703LosCabos.jpg"
-    ]
+    "coordinates": [-100.936442, 21.166121],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "27",
     "location": "Augusta, Maine",
-    "coordinates": [
-      -69.7734278,
-      44.3169922
-    ],
-    "data": [
-      "27",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Maine",
-      "North America",
-      "United States",
-      "Augusta, Maine",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Rolling",
-      "Rolling",
-      "65",
-      "72",
-      "PWM",
-      "https://www.ironman.com/im703-maine",
-      "https://cdn1.sportngin.com/attachments/photo/b57a-169353433/Maine_Race_Card.jpg"
-    ]
+    "coordinates": [-69.7734278, 44.3169922],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "July"
   },
   {
-    "name": "22",
     "location": "Mont-Tremblant, Quebec",
-    "coordinates": [
-      -74.5891426,
-      46.11588
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Mont Tremblant",
-      "North America",
-      "Canada",
-      "Mont-Tremblant, Quebec",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "63",
-      "64",
-      "YUL",
-      "https://www.ironman.com/im703-mont-tremblant",
-      "https://cdn2.sportngin.com/attachments/photo/d093-133828487/703MontTremblant.jpg"
-    ]
+    "coordinates": [-74.5891426, 46.11588],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "02",
     "location": "Monterrey, Mexico",
-    "coordinates": [
-      -100.315258,
-      25.6802019
-    ],
-    "data": [
-      "02",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "Monterrey",
-      "North America",
-      "Mexico",
-      "Monterrey, Mexico",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Flat",
-      "Flat",
-      "77",
-      "77",
-      "MTY",
-      "https://www.ironman.com/im703-monterrey",
-      "https://cdn2.sportngin.com/attachments/photo/c0a3-153551997/Monterrey_Card_2.jpg"
-    ]
+    "coordinates": [-100.315258, 25.6802019],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "12",
     "location": "Muncie, Indiana",
-    "coordinates": [
-      -85.3865271,
-      40.1936892
-    ],
-    "data": [
-      "12",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Muncie",
-      "North America",
-      "United States",
-      "Muncie, Indiana",
-      "",
-      "",
-      "Register with Flex90",
-      "Reservoir",
-      "Flat",
-      "Rolling",
-      "82",
-      "77",
-      "IND",
-      "https://www.ironman.com/im703-muncie",
-      "https://cdn4.sportngin.com/attachments/photo/8cb6-133828505/703Muncie.jpg"
-    ]
+    "coordinates": [-85.3865271, 40.1936892],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "July"
   },
   {
-    "name": "00",
     "location": "Morro Bay, California",
-    "coordinates": [
-      -120.849901,
-      35.3658075
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2023",
-      "IRONMAN-70.3",
-      "Morro Bay",
-      "North America",
-      "United States",
-      "Morro Bay, California",
-      "",
-      "",
-      "Discontinued",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "66",
-      "57",
-      "SBP",
-      "https://www.ironman.com/im703-morro-bay",
-      "https://cdn1.sportngin.com/attachments/photo/6385-177229913/Morrow_Bay_70.3_Race_Card_II_large.jpg"
-    ]
+    "coordinates": [-120.849901, 35.3658075],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "TBD"
   },
   {
-    "name": "06",
     "location": "Huntsville, Ontario",
-    "coordinates": [
-      -79.218434,
-      45.3263919
-    ],
-    "data": [
-      "06",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Muskoka",
-      "North America",
-      "Canada",
-      "Huntsville, Ontario",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Lake",
-      "Rolling",
-      "Hilly",
-      "78",
-      "68",
-      "YYZ",
-      "https://www.ironman.com/im703-muskoka",
-      "https://cdn3.sportngin.com/attachments/photo/83d1-133828536/703Muskoka.jpg"
-    ]
+    "coordinates": [-79.218434, 45.3263919],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Hilly",
+    "date": "July"
   },
   {
-    "name": "19",
     "location": "Wilmington, North Carolina",
-    "coordinates": [
-      -77.9447107,
-      34.2257282
-    ],
-    "data": [
-      "19",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "North Carolina",
-      "North America",
-      "United States",
-      "Wilmington, North Carolina",
-      "",
-      "",
-      "Sold Out - Special Entries Available",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "65",
-      "65",
-      "ILM",
-      "https://www.ironman.com/im703-north-carolina",
-      "https://cdn1.sportngin.com/attachments/photo/3b11-133828581/703NorthCarolina.jpg"
-    ]
+    "coordinates": [-77.9447107, 34.2257282],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "05",
     "location": "Oceanside, California",
-    "coordinates": [
-      -117.379483,
-      33.1958696
-    ],
-    "data": [
-      "05",
-      "April",
-      "2025",
-      "IRONMAN-70.3",
-      "Oceanside",
-      "North America",
-      "United States",
-      "Oceanside, California",
-      "Athletic Brewing",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "66",
-      "61",
-      "SAN",
-      "https://www.ironman.com/im703-oceanside",
-      "https://cdn1.sportngin.com/attachments/photo/1a87-133828636/703Oceanside.jpg"
-    ]
+    "coordinates": [-117.379483, 33.1958696],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "April"
   },
   {
-    "name": "20",
     "location": "Sandusky, Ohio",
-    "coordinates": [
-      -83.1555438,
-      41.2951563
-    ],
-    "data": [
-      "20",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Ohio",
-      "North America",
-      "United States",
-      "Sandusky, Ohio",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Flat",
-      "Flat",
-      "88",
-      "78",
-      "CLE",
-      "https://www.ironman.com/im703-ohio",
-      "https://cdn1.sportngin.com/attachments/photo/e980-133828670/703Ohio.jpg"
-    ]
+    "coordinates": [-83.1555438, 41.2951563],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "15",
     "location": "Happy Valley, Pennsylvania",
-    "coordinates": [
-      -75.8346396,
-      41.3275801
-    ],
-    "data": [
-      "15",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Pennsylvania Happy Valley",
-      "North America",
-      "United States",
-      "Happy Valley, Pennsylvania",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "78",
-      "76",
-      "SCE",
-      "https://www.ironman.com/im703-pennsylvania",
-      "https://cdn1.sportngin.com/attachments/photo/5d89-179921575/Happy_Valley_Race_Card_V2_large.jpg"
-    ]
+    "coordinates": [-75.8346396, 41.3275801],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "07",
     "location": "Santa Cruz, California",
-    "coordinates": [
-      -121.99059,
-      37.050096
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Santa Cruz",
-      "North America",
-      "United States",
-      "Santa Cruz, California",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "65",
-      "63",
-      "SJC",
-      "https://www.ironman.com/im703-santa-cruz",
-      "https://cdn3.sportngin.com/attachments/photo/3350-133828838/703SantaCruz.jpg"
-    ]
+    "coordinates": [-121.99059, 37.050096],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "10",
     "location": "St. George, Utah",
-    "coordinates": [
-      -113.584131,
-      37.104153
-    ],
-    "data": [
-      "10",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "St. George North American Championship",
-      "North America",
-      "United States",
-      "St. George, Utah",
-      "Intermountain Health",
-      "",
-      "Registration Now Open",
-      "Reservoir",
-      "Hilly",
-      "Hilly",
-      "73",
-      "60",
-      "SGU",
-      "https://www.ironman.com/im703-st-george",
-      "https://cdn4.sportngin.com/attachments/photo/a65e-133829328/703StG.jpg"
-    ]
+    "coordinates": [-113.584131, 37.104153],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "May"
   },
   {
-    "name": "06",
     "location": "Galveston, Texas",
-    "coordinates": [
-      -94.7933252,
-      29.3056996
-    ],
-    "data": [
-      "06",
-      "April",
-      "2025",
-      "IRONMAN-70.3",
-      "Texas",
-      "North America",
-      "United States",
-      "Galveston, Texas",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "70",
-      "71",
-      "HOU",
-      "https://www.ironman.com/im703-texas",
-      "https://cdn2.sportngin.com/attachments/photo/841b-133829831/703Texas.jpg"
-    ]
+    "coordinates": [-94.7933252, 29.3056996],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "April"
   },
   {
-    "name": "14",
     "location": "Frankfort, Michigan",
-    "coordinates": [
-      -86.234184,
-      44.633622
-    ],
-    "data": [
-      "14",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Michigan",
-      "North America",
-      "United States",
-      "Frankfort, Michigan",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "67",
-      "65",
-      "TVC",
-      "https://www.ironman.com/im703-michigan",
-      "https://cdn1.sportngin.com/attachments/photo/7565-175705520/Michigan_Race_Card_2.jpg"
-    ]
+    "coordinates": [-86.234184, 44.633622],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "25",
     "location": "Victoria, British Columbia",
-    "coordinates": [
-      -123.364953,
-      48.4283182
-    ],
-    "data": [
-      "25",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Victoria",
-      "North America",
-      "Canada",
-      "Victoria, British Columbia",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "65",
-      "66",
-      "YYJ",
-      "https://www.ironman.com/im703-victoria",
-      "https://cdn2.sportngin.com/attachments/photo/93d0-161653633/Vic_Race_Card.jpg"
-    ]
+    "coordinates": [-123.364953, 48.4283182],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "06",
     "location": "Waco, Texas",
-    "coordinates": [
-      -97.1474628,
-      31.5491899
-    ],
-    "data": [
-      "06",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Waco",
-      "North America",
-      "United States",
-      "Waco, Texas",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Flat",
-      "Rolling",
-      "65",
-      "65",
-      "ACT",
-      "https://www.ironman.com/im703-waco",
-      "https://cdn4.sportngin.com/attachments/photo/6dd0-133830756/703Waco.jpg"
-    ]
+    "coordinates": [-97.1474628, 31.5491899],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "06",
     "location": "Madison, Wisconsin",
-    "coordinates": [
-      -89.3837613,
-      43.074761
-    ],
-    "data": [
-      "06",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Wisconsin",
-      "North America",
-      "United States",
-      "Madison, Wisconsin",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "71",
-      "69",
-      "MSN",
-      "https://www.ironman.com/im703-wisconsin",
-      "https://cdn4.sportngin.com/attachments/photo/7636-133830797/703Wisconsin.jpg"
-    ]
+    "coordinates": [-89.3837613, 43.074761],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "15",
     "location": "Cairns, Queensland",
-    "coordinates": [
-      145.7721854,
-      -16.9206657
-    ],
-    "data": [
-      "15",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Cairns",
-      "Oceania",
-      "Australia",
-      "Cairns, Queensland",
-      "Cairns Airport",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "79",
-      "73",
-      "CNS",
-      "https://www.ironman.com/im703-cairns",
-      "https://cdn4.sportngin.com/attachments/photo/145b-133834007/703Cairns.jpg"
-    ]
+    "coordinates": [145.7721854, -16.9206657],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "23",
     "location": "Geelong, Victoria",
-    "coordinates": [
-      144.3598241,
-      -38.1493248
-    ],
-    "data": [
-      "23",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "Geelong",
-      "Oceania",
-      "Australia",
-      "Geelong, Victoria",
-      "",
-      "",
-      "Registration Now Open",
-      "Bay",
-      "Rolling",
-      "Rolling",
-      "67",
-      "64",
-      "MEL",
-      "https://www.ironman.com/im703-geelong",
-      "https://cdn4.sportngin.com/attachments/photo/deff-133834098/703Geelong.jpg"
-    ]
+    "coordinates": [144.3598241, -38.1493248],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "March"
   },
   {
-    "name": "04",
     "location": "Port Macquarie, New South Wales",
-    "coordinates": [
-      152.9103525,
-      -31.4299499
-    ],
-    "data": [
-      "04",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Port Macquarie",
-      "Oceania",
-      "Australia",
-      "Port Macquarie, New South Wales",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Rolling",
-      "Flat",
-      "70",
-      "73",
-      "PQQ",
-      "https://www.ironman.com/im703-port-macquarie",
-      "https://cdn4.sportngin.com/attachments/photo/bccc-133834182/703PortMacquarie.jpg"
-    ]
+    "coordinates": [152.9103525, -31.4299499],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "14",
     "location": "Mooloolaba, Queensland",
-    "coordinates": [
-      153.1131848665925,
-      -26.6852565
-    ],
-    "data": [
-      "14",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Sunshine Coast",
-      "Oceania",
-      "Australia",
-      "Mooloolaba, Queensland",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "79",
-      "72",
-      "BNE",
-      "https://www.ironman.com/im703-sunshine-coast",
-      "https://cdn4.sportngin.com/attachments/photo/2b77-133834217/703SunshineCoastMooloolaba.jpg"
-    ]
+    "coordinates": [153.1131848665925, -26.6852565],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "00",
     "location": "Taupo, New Zealand",
-    "coordinates": [
-      176.0694773,
-      -38.6866197
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "Taupo",
-      "Oceania",
-      "New Zealand",
-      "Taupo, New Zealand",
-      "",
-      "",
-      "Closed",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "68",
-      "62",
-      "TUO",
-      "https://www.ironman.com/im703-taupo",
-      "https://cdn2.sportngin.com/attachments/photo/68e4-133721481/IMNewZealandTaupo.jpg"
-    ]
+    "coordinates": [176.0694773, -38.6866197],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "03",
     "location": "Sahl Hasheesh, Egypt",
-    "coordinates": [
-      33.8868439,
-      27.0484448
-    ],
-    "data": [
-      "03",
-      "November",
-      "2023",
-      "IRONMAN-70.3",
-      "Egypt",
-      "Africa",
-      "Egypt",
-      "Sahl Hasheesh, Egypt",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Bay",
-      "Rolling",
-      "Flat",
-      "82",
-      "82",
-      "HRG",
-      "https://www.ironman.com/im703-egypt",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/6722-183982591/703Egypt-Race-Card.jpg"
-    ]
+    "coordinates": [33.8868439, 27.0484448],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "21",
     "location": "Penrith, New South Wales",
-    "coordinates": [
-      150.71478824217297,
-      -33.74779624999999
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Western Sydney",
-      "Oceania",
-      "Australia",
-      "Penrith, New South Wales",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "66",
-      "SYD",
-      "https://www.ironman.com/im703-western-sydney",
-      "https://cdn3.sportngin.com/attachments/photo/adfd-133834307/703WesternSydneyPenrith.jpg"
-    ]
+    "coordinates": [150.71478824217297, -33.74779624999999],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "03",
     "location": "Buenos Aires, Argentina",
-    "coordinates": [
-      -58.4440583,
-      -34.6083696
-    ],
-    "data": [
-      "03",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Buenos Aires",
-      "South America",
-      "Argentina",
-      "Buenos Aires, Argentina",
-      "",
-      "Baggio",
-      "Registration Opening Soon",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "62",
-      "64",
-      "EZE",
-      "https://www.ironman.com/im703-buenos-aires",
-      "https://cdn3.sportngin.com/attachments/photo/31d6-133834387/703BuenosAires.jpg"
-    ]
+    "coordinates": [-58.4440583, -34.6083696],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "01",
     "location": "Cartagena, Colombia",
-    "coordinates": [
-      -75.5441671,
-      10.4265566
-    ],
-    "data": [
-      "01",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "Cartagena",
-      "South America",
-      "Colombia",
-      "Cartagena, Colombia",
-      "",
-      "",
-      "Closed - Notify Me",
-      "Bay",
-      "Flat",
-      "Flat",
-      "84",
-      "81",
-      "CTG",
-      "https://www.ironman.com/im703-cartagena",
-      "https://cdn3.sportngin.com/attachments/photo/07e8-133834435/703Cartagena.jpg"
-    ]
+    "coordinates": [-75.5441671, 10.4265566],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "20",
     "location": "Manta, Manabi",
-    "coordinates": [
-      -80.719265,
-      -0.9485461
-    ],
-    "data": [
-      "20",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Ecuador",
-      "South America",
-      "Ecuador",
-      "Manta, Manabi",
-      "Marathon",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "77",
-      "78",
-      "MEC",
-      "https://www.ironman.com/im703-ecuador",
-      "https://cdn1.sportngin.com/attachments/photo/7c42-133834465/703Ecuador.jpg"
-    ]
+    "coordinates": [-80.719265, -0.9485461],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "00",
     "location": "Florianopolis, Brazil",
-    "coordinates": [
-      -48.5496098,
-      -27.5973002
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "Florianópolis",
-      "South America",
-      "Brazil",
-      "Florianopolis, Brazil",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "69",
-      "68",
-      "FLN",
-      "https://www.ironman.com/im703-florianopolis",
-      "https://cdn2.sportngin.com/attachments/photo/24e8-133834500/703Florianopolis.jpg"
-    ]
+    "coordinates": [-48.5496098, -27.5973002],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "00",
     "location": "Fortaleza, Brazil",
-    "coordinates": [
-      -38.5217989,
-      -3.7304512
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "Fortaleza",
-      "South America",
-      "Brazil",
-      "Fortaleza, Brazil",
-      "Itaú BBA",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "88",
-      "82",
-      "FOR",
-      "https://www.ironman.com/im703-fortaleza",
-      "https://cdn1.sportngin.com/attachments/photo/4586-133834515/703Fortaleza.jpg"
-    ]
+    "coordinates": [-38.5217989, -3.7304512],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "30",
     "location": "Panamá City, Panamá",
-    "coordinates": [
-      -79.5341802,
-      8.9714493
-    ],
-    "data": [
-      "30",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "Panama",
-      "North America",
-      "Panama",
-      "Panamá City, Panamá",
-      "",
-      "",
-      "Registration Now Open",
-      "Reservoir",
-      "Flat",
-      "Flat",
-      "83",
-      "80",
-      "PTY",
-      "https://www.ironman.com/im703-panama",
-      "https://cdn4.sportngin.com/attachments/photo/00c6-133834602/703PanamaCity.jpg"
-    ]
+    "coordinates": [-79.5341802, 8.9714493],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "12",
     "location": "Pucon, Chile",
-    "coordinates": [
-      -71.9329968,
-      -39.273222
-    ],
-    "data": [
-      "12",
-      "January",
-      "2025",
-      "IRONMAN-70.3",
-      "Pucon",
-      "South America",
-      "Chile",
-      "Pucon, Chile",
-      "Itaú",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Hilly",
-      "64",
-      "66",
-      "ZCO",
-      "https://www.ironman.com/im703-pucon",
-      "https://cdn1.sportngin.com/attachments/photo/6b05-133834721/703Pucon.jpg"
-    ]
+    "coordinates": [-71.9329968, -39.273222],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Hilly",
+    "date": "January"
   },
   {
-    "name": "09",
     "location": "Punta del Este, Uruguay",
-    "coordinates": [
-      -54.9439981,
-      -34.9632342
-    ],
-    "data": [
-      "09",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "Punta del Este",
-      "South America",
-      "Uruguay",
-      "Punta del Este, Uruguay",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "70",
-      "73",
-      "MVD",
-      "https://www.ironman.com/im703-punta-del-este",
-      "https://cdn2.sportngin.com/attachments/photo/e0d8-133835073/703PuntadelEste-Uruguay.jpg"
-    ]
+    "coordinates": [-54.9439981, -34.9632342],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "27",
     "location": "Lima, Perú",
-    "coordinates": [
-      -77.0365256,
-      -12.0621065
-    ],
-    "data": [
-      "27",
-      "April",
-      "2025",
-      "IRONMAN-70.3",
-      "Peru",
-      "South America",
-      "Perú",
-      "Lima, Perú",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "70",
-      "70",
-      "LIM",
-      "https://www.ironman.com/im703-peru",
-      "https://cdn1.sportngin.com/attachments/photo/04a8-179129550/70.3_Peru_Race_Card_large.jpg"
-    ]
+    "coordinates": [-77.0365256, -12.0621065],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "April"
   },
   {
-    "name": "10",
     "location": "Rio de Janeiro, Brazil",
-    "coordinates": [
-      -43.2093727,
-      -22.9110137
-    ],
-    "data": [
-      "10",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Rio de Janeiro",
-      "South America",
-      "Brazil",
-      "Rio de Janeiro, Brazil",
-      "Itaú BBA",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "80",
-      "73",
-      "GIG",
-      "https://www.ironman.com/im703-rio-de-janeiro",
-      "https://cdn1.sportngin.com/attachments/photo/1fcf-179472504/Rio_de_Janeiro_Race_Card.jpg"
-    ]
+    "coordinates": [-43.2093727, -22.9110137],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "00",
     "location": "Sāo Paulo, Brazil",
-    "coordinates": [
-      -46.6333824,
-      -23.5506507
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "IRONMAN-70.3",
-      "São Paulo",
-      "South America",
-      "Brazil",
-      "Sāo Paulo, Brazil",
-      "Itaú BBA",
-      "",
-      "Registration Opening Soon",
-      "Reservoir",
-      "Flat",
-      "Flat",
-      "77",
-      "71",
-      "CGH",
-      "https://www.ironman.com/im703-sao-paulo",
-      "https://cdn4.sportngin.com/attachments/photo/f037-133835129/703SaoPaulo.jpg"
-    ]
+    "coordinates": [-46.6333824, -23.5506507],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "24",
     "location": "Tallinn, Estonia",
-    "coordinates": [
-      24.7453688,
-      59.4372155
-    ],
-    "data": [
-      "24",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Tallinn",
-      "Europe",
-      "Estonia",
-      "Tallinn, Estonia",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Flat",
-      "Flat",
-      "62",
-      "64",
-      "TLL",
-      "https://www.ironman.com/im703-tallinn",
-      "https://cdn4.sportngin.com/attachments/photo/632e-165226856/IM_703_Tallinn_Race_Card_swimming_large_large.jpg"
-    ]
+    "coordinates": [24.7453688, 59.4372155],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "07",
     "location": "Duisburg, Germany",
-    "coordinates": [
-      6.759562,
-      51.434999
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Duisburg",
-      "Europe",
-      "Germany",
-      "Duisburg, Germany",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "77",
-      "70",
-      "DUS",
-      "https://www.ironman.com/im703-duisburg",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/2024-200889710/IM703DUI_racecard.jpg"
-    ]
+    "coordinates": [6.759562, 51.434999],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "TBD",
     "location": "Hobart, Tasmania",
-    "coordinates": [
-      147.3281233,
-      -42.8825088
-    ],
-    "data": [
-      "TBD",
-      "TBD",
-      "2024",
-      "IRONMAN-70.3",
-      "Tasmania",
-      "Oceania",
-      "Australia",
-      "Hobart, Tasmania",
-      "",
-      "",
-      "Closed - Notify Me",
-      "River",
-      "Hilly",
-      "Flat",
-      "60",
-      "62",
-      "HBA",
-      "https://www.ironman.com/im703-tasmania",
-      "https://cdn4.sportngin.com/attachments/photo/755e-171623380/703-Tasmania-hero-350x350.jpg"
-    ]
+    "coordinates": [147.3281233, -42.8825088],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "TBDTBD"
   },
   {
-    "name": "13",
     "location": "Geneva, New York",
-    "coordinates": [
-      -76.9786122,
-      42.8690271
-    ],
-    "data": [
-      "13",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Musselman",
-      "North America",
-      "United States",
-      "Geneva, New York",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "70",
-      "72",
-      "ROC",
-      "https://www.ironman.com/im703-musselman",
-      "https://cdn1.sportngin.com/attachments/photo/84a7-176700739/70.3_Musselman_Race_Card_large.jpg"
-    ]
+    "coordinates": [-76.9786122, 42.8690271],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "July"
   },
   {
-    "name": "26",
     "location": "Salalah, Oman",
-    "coordinates": [
-      54.1010923,
-      17.0174945
-    ],
-    "data": [
-      "26",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Salalah",
-      "Asia",
-      "Oman",
-      "Salalah, Oman",
-      "",
-      "Hawana Salalah",
-      "Registration Now Open",
-      "Bay",
-      "Rolling",
-      "Flat",
-      "75",
-      "77",
-      "SLL",
-      "https://www.ironman.com/im703-salalah",
-      "https://cdn3.sportngin.com/attachments/photo/398f-142302257/IM703Salalah_RaceCard.jpg"
-    ]
+    "coordinates": [54.1010923, 17.0174945],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "04",
     "location": "Jesolo, Italy",
-    "coordinates": [
-      12.6383337,
-      45.5367094
-    ],
-    "data": [
-      "04",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Venice-Jesolo",
-      "Europe",
-      "Italy",
-      "Jesolo, Italy",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "70",
-      "63",
-      "VCE",
-      "https://www.ironman.com/im703-venice-jesolo",
-      "https://cdn4.sportngin.com/attachments/photo/4b34-145546751/IM703Venice-Jesolo_Jesolo_Beach_350x350_large.jpg"
-    ]
+    "coordinates": [12.6383337, 45.5367094],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "11",
     "location": "Youghal/Cork, Ireland",
-    "coordinates": [
-      -7.8431892,
-      51.9494736
-    ],
-    "data": [
-      "11",
-      "August",
-      "2023",
-      "IRONMAN-70.3",
-      "Ireland, Cork",
-      "Europe",
-      "Ireland",
-      "Youghal/Cork, Ireland",
-      "",
-      "",
-      "Closed - Notify Me",
-      "Bay",
-      "Hilly",
-      "Flat",
-      "65",
-      "61",
-      "ORK",
-      "https://www.ironman.com/im703-ireland",
-      "https://cdn1.sportngin.com/attachments/photo/f0a4-148528996/703_Ireland_Cork.jpg"
-    ]
+    "coordinates": [-7.8431892, 51.9494736],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "06",
     "location": "Kenting, Taiwan",
-    "coordinates": [
-      120.800278,
-      21.945278
-    ],
-    "data": [
-      "06",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Kenting ",
-      "Asia",
-      "Taiwan",
-      "Kenting, Taiwan",
-      "MaiCoin",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "86",
-      "73",
-      "KHH",
-      "https://www.ironman.com/im703-kenting ",
-      "https://cdn1.sportngin.com/attachments/photo/d8c3-183096915/Kenting_70.3_Race_Card_2023_B.jpg"
-    ]
+    "coordinates": [120.800278, 21.945278],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "01",
     "location": "Acapulco, Mexico",
-    "coordinates": [
-      -99.8940182,
-      16.8680495
-    ],
-    "data": [
-      "01",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "Acapulco",
-      "North America",
-      "Mexico",
-      "Acapulco, Mexico",
-      "",
-      "Mundo Imperial",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "88",
-      "84",
-      "ACA",
-      "https://www.ironman.com/im703-acapulco",
-      "https://cdn3.sportngin.com/attachments/photo/33c9-151914166/Acapulco_Race_Card.jpg"
-    ]
+    "coordinates": [-99.8940182, 16.8680495],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "30",
     "location": "Nelson Mandela Bay, Port Elizabeth",
-    "coordinates": [
-      25.599408729036078,
-      -33.93779205
-    ],
-    "data": [
-      "30",
-      "March",
-      "2025",
-      "IRONMAN",
-      "South Africa African Championship",
-      "Africa",
-      "South Africa",
-      "Nelson Mandela Bay, Port Elizabeth",
-      "ISUZU",
-      "",
-      "Registration Now Open",
-      "Bay",
-      "Rolling",
-      "Rolling",
-      "73",
-      "68",
-      "PLZ",
-      "https://www.ironman.com/im-south-africa",
-      "https://cdn4.sportngin.com/attachments/photo/d566-133718321/IMSouthAfrica.jpg"
-    ]
+    "coordinates": [25.599408729036078, -33.93779205],
+    "type": "IRONMAN",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "March"
   },
   {
-    "name": "27",
     "location": "Sacramento, California",
-    "coordinates": [
-      -121.493895,
-      38.5810606
-    ],
-    "data": [
-      "27",
-      "October",
-      "2024",
-      "IRONMAN",
-      "California",
-      "North America",
-      "United States",
-      "Sacramento, California",
-      "Kaiser Permanente",
-      "",
-      "Sold Out - Special Entries Available",
-      "River",
-      "Flat",
-      "Flat",
-      "70",
-      "65",
-      "SMF",
-      "https://www.ironman.com/im-california",
-      "https://cdn2.sportngin.com/attachments/photo/afca-142503667/california_im.jpg"
-    ]
+    "coordinates": [-121.493895, 38.5810606],
+    "type": "IRONMAN",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "17",
     "location": "Tempe, Arizona",
-    "coordinates": [
-      -111.940016,
-      33.4255117
-    ],
-    "data": [
-      "17",
-      "November",
-      "2024",
-      "IRONMAN",
-      "Arizona",
-      "North America",
-      "United States",
-      "Tempe, Arizona",
-      "Paradox",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "63",
-      "61",
-      "PHX",
-      "https://www.ironman.com/im-arizona",
-      "https://cdn4.sportngin.com/attachments/photo/93b2-133719829/IMArizona.jpg"
-    ]
+    "coordinates": [-111.940016, 33.4255117],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "November"
   },
   {
-    "name": "15",
     "location": "Cairns, Queensland",
-    "coordinates": [
-      145.7721854,
-      -16.9206657
-    ],
-    "data": [
-      "15",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Cairns",
-      "Oceania",
-      "Australia",
-      "Cairns, Queensland",
-      "Cairns Airport",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "79",
-      "73",
-      "CNS",
-      "https://www.ironman.com/im-cairns",
-      "https://cdn4.sportngin.com/attachments/photo/dd95-133721121/IMCairns.jpg"
-    ]
+    "coordinates": [145.7721854, -16.9206657],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "04",
     "location": "Port Macquarie, New South Wales",
-    "coordinates": [
-      152.9103525,
-      -31.4299499
-    ],
-    "data": [
-      "04",
-      "May",
-      "2025",
-      "IRONMAN",
-      "Australia",
-      "Oceania",
-      "Australia",
-      "Port Macquarie, New South Wales",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Rolling",
-      "Flat",
-      "70",
-      "73",
-      "PQQ",
-      "https://www.ironman.com/im-australia",
-      "https://cdn2.sportngin.com/attachments/photo/d374-133720931/IMAustraliaPortMacquarie.jpg"
-    ]
+    "coordinates": [152.9103525, -31.4299499],
+    "type": "IRONMAN",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "15",
     "location": "Klagenfurt, Austria",
-    "coordinates": [
-      14.3075976,
-      46.623943
-    ],
-    "data": [
-      "15",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Kärnten-Klagenfurt, Austria",
-      "Europe",
-      "Austria",
-      "Klagenfurt, Austria",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "81",
-      "73",
-      "KLU",
-      "https://www.ironman.com/im-austria",
-      "https://cdn4.sportngin.com/attachments/photo/7f7a-166851334/IRONMAN_Austria-K_rnten.png"
-    ]
+    "coordinates": [14.3075976, 46.623943],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "06",
     "location": "Calella, Spain",
-    "coordinates": [
-      2.6576102,
-      41.6132925
-    ],
-    "data": [
-      "06",
-      "October",
-      "2024",
-      "IRONMAN",
-      "Calella-Barcelona",
-      "Europe",
-      "Spain",
-      "Calella, Spain",
-      "",
-      "",
-      "SOLD OUT – Notify Me",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "75",
-      "72",
-      "BCN",
-      "https://www.ironman.com/im-barcelona",
-      "https://cdn2.sportngin.com/attachments/photo/7c4f-133718900/IMBarcelona.jpg"
-    ]
+    "coordinates": [2.6576102, 41.6132925],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "01",
     "location": "Florianopolis, Brazil",
-    "coordinates": [
-      -48.5496098,
-      -27.5973002
-    ],
-    "data": [
-      "01",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Brazil",
-      "South America",
-      "Brazil",
-      "Florianopolis, Brazil",
-      "Itaú BBA",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "69",
-      "68",
-      "FLN",
-      "https://www.ironman.com/im-brazil",
-      "https://cdn3.sportngin.com/attachments/photo/0bc4-133721775/IMBrazil.jpg"
-    ]
+    "coordinates": [-48.5496098, -27.5973002],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "00",
     "location": "Penticton, British Columbia",
-    "coordinates": [
-      -119.593249,
-      49.5003268
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2024",
-      "IRONMAN",
-      "Canada Penticton",
-      "North America",
-      "Canada",
-      "Penticton, British Columbia",
-      "",
-      "",
-      "DISCONTINUED",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "69",
-      "74",
-      "YYF",
-      "https://www.ironman.com/im-canada",
-      "https://cdn3.sportngin.com/attachments/photo/ebb5-133719864/IMCanada.jpg"
-    ]
+    "coordinates": [-119.593249, 49.5003268],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "TBD"
   },
   {
-    "name": "29",
     "location": "Chattanooga, Tennessee",
-    "coordinates": [
-      -85.3094883,
-      35.0457219
-    ],
-    "data": [
-      "29",
-      "September",
-      "2024",
-      "IRONMAN",
-      "Chattanooga",
-      "North America",
-      "United States",
-      "Chattanooga, Tennessee",
-      " First Horizon Bank",
-      "",
-      "Race Weekend - Follow Us",
-      "River",
-      "Rolling",
-      "Rolling",
-      "75",
-      "77",
-      "CHA",
-      "https://www.ironman.com/im-chattanooga",
-      "https://cdn1.sportngin.com/attachments/photo/8609-133719976/IMChattanooga.jpg"
-    ]
+    "coordinates": [-85.3094883, 35.0457219],
+    "type": "IRONMAN",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "17",
     "location": "Copenhagen, Denmark",
-    "coordinates": [
-      12.5700724,
-      55.6867243
-    ],
-    "data": [
-      "17",
-      "August",
-      "2025",
-      "IRONMAN",
-      "Copenhagen",
-      "Europe",
-      "Denmark",
-      "Copenhagen, Denmark",
-      "",
-      "",
-      "Register with Flex90",
-      "Bay",
-      "Rolling",
-      "Flat",
-      "69",
-      "65",
-      "CPH",
-      "https://www.ironman.com/im-copenhagen",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/32ed-195425548/IM_Copenhagen.jpg"
-    ]
+    "coordinates": [12.5700724, 55.6867243],
+    "type": "IRONMAN",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "24",
     "location": "Cozumel, Mexico",
-    "coordinates": [
-      -86.92069058377268,
-      20.4320599
-    ],
-    "data": [
-      "24",
-      "November",
-      "2024",
-      "IRONMAN",
-      "Cozumel",
-      "North America",
-      "Mexico",
-      "Cozumel, Mexico",
-      "Mazda",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "79",
-      "79",
-      "CZM",
-      "https://www.ironman.com/im-cozumel",
-      "https://cdn2.sportngin.com/attachments/photo/67d2-153551919/IM_Cozumel_Card.jpg"
-    ]
+    "coordinates": [-86.92069058377268, 20.4320599],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "20",
     "location": "Emilia Romagna, Italy",
-    "coordinates": [
-      11.039437,
-      44.525696
-    ],
-    "data": [
-      "20",
-      "September",
-      "2025",
-      "IRONMAN",
-      "Italy Emilia-Romagna",
-      "Europe",
-      "Italy",
-      "Emilia Romagna, Italy",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "77",
-      "72",
-      "BLQ",
-      "https://www.ironman.com/im-emilia-romagna",
-      "https://cdn3.sportngin.com/attachments/photo/a37f-133719000/IMEmiliaRomagna.jpg"
-    ]
+    "coordinates": [11.039437, 44.525696],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "29",
     "location": "Frankfurt, Germany",
-    "coordinates": [
-      8.6820917,
-      50.1106444
-    ],
-    "data": [
-      "29",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Frankfurt European Championship",
-      "Europe",
-      "Germany",
-      "Frankfurt, Germany",
-      "Mainova",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "77",
-      "73",
-      "FRA",
-      "https://www.ironman.com/im-frankfurt",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/7525-199685611/IMFFM_racecard.jpg"
-    ]
+    "coordinates": [8.6820917, 50.1106444],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "02",
     "location": "Panama City Beach, Florida",
-    "coordinates": [
-      -85.805386,
-      30.1765914
-    ],
-    "data": [
-      "02",
-      "November",
-      "2024",
-      "IRONMAN",
-      "Florida",
-      "North America",
-      "United States",
-      "Panama City Beach, Florida",
-      "Visit Panama City Beach",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "66",
-      "71",
-      "ECP",
-      "https://www.ironman.com/im-florida",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/d2b2-195011202/IM_Florida_Catalog_large.jpg"
-    ]
+    "coordinates": [-85.805386, 30.1765914],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "29",
     "location": "Nice, France",
-    "coordinates": [
-      7.2683912,
-      43.7009358
-    ],
-    "data": [
-      "29",
-      "June",
-      "2025",
-      "IRONMAN",
-      "France Nice",
-      "Europe",
-      "France",
-      "Nice, France",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "82",
-      "75",
-      "NCE",
-      "https://www.ironman.com/im-france",
-      "https://cdn1.sportngin.com/attachments/photo/f09d-183149542/NICE_EMEA.jpg"
-    ]
+    "coordinates": [7.2683912, 43.7009358],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "29",
     "location": "Gurye, Korea",
-    "coordinates": [
-      127.463225,
-      35.2024172
-    ],
-    "data": [
-      "29",
-      "September",
-      "2024",
-      "IRONMAN",
-      "Gurye",
-      "Asia",
-      "Korea",
-      "Gurye, Korea",
-      "",
-      "",
-      "Closed - Notify Me",
-      "Reservoir",
-      "Hilly",
-      "Flat",
-      "74",
-      "73",
-      "ICN",
-      "https://www.ironman.com/im-gurye",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/0d7f-200410812/IRONMAN_GURYE_RACE_CARD.jpg"
-    ]
+    "coordinates": [127.463225, 35.2024172],
+    "type": "IRONMAN",
+    "swim": "Reservoir",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "01",
     "location": "Hamburg, Germany",
-    "coordinates": [
-      10.000654,
-      53.550341
-    ],
-    "data": [
-      "01",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Hamburg European Championship",
-      "Europe",
-      "Germany",
-      "Hamburg, Germany",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Flat",
-      "Rolling",
-      "73",
-      "70",
-      "HAM",
-      "https://www.ironman.com/im-hamburg",
-      "https://cdn1.sportngin.com/attachments/photo/cd06-183146477/IM_HH_racecard.jpg"
-    ]
+    "coordinates": [10.000654, 53.550341],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "11",
     "location": "Youghal/Cork, Ireland",
-    "coordinates": [
-      -7.8431892,
-      51.9494736
-    ],
-    "data": [
-      "11",
-      "August",
-      "2023",
-      "IRONMAN",
-      "Ireland, Cork",
-      "Europe",
-      "Ireland",
-      "Youghal/Cork, Ireland",
-      "",
-      "",
-      "Closed - Notify Me",
-      "Bay",
-      "Hilly",
-      "Flat",
-      "65",
-      "61",
-      "ORK",
-      "https://www.ironman.com/im-ireland",
-      "https://cdn2.sportngin.com/attachments/photo/7cb4-133719286/IMIrelandCork.jpg"
-    ]
+    "coordinates": [-7.8431892, 51.9494736],
+    "type": "IRONMAN",
+    "swim": "Bay",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "16",
     "location": "Kalmar, Sweden",
-    "coordinates": [
-      16.3662382,
-      56.6628826
-    ],
-    "data": [
-      "16",
-      "August",
-      "2025",
-      "IRONMAN",
-      "Kalmar",
-      "Europe",
-      "Sweden",
-      "Kalmar, Sweden",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "71",
-      "68",
-      "KLR",
-      "https://www.ironman.com/im-kalmar",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/679b-195425533/IM_Kalmar.jpg"
-    ]
+    "coordinates": [16.3662382, 56.6628826],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "20",
     "location": "Lake Placid, New York",
-    "coordinates": [
-      -73.979874,
-      44.279621
-    ],
-    "data": [
-      "20",
-      "July",
-      "2025",
-      "IRONMAN",
-      "Lake Placid",
-      "North America",
-      "United States",
-      "Lake Placid, New York",
-      "Athletic Brewing",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "63",
-      "72",
-      "PBG",
-      "https://www.ironman.com/im-lake-placid",
-      "https://cdn2.sportngin.com/attachments/photo/13f0-133720363/IMLakePlacid.jpg"
-    ]
+    "coordinates": [-73.979874, 44.279621],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "July"
   },
   {
-    "name": "17",
     "location": "Lanzarote, Canary Islands",
-    "coordinates": [
-      -13.636291608604138,
-      29.03970805
-    ],
-    "data": [
-      "17",
-      "May",
-      "2025",
-      "IRONMAN",
-      "Lanzarote",
-      "Europe",
-      "Spain",
-      "Lanzarote, Canary Islands",
-      "Club La Santa",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Rolling",
-      "75",
-      "66",
-      "ACE",
-      "https://www.ironman.com/im-lanzarote",
-      "https://cdn1.sportngin.com/attachments/photo/2d3a-133719301/IMLanzarote.jpg"
-    ]
+    "coordinates": [-13.636291608604138, 29.03970805],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "12",
     "location": "Langkawi, Malaysia",
-    "coordinates": [
-      99.7928634,
-      6.3700386
-    ],
-    "data": [
-      "12",
-      "October",
-      "2024",
-      "IRONMAN",
-      "Malaysia",
-      "Asia",
-      "Malaysia",
-      "Langkawi, Malaysia",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "88",
-      "82",
-      "LGK",
-      "https://www.ironman.com/im-malaysia",
-      "https://cdn1.sportngin.com/attachments/photo/5988-133718648/IMMalaysia.jpg"
-    ]
+    "coordinates": [99.7928634, 6.3700386],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "20",
     "location": "Cambridge, Maryland",
-    "coordinates": [
-      -76.0763177,
-      38.5714624
-    ],
-    "data": [
-      "20",
-      "September",
-      "2025",
-      "IRONMAN",
-      "Maryland",
-      "North America",
-      "United States",
-      "Cambridge, Maryland",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "River",
-      "Flat",
-      "Flat",
-      "75",
-      "72",
-      "IAD/BWI",
-      "https://www.ironman.com/im-maryland",
-      "https://cdn1.sportngin.com/attachments/photo/6e21-133720481/IMMaryland.jpg"
-    ]
+    "coordinates": [-76.0763177, 38.5714624],
+    "type": "IRONMAN",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "09",
     "location": "Subic Bay, Philippines",
-    "coordinates": [
-      120.23397993795183,
-      14.78497865
-    ],
-    "data": [
-      "09",
-      "June",
-      "2024",
-      "IRONMAN",
-      "Philippines",
-      "Asia",
-      "Philippines",
-      "Subic Bay, Philippines",
-      "Century Tuna",
-      "",
-      "Closed",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "92",
-      "82",
-      "CRK",
-      "https://www.ironman.com/im-philippines",
-      "https://cdn2.sportngin.com/attachments/photo/b2ae-133718714/IMPhilippines.jpg"
-    ]
+    "coordinates": [120.23397993795183, 14.78497865],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "24",
     "location": "Thun, Switzerland",
-    "coordinates": [
-      7.628086,
-      46.7582827
-    ],
-    "data": [
-      "24",
-      "August",
-      "2025",
-      "IRONMAN",
-      "Switzerland Thun",
-      "Europe",
-      "Switzerland",
-      "Thun, Switzerland",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Flat",
-      "68",
-      "64",
-      "ZRH",
-      "https://www.ironman.com/im-switzerland",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/76df-185150903/IMSwitzerland-RaceCard.jpg"
-    ]
+    "coordinates": [7.628086, 46.7582827],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "13",
     "location": "Penghu, Taiwan",
-    "coordinates": [
-      119.5664543,
-      23.569694
-    ],
-    "data": [
-      "13",
-      "April",
-      "2025",
-      "IRONMAN",
-      "Taiwan",
-      "Asia",
-      "Taiwan",
-      "Penghu, Taiwan",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "71",
-      "68",
-      "MZG",
-      "https://www.ironman.com/im-taiwan",
-      "https://cdn4.sportngin.com/attachments/photo/5e9c-133718743/IMTaiwan.jpg"
-    ]
+    "coordinates": [119.5664543, 23.569694],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "April"
   },
   {
-    "name": "23",
     "location": "Tallinn, Estonia",
-    "coordinates": [
-      24.7453688,
-      59.4372155
-    ],
-    "data": [
-      "23",
-      "August",
-      "2025",
-      "IRONMAN",
-      "Tallinn",
-      "Europe",
-      "Estonia",
-      "Tallinn, Estonia",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "62",
-      "64",
-      "TLL",
-      "https://www.ironman.com/im-tallinn",
-      "https://cdn3.sportngin.com/attachments/photo/9c2b-133719399/IMTallinn.jpg"
-    ]
+    "coordinates": [24.7453688, 59.4372155],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "13",
     "location": "Vitoria-Gasteiz, Spain",
-    "coordinates": [
-      -2.6724025,
-      42.8465088
-    ],
-    "data": [
-      "13",
-      "July",
-      "2025",
-      "IRONMAN",
-      "Vitoria-Gasteiz",
-      "Europe",
-      "Spain",
-      "Vitoria-Gasteiz, Spain",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "72",
-      "70",
-      "BIO/VIT",
-      "https://www.ironman.com/im-vitoria",
-      "https://cdn1.sportngin.com/attachments/photo/f338-133719600/IMVitoriaGastelz.jpg"
-    ]
+    "coordinates": [-2.6724025, 42.8465088],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "21",
     "location": "Pembrokeshire, Wales",
-    "coordinates": [
-      -4.916667,
-      51.8339209
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "IRONMAN",
-      "Wales",
-      "Europe",
-      "United Kingdom",
-      "Pembrokeshire, Wales",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Hilly",
-      "Hilly",
-      "61",
-      "63",
-      "CWL",
-      "https://www.ironman.com/im-wales",
-      "https://cdn2.sportngin.com/attachments/photo/bed4-133719624/IMWales.jpg"
-    ]
+    "coordinates": [-4.916667, 51.8339209],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "September"
   },
   {
-    "name": "26",
     "location": "The Woodlands, Texas",
-    "coordinates": [
-      -95.504686,
-      30.1734194
-    ],
-    "data": [
-      "26",
-      "April",
-      "2025",
-      "IRONMAN",
-      "Texas - North American Championship",
-      "North America",
-      "United States",
-      "The Woodlands, Texas",
-      "Memorial Hermann",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Flat",
-      "Rolling",
-      "74",
-      "82",
-      "IAH",
-      "https://www.ironman.com/im-texas",
-      "https://cdn3.sportngin.com/attachments/photo/ac39-133720670/IMTexas.jpg"
-    ]
+    "coordinates": [-95.504686, 30.1734194],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "April"
   },
   {
-    "name": "07",
     "location": "Madison, Wisconsin",
-    "coordinates": [
-      -89.3837613,
-      43.074761
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "IRONMAN",
-      "Wisconsin",
-      "North America",
-      "United States",
-      "Madison, Wisconsin",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "71",
-      "69",
-      "MSN",
-      "https://www.ironman.com/im-wisconsin",
-      "https://cdn3.sportngin.com/attachments/photo/7fac-133720721/IMWisconsin.jpg"
-    ]
+    "coordinates": [-89.3837613, 43.074761],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "19",
     "location": "Cascais, Portugal",
-    "coordinates": [
-      -9.4204495,
-      38.6968919
-    ],
-    "data": [
-      "19",
-      "October",
-      "2024",
-      "IRONMAN",
-      "Portugal - Cascais",
-      "Europe",
-      "Portugal",
-      "Cascais, Portugal",
-      "",
-      "",
-      "Register - Last Places Available",
-      "Bay",
-      "Hilly",
-      "Rolling",
-      "65",
-      "62",
-      "LIS",
-      "https://www.ironman.com/im-cascais",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/71b5-189069675/IMCascais-RaceCard.jpg"
-    ]
+    "coordinates": [-9.4204495, 38.6968919],
+    "type": "IRONMAN",
+    "swim": "Bay",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "21",
     "location": "Emilia Romagna, Italy",
-    "coordinates": [
-      11.039437,
-      44.525696
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "5150-Triathlon-Series",
-      "Cervia",
-      "Europe",
-      "Italy",
-      "Emilia Romagna, Italy",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "68",
-      "62",
-      "BLQ",
-      "https://www.ironman.com/5150-cervia",
-      "https://cdn3.sportngin.com/attachments/photo/d854-133725854/5150Cervia.jpg"
-    ]
+    "coordinates": [11.039437, 44.525696],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "25",
     "location": "Kraichgau, Ubstadt-Weiher, Germany",
-    "coordinates": [
-      8.6269078,
-      49.1646102
-    ],
-    "data": [
-      "25",
-      "May",
-      "2025",
-      "5150-Triathlon-Series",
-      "Kraichgau",
-      "Europe",
-      "Germany",
-      "Kraichgau, Ubstadt-Weiher, Germany",
-      "",
-      "KraichgauEnergie",
-      "Registration Now Open",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "72",
-      "73",
-      "FKB",
-      "https://www.ironman.com/5150-kraichgau",
-      "https://cdn2.sportngin.com/attachments/photo/009f-166852124/IM703Kraichgau_2.jpg"
-    ]
+    "coordinates": [8.6269078, 49.1646102],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "08",
     "location": "Warsaw, Poland",
-    "coordinates": [
-      21.071432235636493,
-      52.2337172
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "5150-Triathlon-Series",
-      "Warsaw",
-      "Europe",
-      "Poland",
-      "Warsaw, Poland",
-      "",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "65",
-      "WAW",
-      "https://www.ironman.com/5150-warsaw",
-      "https://cdn2.sportngin.com/attachments/photo/ca69-133726153/5150Warsaw.jpg"
-    ]
+    "coordinates": [21.071432235636493, 52.2337172],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "00",
     "location": "Cartagena, Colombia",
-    "coordinates": [
-      -75.5441671,
-      10.4265566
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "5150-Triathlon-Series",
-      "Cartagena",
-      "South America",
-      "Colombia",
-      "Cartagena, Colombia",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Bay",
-      "Flat",
-      "Flat",
-      "84",
-      "81",
-      "CTG",
-      "https://www.ironman.com/5150-cartagena",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/4756-192228346/Imagen5150Terret_2_large.jpg"
-    ]
+    "coordinates": [-75.5441671, 10.4265566],
+    "type": "5150-Triathlon-Series",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "00",
     "location": "Buenos Aires, Argentina",
-    "coordinates": [
-      -58.4440583,
-      -34.6083696
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2023",
-      "5150-Triathlon-Series",
-      "Buenos Aires",
-      "South America",
-      "Argentina",
-      "Buenos Aires, Argentina",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "80",
-      "70",
-      "EZE",
-      "https://www.ironman.com/5150-buenos-aires",
-      "https://cdn3.sportngin.com/attachments/photo/d9ec-133726569/5150BuenosAires2.jpg"
-    ]
+    "coordinates": [-58.4440583, -34.6083696],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "21",
     "location": "Mont-Tremblant, Quebec",
-    "coordinates": [
-      -74.5891426,
-      46.11588
-    ],
-    "data": [
-      "21",
-      "June",
-      "2025",
-      "5150-Triathlon-Series",
-      "Mont Tremblant",
-      "North America",
-      "Canada",
-      "Mont-Tremblant, Quebec",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "63",
-      "64",
-      "YUL",
-      "https://www.ironman.com/5150-mont-tremblant",
-      "https://cdn4.sportngin.com/attachments/photo/68f1-133726456/5150MontTremblant.jpg"
-    ]
+    "coordinates": [-74.5891426, 46.11588],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "12",
     "location": "Subic Bay, Philippines",
-    "coordinates": [
-      120.23397993795183,
-      14.78497865
-    ],
-    "data": [
-      "12",
-      "October",
-      "2025",
-      "5150-Triathlon-Series",
-      "Subic Bay",
-      "Asia",
-      "Philippines",
-      "Subic Bay, Philippines",
-      "Alveo",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Rolling",
-      "85",
-      "73",
-      "CRK",
-      "https://www.ironman.com/5150-subic-bay-philippines",
-      "https://cdn4.sportngin.com/attachments/photo/7650-133725762/5150SubicBay.jpg"
-    ]
+    "coordinates": [120.23397993795183, 14.78497865],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "18",
     "location": "Desaru Coast, Malaysia",
-    "coordinates": [
-      104.2623299,
-      1.536381
-    ],
-    "data": [
-      "18",
-      "May",
-      "2024",
-      "5150-Triathlon-Series",
-      "Desaru Coast",
-      "Asia",
-      "Malaysia",
-      "Desaru Coast, Malaysia",
-      "",
-      "",
-      "Closed",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "82",
-      "82",
-      "JHB",
-      "https://www.ironman.com/5150-desaru-coast",
-      "https://cdn1.sportngin.com/attachments/photo/ea37-176700556/Desaru_Coast_5150_large.jpg"
-    ]
+    "coordinates": [104.2623299, 1.536381],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "May"
   },
   {
-    "name": "23",
     "location": "Westfriesland, Netherlands",
-    "coordinates": [
-      5.7337039,
-      52.7210004
-    ],
-    "data": [
-      "23",
-      "June",
-      "2024",
-      "5150-Triathlon-Series",
-      "Westfriesland",
-      "Europe",
-      "Netherlands",
-      "Westfriesland, Netherlands",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Flat",
-      "Flat",
-      "68",
-      "63",
-      "AMS",
-      "https://www.ironman.com/5150-westfriesland",
-      "https://cdn1.sportngin.com/attachments/photo/00af-133726250/5150Westfriesland.jpg"
-    ]
+    "coordinates": [5.7337039, 52.7210004],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "13",
     "location": "Bohol, Philippines",
-    "coordinates": [
-      124.2064611575164,
-      9.880782199999999
-    ],
-    "data": [
-      "13",
-      "July",
-      "2025",
-      "5150-Triathlon-Series",
-      "Bohol",
-      "Asia",
-      "Philippines",
-      "Bohol, Philippines",
-      " Sun Life",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "88",
-      "82",
-      "TAG",
-      "https://www.ironman.com/5150-bohol",
-      "https://cdn2.sportngin.com/attachments/photo/3f30-141951275/5150-bohol-location.jpg"
-    ]
+    "coordinates": [124.2064611575164, 9.880782199999999],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "00",
     "location": "Dapitan, Philippines",
-    "coordinates": [
-      123.4243754,
-      8.6549449
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2025",
-      "5150-Triathlon-Series",
-      "Dapitan",
-      "Asia",
-      "Philippines",
-      "Dapitan, Philippines",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "91",
-      "85",
-      "",
-      "https://www.ironman.com/5150-Dapitan-Philippines",
-      "https://cdn1.sportngin.com/attachments/photo/7bce-182202724/6-edited_large.jpg"
-    ]
+    "coordinates": [123.4243754, 8.6549449],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "TBD"
   },
   {
-    "name": "11",
     "location": "Camarines Sur, Philippines",
-    "coordinates": [
-      123.3282338,
-      13.6428216
-    ],
-    "data": [
-      "11",
-      "February",
-      "2024",
-      "5150-Triathlon-Series",
-      "Camsur",
-      "Asia",
-      "Philippines",
-      "Camarines Sur, Philippines",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me ",
-      "Reservoir",
-      "Flat",
-      "Flat",
-      "84",
-      "90",
-      "WNP",
-      "https://www.ironman.com/5150-camsur",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/8526-186746072/5150_Camsur_Race_Card_large.jpg"
-    ]
+    "coordinates": [123.3282338, 13.6428216],
+    "type": "5150-Triathlon-Series",
+    "swim": "Reservoir",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "February"
   },
   {
-    "name": "20",
     "location": "Salem, Oregon",
-    "coordinates": [
-      -123.033121,
-      44.9391565
-    ],
-    "data": [
-      "20",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Oregon",
-      "North America",
-      "United States",
-      "Salem, Oregon",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Flat",
-      "Flat",
-      "80",
-      "65",
-      "PDX",
-      "https://www.ironman.com/im703-oregon",
-      "https://cdn2.sportngin.com/attachments/photo/d15d-156104501/Oregon_Slider_Bridge_Race_Card_large.jpg"
-    ]
+    "coordinates": [-123.033121, 44.9391565],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "01",
     "location": "Taupo, Waikato",
-    "coordinates": [
-      176.0694773,
-      -38.6866197
-    ],
-    "data": [
-      "01",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "New Zealand",
-      "Oceania",
-      "New Zealand",
-      "Taupo, Waikato",
-      "ANZCO Foods",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "70",
-      "65",
-      "TUO",
-      "https://www.ironman.com/im703-new-zealand",
-      "https://cdn1.sportngin.com/attachments/photo/481c-133834155/703NewZealandTaupo.jpg"
-    ]
+    "coordinates": [176.0694773, -38.6866197],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "03",
     "location": "Tiberias, Israel",
-    "coordinates": [
-      35.5328566,
-      32.7938522
-    ],
-    "data": [
-      "03",
-      "November",
-      "2023",
-      "IRONMAN-70.3",
-      "Tiberias, Sea of Galilee",
-      "Asia",
-      "Israel",
-      "Tiberias, Israel",
-      "",
-      "",
-      "Closed",
-      "Lake",
-      "Flat",
-      "Flat",
-      "72",
-      "77",
-      "TLV",
-      "https://www.ironman.com/im703-tiberias",
-      "https://cdn4.sportngin.com/attachments/photo/445f-160668523/Tiberias_70.3_Race_Card.jpg"
-    ]
+    "coordinates": [35.5328566, 32.7938522],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "03",
     "location": "Tiberias, Israel",
-    "coordinates": [
-      35.5328566,
-      32.7938522
-    ],
-    "data": [
-      "03",
-      "November",
-      "2023",
-      "IRONMAN",
-      "Israel Middle East Championship",
-      "Asia",
-      "Israel",
-      "Tiberias, Israel",
-      "",
-      "",
-      "Closed",
-      "Lake",
-      "Flat",
-      "Flat",
-      "72",
-      "77",
-      "TLV",
-      "https://www.ironman.com/im-israel",
-      "https://cdn2.sportngin.com/attachments/photo/e14f-170987289/IM_Israel_Race_Card_large.jpg"
-    ]
+    "coordinates": [35.5328566, 32.7938522],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "01",
     "location": "Taupo, Waikato",
-    "coordinates": [
-      176.0694773,
-      -38.6866197
-    ],
-    "data": [
-      "01",
-      "March",
-      "2025",
-      "IRONMAN",
-      "New Zealand",
-      "Oceania",
-      "New Zealand",
-      "Taupo, Waikato",
-      "ANZCO Foods",
-      "",
-      "Registration Now Open",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "70",
-      "65",
-      "TUO",
-      "https://www.ironman.com/im-new-zealand",
-      "https://cdn1.sportngin.com/attachments/photo/f332-133834276/703Taupo.jpg"
-    ]
+    "coordinates": [176.0694773, -38.6866197],
+    "type": "IRONMAN",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "17",
     "location": "Mossel Bay, South Africa",
-    "coordinates": [
-      22.1536248,
-      -34.1832022
-    ],
-    "data": [
-      "17",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Mossel Bay - African TriClub Championship",
-      "Africa",
-      "South Africa",
-      "Mossel Bay, South Africa",
-      "ISUZU",
-      "",
-      "Registration Now Open",
-      "Bay",
-      "Hilly",
-      "Rolling",
-      "64",
-      "67",
-      "GRJ",
-      "https://www.ironman.com/im703-mossel-bay",
-      "https://cdn2.sportngin.com/attachments/photo/b4fe-164819656/703-Mossel-Bay-Race-Card.png"
-    ]
+    "coordinates": [22.1536248, -34.1832022],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "November"
   },
   {
-    "name": "13",
     "location": "Swansea, Wales",
-    "coordinates": [
-      -3.9459248,
-      51.6195955
-    ],
-    "data": [
-      "13",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Swansea",
-      "Europe",
-      "United Kingdom",
-      "Swansea, Wales",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "66",
-      "60",
-      "CWL",
-      "https://www.ironman.com/im703-swansea",
-      "https://cdn1.sportngin.com/attachments/photo/7c89-165847013/70.3Swansea.jpg"
-    ]
+    "coordinates": [-3.9459248, 51.6195955],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "July"
   },
   {
-    "name": "27",
     "location": "Leeds, England",
-    "coordinates": [
-      -1.5437941,
-      53.7974185
-    ],
-    "data": [
-      "27",
-      "July",
-      "2025",
-      "IRONMAN",
-      "Leeds",
-      "Europe",
-      "United Kingdom",
-      "Leeds, England",
-      "",
-      "",
-      "Register with Flex90",
-      "TBD",
-      "TBD",
-      "TBD",
-      "N/A",
-      "N/A",
-      "LBA",
-      "https://www.ironman.com/im-leeds",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/fe69-205060736/IM-Leeds.png"
-    ]
+    "coordinates": [-1.5437941, 53.7974185],
+    "type": "IRONMAN",
+    "swim": "TBD",
+    "bike": "TBD",
+    "run": "TBD",
+    "date": "July"
   },
   {
-    "name": "14",
     "location": "Erkner, Berlin, Germany",
-    "coordinates": [
-      13.7193349,
-      52.4411865
-    ],
-    "data": [
-      "14",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Erkner Berlin-Brandenburg",
-      "Europe",
-      "Germany",
-      "Erkner, Berlin, Germany",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "68",
-      "BER",
-      "https://www.ironman.com/im703-erkner",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/f95c-191650315/IM703_Erkner_Website_Racecard.jpg"
-    ]
+    "coordinates": [13.7193349, 52.4411865],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "13",
     "location": "Erkner, Berlin, Germany",
-    "coordinates": [
-      13.7193349,
-      52.4411865
-    ],
-    "data": [
-      "13",
-      "September",
-      "2025",
-      "5150-Triathlon-Series",
-      "Erkner Berlin-Brandenburg",
-      "Europe",
-      "Germany",
-      "Erkner, Berlin, Germany",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "68",
-      "BER",
-      "https://www.ironman.com/5150-erkner",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/06a3-191650320/5150_Erkner_Website_Racecard.jpg"
-    ]
+    "coordinates": [13.7193349, 52.4411865],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "26",
     "location": "Kailua-Kona, Hawai`I",
-    "coordinates": [
-      -155.996933,
-      19.641941
-    ],
-    "data": [
-      "26",
-      "October",
-      "2024",
-      "IRONMAN",
-      "World Championship - Men",
-      "North America",
-      "United States",
-      "Kailua-Kona, Hawai`I",
-      "VINFAST",
-      "",
-      "By Qualification Only",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "80",
-      "75",
-      "KOA",
-      "https://www.ironman.com/im-world-championship-kona",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/ee81-195549274/Race_Card_Kona_2024_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [-155.996933, 19.641941],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "01",
     "location": "Busselton, Western Australia",
-    "coordinates": [
-      115.3488754,
-      -33.644499
-    ],
-    "data": [
-      "01",
-      "December",
-      "2024",
-      "IRONMAN",
-      "Western Australia",
-      "Oceania",
-      "Australia",
-      "Busselton, Western Australia",
-      "",
-      "",
-      "Sold Out - Special Entries Available",
-      "Bay",
-      "Flat",
-      "Flat",
-      "81",
-      "68",
-      "PER",
-      "https://www.ironman.com/im-western-australia",
-      "https://cdn4.sportngin.com/attachments/photo/042e-133721606/IMWesternAustraliaBusselton.jpg"
-    ]
+    "coordinates": [115.3488754, -33.644499],
+    "type": "IRONMAN",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "01",
     "location": "Busselton, Western Australia",
-    "coordinates": [
-      115.3488754,
-      -33.644499
-    ],
-    "data": [
-      "01",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "Western Australia Asia-Pacific Championship",
-      "Oceania",
-      "Australia",
-      "Busselton, Western Australia",
-      "",
-      "",
-      "Sold Out - Special Entries Available",
-      "Bay",
-      "Flat",
-      "Flat",
-      "81",
-      "68",
-      "PER",
-      "https://www.ironman.com/im703-western-australia",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3b98-133834286/703WesternAustraliaBusselton.jpg"
-    ]
+    "coordinates": [115.3488754, -33.644499],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "10",
     "location": "St. Kilda, Victoria",
-    "coordinates": [
-      144.981637,
-      -37.8638261
-    ],
-    "data": [
-      "10",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Melbourne",
-      "Oceania",
-      "Australia",
-      "St. Kilda, Victoria",
-      "Qatar Airways",
-      "",
-      "Registration Now Open",
-      "Bay",
-      "Flat",
-      "Flat",
-      "63",
-      "64",
-      "MEL",
-      "https://www.ironman.com/im703-melbourne",
-      "https://cdn4.sportngin.com/attachments/photo/effc-141601925/melbourne_large-min_large.png"
-    ]
+    "coordinates": [144.981637, -37.8638261],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "21",
     "location": "Nelson Mandela Bay, Port Elizabeth",
-    "coordinates": [
-      25.599408729036078,
-      -33.93779205
-    ],
-    "data": [
-      "21",
-      "April",
-      "2024",
-      "IRONMAN-70.3",
-      "Nelson Mandela Bay",
-      "Africa",
-      "South Africa",
-      "Nelson Mandela Bay, Port Elizabeth",
-      "ISUZU",
-      "",
-      "Closed - Notify Me",
-      "Bay",
-      "Rolling",
-      "Rolling",
-      "73",
-      "68",
-      "PLZ",
-      "https://www.ironman.com/im703-nelson-mandela-bay",
-      "https://cdn3.sportngin.com/attachments/photo/a146-166791783/703_Nelson_Mandela_Bay_350px-350px.jpg"
-    ]
+    "coordinates": [25.599408729036078, -33.93779205],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "April"
   },
   {
-    "name": "06",
     "location": "San Juan, Argentina",
-    "coordinates": [
-      -68.5251802,
-      -31.5370909
-    ],
-    "data": [
-      "06",
-      "April",
-      "2025",
-      "IRONMAN-70.3",
-      "San Juan",
-      "South America",
-      "Argentina",
-      "San Juan, Argentina",
-      "",
-      "",
-      "Registration Now Open",
-      "Reservoir",
-      "Hilly",
-      "Flat",
-      "77",
-      "68",
-      "UAQ",
-      "https://www.ironman.com/im703-san-juan",
-      "https://cdn3.sportngin.com/attachments/photo/5fc4-167317426/70.3_San_Juan_Race_Card_large.jpg"
-    ]
+    "coordinates": [-68.5251802, -31.5370909],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "April"
   },
   {
-    "name": "20",
     "location": "Istria, Croatia",
-    "coordinates": [
-      13.915053587355306,
-      45.193434499999995
-    ],
-    "data": [
-      "20",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Porec",
-      "Europe",
-      "Croatia",
-      "Istria, Croatia",
-      "Plava Laguna",
-      "",
-      "Sold Out - Notify Me",
-      "Ocean",
-      "Rolling",
-      "Rolling",
-      "70",
-      "64",
-      "PUY",
-      "https://www.ironman.com/im703-croatia",
-      "https://cdn2.sportngin.com/attachments/photo/4d1c-167614674/70.3Croatia.jpg"
-    ]
+    "coordinates": [13.915053587355306, 45.193434499999995],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "October"
   },
   {
-    "name": "27",
     "location": "Tangier, Morocco",
-    "coordinates": [
-      -5.842961427833071,
-      35.7642313
-    ],
-    "data": [
-      "27",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Tangier",
-      "Africa",
-      "Morocco",
-      "Tangier, Morocco",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "77",
-      "66",
-      "TNG",
-      "https://www.ironman.com/im703-tangier",
-      "https://cdn4.sportngin.com/attachments/photo/4072-171497329/Race_Card_Tangier.png"
-    ]
+    "coordinates": [-5.842961427833071, 35.7642313],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "07",
     "location": "Poznan, Poland",
-    "coordinates": [
-      16.9335199,
-      52.4082663
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Poznan",
-      "Europe",
-      "Poland",
-      "Poznan, Poland",
-      "Enea",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "65",
-      "POZ",
-      "https://www.ironman.com/im703-poznan",
-      "https://cdn1.sportngin.com/attachments/photo/dea9-168626415/70.3-Poznan-Card.jpg"
-    ]
+    "coordinates": [16.9335199, 52.4082663],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "07",
     "location": "Poznan, Poland",
-    "coordinates": [
-      16.9335199,
-      52.4082663
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "5150-Triathlon-Series",
-      "Poznan",
-      "Europe",
-      "Poland",
-      "Poznan, Poland",
-      "Enea",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Flat",
-      "Flat",
-      "73",
-      "65",
-      "POZ",
-      "https://www.ironman.com/5150-poznan",
-      "https://cdn4.sportngin.com/attachments/photo/d678-168626424/5150-Poznan-Card.pg_large.jpg"
-    ]
+    "coordinates": [16.9335199, 52.4082663],
+    "type": "5150-Triathlon-Series",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "04",
     "location": "Rwanda, Africa",
-    "coordinates": [
-      38.7779248,
-      8.992709
-    ],
-    "data": [
-      "04",
-      "August",
-      "2024",
-      "IRONMAN-70.3",
-      "Rwanda",
-      "Africa",
-      "Rwanda",
-      "Rwanda, Africa",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Rolling",
-      "Hilly",
-      "79",
-      "76",
-      "KGL",
-      "https://www.ironman.com/im703-rwanda",
-      "https://cdn4.sportngin.com/attachments/photo/b516-169269996/703Rwanda-Race-Card_large.jpg"
-    ]
+    "coordinates": [38.7779248, 8.992709],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Hilly",
+    "date": "August"
   },
   {
-    "name": "08",
     "location": "Des Moines, Iowa",
-    "coordinates": [
-      -93.6249494,
-      41.5868654
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Des Moines",
-      "North America",
-      "United States",
-      "Des Moines, Iowa",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "71",
-      "72",
-      "DSM",
-      "https://www.ironman.com/im703-des-moines",
-      "https://cdn1.sportngin.com/attachments/photo/9157-161330938/New_Des_Moines_Race_Card_2.jpg"
-    ]
+    "coordinates": [-93.6249494, 41.5868654],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "07",
     "location": "Knokke-Heist, Flanders, Belgium",
-    "coordinates": [
-      3.2884738,
-      51.3433866
-    ],
-    "data": [
-      "07",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Knokke-Heist, Belgium",
-      "Europe",
-      "Belgium",
-      "Knokke-Heist, Flanders, Belgium",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Flat",
-      "Flat",
-      "65",
-      "64",
-      "BRU",
-      "https://www.ironman.com/im703-knokke-heist",
-      "https://cdn1.sportngin.com/attachments/photo/a777-178779299/703Knokke-Heist-Race-Card_large.jpg"
-    ]
+    "coordinates": [3.2884738, 51.3433866],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "06",
     "location": "Knokke-Heist, Flanders, Belgium",
-    "coordinates": [
-      3.2884738,
-      51.3433866
-    ],
-    "data": [
-      "06",
-      "September",
-      "2025",
-      "5150-Triathlon-Series",
-      "Knokke-Heist",
-      "Europe",
-      "Belgium",
-      "Knokke-Heist, Flanders, Belgium",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "River",
-      "Flat",
-      "Flat",
-      "65",
-      "64",
-      "BRU",
-      "https://www.ironman.com/5150-knokke-heist",
-      "https://cdn1.sportngin.com/attachments/photo/95df-178779320/5150-Knokke-Heist_large.jpg"
-    ]
+    "coordinates": [3.2884738, 51.3433866],
+    "type": "5150-Triathlon-Series",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "08",
     "location": "Springfield, Massachusetts",
-    "coordinates": [
-      -72.5886727,
-      42.1018764
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Western Massachusetts",
-      "North America",
-      "United States",
-      "Springfield, Massachusetts",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Hilly",
-      "Hilly",
-      "70",
-      "67",
-      "BDL",
-      "https://www.ironman.com/im703-western-massachusetts",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/b618-193356756/MicrosoftTeams-image__58__large.jpg"
-    ]
+    "coordinates": [-72.5886727, 42.1018764],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Hilly",
+    "run": "Hilly",
+    "date": "June"
   },
   {
-    "name": "22",
     "location": "Nice, France",
-    "coordinates": [
-      7.2683912,
-      43.7009358
-    ],
-    "data": [
-      "22",
-      "September",
-      "2024",
-      "IRONMAN",
-      "World Championship - Women",
-      "Europe",
-      "France",
-      "Nice, France",
-      "VinFast",
-      "",
-      "By Qualification Only",
-      "Ocean",
-      "Hilly",
-      "Rolling",
-      "76",
-      "72",
-      "NCE",
-      "https://www.ironman.com/im-world-championship-nice",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/5881-201115746/IRONMAN_World_Championship_2024_Race_Card_New_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [7.2683912, 43.7009358],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "September"
   },
   {
-    "name": "28",
     "location": "Jones Beach, New York",
-    "coordinates": [
-      -76.3941005,
-      42.9047894
-    ],
-    "data": [
-      "28",
-      "September",
-      "2024",
-      "IRONMAN-70.3",
-      "New York",
-      "North America",
-      "United States",
-      "Jones Beach, New York",
-      "Northwell Health",
-      "",
-      "Race Weekend - Follow Us",
-      "Bay",
-      "Flat",
-      "Flat",
-      "70",
-      "65",
-      "JFK | LGA",
-      "https://www.ironman.com/im703-new-york",
-      "https://cdn1.sportngin.com/attachments/photo/53f7-183115969/Jones_Beach_Race_Card_large.jpg"
-    ]
+    "coordinates": [-76.3941005, 42.9047894],
+    "type": "IRONMAN-70.3",
+    "swim": "Bay",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "14",
     "location": "Taupo, New Zealand",
-    "coordinates": [
-      176.0694773,
-      -38.6866197
-    ],
-    "data": [
-      "14",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "World Championship - Women",
-      "Oceania",
-      "New Zealand",
-      "Taupo, New Zealand",
-      "VinFast",
-      "",
-      "By Qualification Only",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "68",
-      "64",
-      "TUO",
-      "https://www.ironman.com/im703-world-championship-2024",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/77ff-188701307/2024_IM_70.3_World_Champ_Race_Card_1_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [176.0694773, -38.6866197],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "15",
     "location": "Taupo, New Zealand",
-    "coordinates": [
-      176.0694773,
-      -38.6866197
-    ],
-    "data": [
-      "15",
-      "December",
-      "2024",
-      "IRONMAN-70.3",
-      "World Championship - Men",
-      "Oceania",
-      "New Zealand",
-      "Taupo, New Zealand",
-      "VinFast",
-      "",
-      "By Qualification Only",
-      "Lake",
-      "Rolling",
-      "Flat",
-      "68",
-      "64",
-      "TUO",
-      "https://www.ironman.com/im703-world-championship-2024",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/e865-188701403/2024_IM_70.3_World_Champ_Race_Card_2_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [176.0694773, -38.6866197],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "December"
   },
   {
-    "name": "03",
     "location": "Sahl Hasheesh, Egypt",
-    "coordinates": [
-      33.8868439,
-      27.0484448
-    ],
-    "data": [
-      "03",
-      "November",
-      "2023",
-      "5150-Triathlon-Series",
-      "Egypt",
-      "Africa",
-      "Egypt",
-      "Sahl Hasheesh, Egypt",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Bay",
-      "Rolling",
-      "Flat",
-      "82",
-      "82",
-      "HRG",
-      "https://www.ironman.com/5150-egypt",
-      "https://cdn1.sportngin.com/attachments/photo/7766-189182658/5150Egypt-raceCard_large.jpg"
-    ]
+    "coordinates": [33.8868439, 27.0484448],
+    "type": "5150-Triathlon-Series",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "17",
     "location": "Phu Quoc, Viet Nam",
-    "coordinates": [
-      103.9875395,
-      10.2162807
-    ],
-    "data": [
-      "17",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Phu Quoc",
-      "Asia",
-      "Viet Nam",
-      "Phu Quoc, Viet Nam",
-      "BIM Group",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "82",
-      "84",
-      "PQC",
-      "https://www.ironman.com/im703-Phu-quoc",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3e53-190635708/703PhuQuoc-RaceCard_large.jpg"
-    ]
+    "coordinates": [103.9875395, 10.2162807],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "22",
     "location": "Coeur d'Alene, Idaho",
-    "coordinates": [
-      -116.7811531,
-      47.6742994
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Coeur d'Alene",
-      "North America",
-      "United States",
-      "Coeur d'Alene, Idaho",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "75",
-      "62",
-      "GEG",
-      "https://www.ironman.com/im703-coeur-dalene",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/ff28-175981973/IM_CdA_2033_large.jpg"
-    ]
+    "coordinates": [-116.7811531, 47.6742994],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "08",
     "location": "Bolton, England",
-    "coordinates": [
-      -2.4300367,
-      53.5782863
-    ],
-    "data": [
-      "08",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Bolton",
-      "Europe",
-      "United Kingdom",
-      "Bolton, England",
-      "",
-      "",
-      "Register with Flex90",
-      "Lake",
-      "Rolling",
-      "Rolling",
-      "68",
-      "66",
-      "MAN",
-      "https://www.ironman.com/im703-bolton",
-      "https://cdn1.sportngin.com/attachments/photo/b6a9-133719409/IMUK.jpg"
-    ]
+    "coordinates": [-2.4300367, 53.5782863],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "June"
   },
   {
-    "name": "10",
     "location": "Lapu-Lapu, Cebu, Philippines",
-    "coordinates": [
-      123.8909945,
-      10.3166846
-    ],
-    "data": [
-      "10",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Lapu-Lapu",
-      "Asia",
-      "Philippines",
-      "Lapu-Lapu, Cebu, Philippines",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "92",
-      "82",
-      "CEB",
-      "https://www.ironman.com/im703-cebu-philippines",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/de37-133724991/5150Cebu.jpg"
-    ]
+    "coordinates": [123.8909945, 10.3166846],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "16",
     "location": "Campeche, Mexico",
-    "coordinates": [
-      -90.5,
-      19
-    ],
-    "data": [
-      "16",
-      "March",
-      "2025",
-      "IRONMAN-70.3",
-      "Campeche",
-      "North America",
-      "Mexico",
-      "Campeche, Mexico",
-      "",
-      "",
-      "Registration Opening Soon",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "86",
-      "82",
-      "CPE",
-      "https://www.ironman.com/im703-campeche",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/33a1-133827079/703Campeche.jpg"
-    ]
+    "coordinates": [-90.5, 19],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "March"
   },
   {
-    "name": "04",
     "location": "Cap Cana, Dominican Republic",
-    "coordinates": [
-      -68.3830103,
-      18.5044392
-    ],
-    "data": [
-      "04",
-      "May",
-      "2025",
-      "IRONMAN-70.3",
-      "Cap Cana",
-      "South America",
-      "Dominican Republic",
-      "Cap Cana, Dominican Republic",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "86",
-      "83",
-      "PUJ",
-      "https://www.ironman.com/im703-cap-cana",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/33a1-133827079/703Campeche.jpg"
-    ]
+    "coordinates": [-68.3830103, 18.5044392],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "17",
     "location": "Louisville, Kentucky",
-    "coordinates": [
-      -85.759407,
-      38.2542376
-    ],
-    "data": [
-      "17",
-      "August",
-      "2025",
-      "IRONMAN-70.3",
-      "Louisville",
-      "North America",
-      "United States",
-      "Louisville, Kentucky",
-      "",
-      "",
-      "Registration Opening Soon",
-      "River",
-      "Rolling",
-      "Rolling",
-      "85",
-      "80",
-      "SDF",
-      "https://www.ironman.com/im703-louisville",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/0420-194198507/70.3_Louisville_Race_Card_large.jpg"
-    ]
+    "coordinates": [-85.759407, 38.2542376],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "August"
   },
   {
-    "name": "27",
     "location": "Valencia, Spain",
-    "coordinates": [
-      -0.3763353,
-      39.4697065
-    ],
-    "data": [
-      "27",
-      "April",
-      "2025",
-      "IRONMAN-70.3",
-      "Valencia",
-      "Europe",
-      "Spain",
-      "Valencia, Spain",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "68",
-      "63",
-      "VLC",
-      "https://www.ironman.com/im703-valencia",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/f8f1-194497947/IM703Valencia_large.png"
-    ]
+    "coordinates": [-0.3763353, 39.4697065],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "April"
   },
   {
-    "name": "17",
     "location": "Valdivia, Chile",
-    "coordinates": [
-      -73.2459859,
-      -39.8141262
-    ],
-    "data": [
-      "17",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Valdivia",
-      "South America",
-      "Chile",
-      "Valdivia, Chile",
-      "",
-      "",
-      "Sold Out",
-      "River",
-      "Flat",
-      "Flat",
-      "68",
-      "58",
-      "ZAL",
-      "https://www.ironman.com/im703-valdivia",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3c39-194814429/TEASER-BOXES-3_large.jpg"
-    ]
+    "coordinates": [-73.2459859, -39.8141262],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "21",
     "location": "Richland, Washington",
-    "coordinates": [
-      -119.275205,
-      46.2804298
-    ],
-    "data": [
-      "21",
-      "September",
-      "2025",
-      "IRONMAN-70.3",
-      "Washington Tri-Cities",
-      "North America",
-      "United States",
-      "Richland, Washington",
-      "",
-      "",
-      "Register Now: 2025 Presale",
-      "River",
-      "Rolling",
-      "Flat",
-      "70",
-      "68",
-      "PCS",
-      "https://www.ironman.com/im703-washington-tri-cities",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3342-195282968/70.3_Washington_Tri-Cities_large.jpg"
-    ]
+    "coordinates": [-119.275205, 46.2804298],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "18",
     "location": "Hradec Králové, Czech Republic",
-    "coordinates": [
-      15.8327512,
-      50.2092113
-    ],
-    "data": [
-      "18",
-      "August",
-      "2024",
-      "IRONMAN-70.3",
-      "Hradec Králové",
-      "Europe",
-      "Czech Republic",
-      "Hradec Králové, Czech Republic",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "River",
-      "Rolling",
-      "Flat",
-      "73",
-      "65",
-      "PRG",
-      "https://www.ironman.com/im703-hradec-kralove",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/3251-195217656/703HradecKralove-RaceCard_large.jpg"
-    ]
+    "coordinates": [15.8327512, 50.2092113],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "18",
     "location": "Hradec Králové, Czech Republic",
-    "coordinates": [
-      15.8327512,
-      50.2092113
-    ],
-    "data": [
-      "18",
-      "August",
-      "2024",
-      "5150-Triathlon-Series",
-      "Hradec Králové",
-      "Europe",
-      "Czech Republic",
-      "Hradec Králové, Czech Republic",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "River",
-      "Rolling",
-      "Flat",
-      "73",
-      "65",
-      "PRG",
-      "https://www.ironman.com/5150-hradec-kralove",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/9da2-195217641/5150HradecKralove-RaceCard_large.jpg"
-    ]
+    "coordinates": [15.8327512, 50.2092113],
+    "type": "5150-Triathlon-Series",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "04",
     "location": "Gdynia, Poland",
-    "coordinates": [
-      18.604027892041863,
-      54.52333035
-    ],
-    "data": [
-      "04",
-      "August",
-      "2024",
-      "5150-Triathlon-Series",
-      "Gdynia",
-      "Europe",
-      "Poland",
-      "Gdynia, Poland",
-      "Enea",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Bay",
-      "Rolling",
-      "Rolling",
-      "77",
-      "66",
-      "GDN",
-      "https://www.ironman.com/5150-gdynia",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/c76d-195217512/5150_gdynia_-_card_large.jpg"
-    ]
+    "coordinates": [18.604027892041863, 54.52333035],
+    "type": "5150-Triathlon-Series",
+    "swim": "Bay",
+    "bike": "Rolling",
+    "run": "Rolling",
+    "date": "August"
   },
   {
-    "name": "15",
     "location": "Belgrade, Serbia",
-    "coordinates": [
-      20.4568974,
-      44.8178131
-    ],
-    "data": [
-      "15",
-      "September",
-      "2024",
-      "IRONMAN-70.3",
-      "Belgrade, Serbia",
-      "Europe",
-      "Serbia",
-      "Belgrade, Serbia",
-      "",
-      "",
-      "Registration Opening Soon - Notify Me",
-      "Lake",
-      "Flat",
-      "Flat",
-      "70",
-      "68",
-      "BEG",
-      "https://www.ironman.com/im703-belgrade",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/2b1b-195802604/Belgr-1.png"
-    ]
+    "coordinates": [20.4568974, 44.8178131],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "15",
     "location": "Hokkaido, Japan",
-    "coordinates": [
-      142.8197834,
-      43.4519831
-    ],
-    "data": [
-      "15",
-      "September",
-      "2024",
-      "IRONMAN",
-      "Japan South Hokkaido",
-      "Asia",
-      "Japan",
-      "Hokkaido, Japan",
-      "",
-      "",
-      "Sold Out",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "64",
-      "70",
-      "HKD",
-      "https://www.ironman.com/im-south-hokkaido",
-      "https://cdn1.sportngin.com/attachments/photo/ab1a-197503764/Ironman_Japan_South_Hokkaido_RaceCARD_resize_large.jpg"
-    ]
+    "coordinates": [142.8197834, 43.4519831],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "September"
   },
   {
-    "name": "08",
     "location": "Marbella, Spain",
-    "coordinates": [
-      -4.88562,
-      36.508976
-    ],
-    "data": [
-      "08",
-      "November",
-      "2025",
-      "IRONMAN-70.3",
-      "World Championship - Women",
-      "Europe",
-      "Spain",
-      "Marbella, Spain",
-      "VinFast",
-      "",
-      "By Qualification Only",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "70",
-      "61",
-      "AGP",
-      "https://www.ironman.com/im703-world-championship-2025",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/445d-198342757/2025_IM70.3_WC_Race_Card_Women_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [-4.88562, 36.508976],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "09",
     "location": "Marbella, Spain",
-    "coordinates": [
-      -4.88562,
-      36.508976
-    ],
-    "data": [
-      "09",
-      "November",
-      "2025",
-      "IRONMAN-70.3",
-      "World Championship - Men",
-      "Europe",
-      "Spain",
-      "Marbella, Spain",
-      "VinFast",
-      "",
-      "By Qualification Only",
-      "Ocean",
-      "Hilly",
-      "Flat",
-      "70",
-      "61",
-      "AGP",
-      "https://www.ironman.com/im703-world-championship-2025",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/fce5-198342776/2025_IM70.3_WC_Race_Card_Men_large.jpg",
-      "TRUE"
-    ]
+    "coordinates": [-4.88562, 36.508976],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Hilly",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "18",
     "location": "Salinas, Ecuador",
-    "coordinates": [
-      -80.967163,
-      -2.2079292
-    ],
-    "data": [
-      "18",
-      "May",
-      "2025",
-      "5150-Triathlon-Series",
-      "Salinas",
-      "South America",
-      "Ecuador",
-      "Salinas, Ecuador",
-      "La Roche Posay",
-      "Marathon",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "78",
-      "78",
-      "GYE",
-      "https://www.ironman.com/5150-salinas",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/9f3b-198645915/5150_Salinas_Race_Card_large.jpg"
-    ]
+    "coordinates": [-80.967163, -2.2079292],
+    "type": "5150-Triathlon-Series",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "May"
   },
   {
-    "name": "00",
     "location": "Penticton, British Columbia",
-    "coordinates": [
-      -119.593249,
-      49.5003268
-    ],
-    "data": [
-      "00",
-      "TBD",
-      "2024",
-      "IRONMAN-70.3",
-      "Canada",
-      "North America",
-      "Canada",
-      "Penticton, British Columbia",
-      "",
-      "",
-      "DISCONTINUED",
-      "Lake",
-      "Hilly",
-      "Rolling",
-      "78",
-      "70",
-      "YYF",
-      "https://www.ironman.com/im703-canada",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/56fc-198827526/70.3_Canada_Race_Card_2024_large.jpg"
-    ]
+    "coordinates": [-119.593249, 49.5003268],
+    "type": "IRONMAN-70.3",
+    "swim": "Lake",
+    "bike": "Hilly",
+    "run": "Rolling",
+    "date": "TBD"
   },
   {
-    "name": "24",
     "location": "Aracaju, Brazil",
-    "coordinates": [
-      -37.0774655,
-      -10.9162061
-    ],
-    "data": [
-      "24",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Aracaju - Sergipe",
-      "South America",
-      "Brazil",
-      "Aracaju, Brazil",
-      "Itaú",
-      "",
-      "Sold Out",
-      "River",
-      "Flat",
-      "Flat",
-      "84",
-      "77",
-      "AJU",
-      "https://www.ironman.com/im703-aracaju-sergipe",
-      "https://cdn1.sportngin.com/attachments/photo/d061-200792877/Aracaju-Sergipe_Race_Card_large.jpg"
-    ]
+    "coordinates": [-37.0774655, -10.9162061],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "10",
     "location": "Riviera Nayarit, Mexico",
-    "coordinates": [
-      -105.29567608865271,
-      20.6969632
-    ],
-    "data": [
-      "10",
-      "November",
-      "2024",
-      "IRONMAN-70.3",
-      "Riviera Nayarit",
-      "North America",
-      "Mexico",
-      "Riviera Nayarit, Mexico",
-      "",
-      "",
-      "Sold Out",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "86",
-      "80",
-      "PVR",
-      "https://www.ironman.com/im703-riviera-nayarit",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/76ba-200901337/Riviera_Nayarit_Race_Card_large.jpg"
-    ]
+    "coordinates": [-105.29567608865271, 20.6969632],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "November"
   },
   {
-    "name": "03",
     "location": "Ottawa, Canada",
-    "coordinates": [
-      -75.6901106,
-      45.4208777
-    ],
-    "data": [
-      "03",
-      "August",
-      "2025",
-      "IRONMAN",
-      "Canada - Ottawa",
-      "North America",
-      "Canada",
-      "Ottawa, Canada",
-      "",
-      "",
-      "Sold Out - IRONMAN Foundation Entries Available",
-      "River",
-      "Rolling",
-      "Flat",
-      "78",
-      "70",
-      "YOW",
-      "https://www.ironman.com/im-canada-ottawa",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/a4b9-201022256/IRONMAN_cCanada_-_Ottawa_-_Race_Card_large.jpg"
-    ]
+    "coordinates": [-75.6901106, 45.4208777],
+    "type": "IRONMAN",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "August"
   },
   {
-    "name": "06",
     "location": "Gualeguaychu, Argentina",
-    "coordinates": [
-      -58.5103466,
-      -33.0078585
-    ],
-    "data": [
-      "06",
-      "October",
-      "2024",
-      "5150-Triathlon-Series",
-      "Gualeguaychú",
-      "South America",
-      "Argentina",
-      "Gualeguaychu, Argentina",
-      "",
-      "",
-      "Registration Now Open",
-      "River",
-      "Flat",
-      "Flat",
-      "75",
-      "76",
-      "AEP",
-      "https://www.ironman.com/5150-gualeguaychu",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/f0db-202294786/download__2___1__large.png"
-    ]
+    "coordinates": [-58.5103466, -33.0078585],
+    "type": "5150-Triathlon-Series",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "22",
     "location": "Rockford, Illinois",
-    "coordinates": [
-      -89.093966,
-      42.2713945
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Rockford Illinois",
-      "North America",
-      "United States",
-      "Rockford, Illinois",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Rolling",
-      "Flat",
-      "81",
-      "79",
-      "ORD | RFD",
-      "https://www.ironman.com/im703-rockford-illinois",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/7951-202812071/Rockford_Illinois_Race_Card_large.jpg"
-    ]
+    "coordinates": [-89.093966, 42.2713945],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "22",
     "location": "Vendėe, France",
-    "coordinates": [
-      -1.29144634801388,
-      46.67577325
-    ],
-    "data": [
-      "22",
-      "June",
-      "2025",
-      "IRONMAN",
-      "Les Sables d'Olonne-Vendée",
-      "Europe",
-      "France",
-      "Vendėe, France",
-      "",
-      "",
-      "Register with Flex90",
-      "Ocean",
-      "Rolling",
-      "Flat",
-      "75",
-      "66",
-      "NTE",
-      "https://www.ironman.com/im-les-sables-dolonne",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/dd76-203006016/IM_Les-Sables_Race-Card.jpg"
-    ]
+    "coordinates": [-1.29144634801388, 46.67577325],
+    "type": "IRONMAN",
+    "swim": "Ocean",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "01",
     "location": "Tours, France",
-    "coordinates": [
-      0.6889268,
-      47.3900474
-    ],
-    "data": [
-      "01",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "Tours Métropole - Loire Valley",
-      "Europe",
-      "France",
-      "Tours, France",
-      "",
-      "",
-      "Register with Flex90",
-      "River",
-      "Flat",
-      "Flat",
-      "75",
-      "66",
-      "TUF",
-      "https://www.ironman.com/im703-tours",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/aa7d-203453975/IM-703-Tour-Race-Asset.jpg"
-    ]
+    "coordinates": [0.6889268, 47.3900474],
+    "type": "IRONMAN-70.3",
+    "swim": "River",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "20",
     "location": "Marathon, Attica, Greece",
-    "coordinates": [
-      23.9620892,
-      38.1532724
-    ],
-    "data": [
-      "20",
-      "October",
-      "2024",
-      "IRONMAN-70.3",
-      "Marathon, Greece",
-      "Europe",
-      "Greece",
-      "Marathon, Attica, Greece",
-      "PPC",
-      "",
-      "Sold Out - Notify Me",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "73",
-      "72",
-      "ATH",
-      "https://www.ironman.com/im703-marathon",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/fed6-203477053/Marathon_Race_Card.jpg"
-    ]
+    "coordinates": [23.9620892, 38.1532724],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "October"
   },
   {
-    "name": "15",
     "location": "San Andrés Islas, Colombia",
-    "coordinates": [
-      -81.72041550499901,
-      12.537597850000001
-    ],
-    "data": [
-      "15",
-      "June",
-      "2025",
-      "IRONMAN-70.3",
-      "San Andres",
-      "South America",
-      "Colombia",
-      "San Andrés Islas, Colombia",
-      "",
-      "",
-      "Registration Now Open",
-      "Ocean",
-      "Flat",
-      "Flat",
-      "82",
-      "82",
-      "ADZ",
-      "https://www.ironman.com/im703-san-andres",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/63e7-204616734/San_Andres_Race_Card_large.jpg"
-    ]
+    "coordinates": [-81.72041550499901, 12.537597850000001],
+    "type": "IRONMAN-70.3",
+    "swim": "Ocean",
+    "bike": "Flat",
+    "run": "Flat",
+    "date": "June"
   },
   {
-    "name": "26",
     "location": "Boise, Idaho",
-    "coordinates": [
-      -116.200886,
-      43.6166163
-    ],
-    "data": [
-      "26",
-      "July",
-      "2025",
-      "IRONMAN-70.3",
-      "Boise",
-      "North America",
-      "United States",
-      "Boise, Idaho",
-      "",
-      "",
-      "Register with Flex90",
-      "Reservoir",
-      "Rolling",
-      "Flat",
-      "81",
-      "72",
-      "BOI",
-      "https://www.ironman.com/im703-boise",
-      "https://ironman.kleecks-cdn.com/cdn1/attachments/photo/987e-204826117/Boise_Sliders_Downtown_II_large.jpg"
-    ]
+    "coordinates": [-116.200886, 43.6166163],
+    "type": "IRONMAN-70.3",
+    "swim": "Reservoir",
+    "bike": "Rolling",
+    "run": "Flat",
+    "date": "July"
   }
 ]

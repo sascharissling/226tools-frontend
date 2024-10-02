@@ -34,10 +34,9 @@ const EventsMap = () => {
       });
 
       races.forEach((event) => {
-        const { coordinates, data: eventData } = event;
         const feature = new Feature({
-          geometry: new Point(fromLonLat(coordinates)),
-          eventData,
+          geometry: new Point(fromLonLat(event.coordinates)),
+          event,
         });
         vectorSource.addFeature(feature);
         feature.setStyle(iconStyle);
@@ -63,7 +62,7 @@ const EventsMap = () => {
       map.current?.getView().fit(extent, {
         size: map.current.getSize(),
         padding: [50, 50, 50, 50], // Optional padding
-        maxZoom: 12, // Set max zoom level to avoid zooming too close
+        maxZoom: 12,
       });
 
       // Create an overlay to show event information
@@ -73,7 +72,7 @@ const EventsMap = () => {
       });
       map.current?.addOverlay(overlay);
 
-      // Display event information on hover
+      // Display event information on click
       map.current?.on("click", (event) => {
         const feature = map.current?.forEachFeatureAtPixel(
           event.pixel,
@@ -81,17 +80,17 @@ const EventsMap = () => {
         );
         if (feature) {
           const coordinates = feature.getGeometry()?.getCoordinates();
-          const eventData = feature.get("eventData");
+          const event = feature.get("event");
           const content = document.getElementById("popup-content")!;
           content.innerHTML = `
-            <strong>${eventData[3]}</strong><br>
-            ${eventData[4]}, ${eventData[5]}<br>
+            <strong>${event.type}</strong><br>
+            ${event.location}<br>
             <br>
-            Month: ${eventData[1]}<br>
+            Month: ${event.date}<br>
             <br>
-            Swim: ${eventData[11]}<br>
-            Bike: ${eventData[12]}<br>
-            Run: ${eventData[13]}<br>
+            Swim: ${event.swim}<br>
+            Bike: ${event.bike}<br>
+            Run: ${event.run}<br>
           `;
           overlay.setPosition(coordinates as unknown as Coordinate);
         } else {
