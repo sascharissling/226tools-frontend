@@ -16,6 +16,8 @@ import "ol/ol.css";
 import races from "./events.json";
 import { Coordinate } from "ol/coordinate";
 import markerSvg from "./marker.svg";
+import { Section } from "../../components/section";
+import { Heading } from "../../components/text";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -119,15 +121,16 @@ const EventsMap = () => {
 
   return (
     <main>
-      <h1>Events Map</h1>
       <div style={{ height: 800 }}>
         <MapContainer ref={mapRef}></MapContainer>
         <Popup id="popup">
           <PopupContent id="popup-content"></PopupContent>
         </Popup>
       </div>
-      <section>
-        <h1>Explore All Global Triathlon Events on Our Interactive Map</h1>
+      <Section>
+        <Heading as="h1" $paddingBottom={1}>
+          Explore All Global Triathlon Events on Our Interactive Map
+        </Heading>
         <p>
           Looking for your next Triathlon challenge? Our comprehensive Triathlon
           events map helps you find races across the globe. Whether you're a
@@ -150,7 +153,7 @@ const EventsMap = () => {
           We want to include way more events and filtering for Oly, Half and
           Full.
         </p>
-      </section>
+      </Section>
     </main>
   );
 };
