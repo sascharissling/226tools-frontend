@@ -18,6 +18,7 @@ import { Coordinate } from "ol/coordinate";
 import markerSvg from "./marker.svg";
 import { Section } from "../../components/section";
 import { Heading } from "../../components/text";
+import Meta from "./components/Meta.tsx";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -121,7 +122,8 @@ const EventsMap = () => {
 
   return (
     <main>
-      <MapWrapper style={{ height: 800 }}>
+      <Meta />
+      <MapWrapper>
         <MapContainer ref={mapRef}></MapContainer>
         <Popup id="popup">
           <PopupContent id="popup-content"></PopupContent>
@@ -164,6 +166,7 @@ const EventsMap = () => {
 export default EventsMap;
 
 const MapWrapper = styled.div`
+  height: 800px;
   max-height: 60vh;
 `;
 
