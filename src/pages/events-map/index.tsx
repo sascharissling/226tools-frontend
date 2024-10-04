@@ -19,6 +19,7 @@ import markerSvg from "./marker.svg";
 import { Section } from "../../components/section";
 import { Heading } from "../../components/text";
 import Meta from "./components/Meta.tsx";
+import { isMobile } from "react-device-detect";
 
 const EventsMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -98,7 +99,9 @@ const EventsMap = () => {
         }
       };
       // Display event information on click
-      map.current?.on("pointermove", handlePopup);
+
+      const action = isMobile ? "touchend" : "pointermove";
+      map.current?.on(action, handlePopup);
     };
 
     if (!map.current && mapRef.current) {
