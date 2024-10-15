@@ -4,11 +4,10 @@ import { drawLine, clearCanvas } from "./helpers/drawLine";
 import { Section } from "../../components/section";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
-
-dayjs.extend(duration);
-
 import jsPDF from "jspdf";
 import Button from "../../components/button";
+
+dayjs.extend(duration);
 
 const allowedColors = [
   "#FF6F61",
@@ -85,7 +84,7 @@ const RaceTracePage = () => {
                   .duration(totalTime, "seconds")
                   .format("HH:mm:ss");
                 setData((prevData) =>
-                  prevData ? [...prevData, data] : [data]
+                  prevData ? [...prevData, data] : [data],
                 );
                 setColors((prevColors) => [...prevColors, allowedColors[0]]);
                 setTimes((prevTimes) => [...prevTimes, formattedTime]);
@@ -144,7 +143,7 @@ const RaceTracePage = () => {
                 </strong>
                 - Start Time:{" "}
                 {dayjs(fitFileData.activity?.timestamp).format(
-                  "HH:mm:ss DD/MM/YYYY"
+                  "HH:mm:ss DD/MM/YYYY",
                 )}
                 <div>
                   {allowedColors.map((color) => (
