@@ -24,9 +24,8 @@ const NutritionCalculator = () => {
 
 export default NutritionCalculator;
 
-const Main = styled.main`
+const Main = styled.div`
   padding: 1em;
   display: grid;
   gap: 3rem;
-  overflow: scroll;
 `;
