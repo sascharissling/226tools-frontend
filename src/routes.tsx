@@ -24,11 +24,11 @@ export const router = createBrowserRouter(
         <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
         <Route path={"/events-map"} element={<EventsMap />} />
         <Route path={"/blog"} element={<Blog />} />
+        <Route path="/blog" element={<Blog />}>
+          <Route path=":articleSlug" element={<Article />} />
+        </Route>
         {process.env.NODE_ENV === "development" && (
           <>
-            <Route path="/blog" element={<Blog />}>
-              <Route path=":articleSlug" element={<Article />} />
-            </Route>
             <Route path={"/race-trace"} element={<RaceTracePage />} />
             <Route
               path={"/nutrition-calculator"}
