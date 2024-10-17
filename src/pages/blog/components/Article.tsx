@@ -12,7 +12,7 @@ const Article = () => {
     const fetchContent = async () => {
       try {
         const response = await fetch(
-          `/src/pages/blog/content/${articleSlug}.md`
+          `/src/pages/blog/content/${articleSlug}.md`,
         );
         const text = await response.text();
         setContent(text);

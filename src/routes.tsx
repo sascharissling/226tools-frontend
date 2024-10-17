@@ -23,9 +23,9 @@ export const router = createBrowserRouter(
         <Route path={"/imprint"} element={<Imprint />} />
         <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
         <Route path={"/events-map"} element={<EventsMap />} />
+        <Route path={"/blog"} element={<Blog />} />
         {process.env.NODE_ENV === "development" && (
           <>
-            <Route path={"/blog"} element={<Blog />} />
             <Route path="/blog" element={<Blog />}>
               <Route path=":articleSlug" element={<Article />} />
             </Route>

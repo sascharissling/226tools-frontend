@@ -3,12 +3,8 @@ import styled from "styled-components";
 
 const articles = [
   {
-    title: "The Ultimate Guide to Triathlon Pacing Strategies",
-    slug: "triathlon-pacing-strategies",
-  },
-  {
-    title: "Top 5 Tools Every Long-Distance Triathlete Needs",
-    slug: "tools-long-distance-triathlete",
+    title: "How to train for an ironman with kids",
+    slug: "how-to-train-for-an-ironman-with-kids",
   },
 ];
 
@@ -18,7 +14,7 @@ const Blog = () => {
       <main>
         <Outlet />
       </main>
-      <aside>
+      <Aside>
         <h1>Blog</h1>
         <ul>
           {articles.map((article, index) => (
@@ -27,7 +23,7 @@ const Blog = () => {
             </li>
           ))}
         </ul>
-      </aside>
+      </Aside>
     </BlogWrapper>
   );
 };
@@ -39,4 +35,8 @@ const BlogWrapper = styled.div`
   grid-template-columns: auto auto;
   max-width: 70vw;
   margin: auto auto;
+`;
+
+const Aside = styled.aside`
+  padding-top: 1em;
 `;

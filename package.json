@@ -36,6 +36,7 @@
     "react-hook-form": "^7.52.1",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.25.1",
+    "simplify-js": "^1.2.4",
     "styled-components": "^6.1.13",
     "uuidv4": "^6.2.13"
   },
