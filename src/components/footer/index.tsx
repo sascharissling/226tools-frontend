@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import instagramSvg from "../../assets/instagram.svg";
-import githubSvg from "../../assets/github.svg";
 import { FOOTER_HEIGHT_REM } from "../../theme/GlobalStyles.tsx";
 import { devices } from "../../theme/theme.ts";
+import SocialLink from "../social-link";
 
 const Footer = () => {
   return (
@@ -14,12 +13,8 @@ const Footer = () => {
         <Link to={"/privacy-policy"}>Privacy Policy</Link>
       </LinkWrapper>
       <SocialContainer>
-        <SocialLink href={"https://instagram.com/430legsup"} target="_blank">
-          <SocialImage src={instagramSvg} alt="Instagram" />
-        </SocialLink>
-        <SocialLink href={"https://github.com/sascharissling"} target="_blank">
-          <SocialImage src={githubSvg} alt="Github" />
-        </SocialLink>
+        <SocialLink type="github" />
+        <SocialLink type="instagram" />
       </SocialContainer>
     </FooterComponent>
   );
@@ -54,20 +49,6 @@ const FooterComponent = styled.footer`
     grid-template-columns: 1fr 60% 1fr;
     grid-template-areas: "madeWith link social";
   }
-`;
-
-const SocialLink = styled.a`
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.5;
-  &:hover {
-    opacity: 1;
-  }
-`;
-
-const SocialImage = styled.img`
-  width: 1rem;
-  height: 1rem;
 `;
 
 const MadeWith = styled.div`
