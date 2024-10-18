@@ -1,42 +1,48 @@
-import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
-
-const articles = [
-  {
-    title: "How to train for an ironman with kids",
-    slug: "how-to-train-for-an-ironman-with-kids",
-  },
-];
+import AboutTheAuthor from "./components/AboutTheAuthor.tsx";
+import { devices } from "../../theme/theme.ts";
+import { Outlet } from "react-router-dom";
 
 const Blog = () => {
   return (
-    <BlogWrapper>
-      <main>
+    <BlogMain>
+      <BlogContent>
         <Outlet />
-      </main>
+      </BlogContent>
+
       <Aside>
-        <h1>Blog</h1>
-        <ul>
-          {articles.map((article, index) => (
-            <li key={index}>
-              <Link to={`/blog/${article.slug}`}>{article.title}</Link>
-            </li>
-          ))}
-        </ul>
+        <AboutTheAuthor />
       </Aside>
-    </BlogWrapper>
+    </BlogMain>
   );
 };
 
 export default Blog;
 
-const BlogWrapper = styled.div`
+const BlogMain = styled.main`
   display: grid;
-  grid-template-columns: auto auto;
-  max-width: 70vw;
-  margin: auto auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "aside";
+  grid-template-rows: max-content max-content max-content;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+
+  @media ${devices.md} {
+    grid-template-areas:
+      "header header"
+      "content aside";
+    grid-template-rows: max-content max-content;
+    grid-template-columns: auto 15rem;
+  }
+`;
+
+const BlogContent = styled.section`
+  grid-area: content;
 `;
 
 const Aside = styled.aside`
-  padding-top: 1em;
+  grid-area: aside;
 `;

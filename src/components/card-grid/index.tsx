@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 const CardGrid = ({
   content,
+  orientation = "wrap",
 }: {
   content: {
     img: string;
@@ -12,11 +13,12 @@ const CardGrid = ({
     comingSoon?: boolean;
     fullWidth?: boolean;
   }[];
+  orientation?: "wrap" | "vertical";
 }) => {
   return (
-    <GridContainer>
+    <GridContainer $orientation={orientation}>
       {content.map((item) => (
-        <Card key={item.title} {...item} />
+        <Card key={item.title} {...item} orientation={orientation} />
       ))}
     </GridContainer>
   );
@@ -24,36 +26,47 @@ const CardGrid = ({
 
 export default CardGrid;
 
-const GridContainer = styled.div`
+const GridContainer = styled.div<{ $orientation: "wrap" | "vertical" }>`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 
-  @media (min-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  ${({ $orientation }) =>
+    $orientation === "wrap" &&
+    css`
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    `}
 `;
 
-const Card = ({
+export const Card = ({
   img,
   title,
   description,
   to,
   comingSoon,
+  orientation,
 }: {
   img: string;
   title: string;
   description?: string;
   to?: string;
   comingSoon?: boolean;
+  orientation: "wrap" | "vertical";
 }) => {
   const content = (
     <CardContainer>
-      <CardImage src={img} alt={title} loading="eager" />
+      <CardImage
+        src={img}
+        alt={title}
+        loading="eager"
+        $orientation={orientation}
+      />
       <CardContent>
         <CardHeader>{title}</CardHeader>
         <CardDescription>{description}</CardDescription>
@@ -88,12 +101,19 @@ const CardContainer = styled.div`
   }
 `;
 
-const CardImage = styled.img`
+const CardImage = styled.img<{ $orientation: "wrap" | "vertical" }>`
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
-  height: 15rem;
   object-fit: cover;
+  ${({ $orientation }) =>
+    $orientation === "wrap"
+      ? css`
+          height: 15rem;
+        `
+      : css`
+          height: 30rem;
+        `}
 `;
 
 const CardContent = styled.div`
