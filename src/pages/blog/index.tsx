@@ -2,10 +2,18 @@ import styled from "styled-components";
 import AboutTheAuthor from "./components/AboutTheAuthor.tsx";
 import { devices } from "../../theme/theme.ts";
 import { Outlet } from "react-router-dom";
+import HeaderGroup from "../../components/header-group";
 
 const Blog = () => {
   return (
     <BlogMain>
+      <HeaderGroup
+        as="h1"
+        headline="Blog"
+        subHeadline={
+          "Read my latest articles on triathlon training, nutrition, and more."
+        }
+      />
       <BlogContent>
         <Outlet />
       </BlogContent>

@@ -1,5 +1,4 @@
 import CardGrid from "../../../components/card-grid";
-import HeaderGroup from "../../../components/header-group";
 
 const articles = [
   {
@@ -13,24 +12,15 @@ const articles = [
 
 const BlogList = () => {
   return (
-    <main>
-      <HeaderGroup
-        as="h1"
-        headline="Blog"
-        subHeadline={
-          "Read my latest articles on triathlon training, nutrition, and more."
-        }
-      />
-      <CardGrid
-        content={articles.map((article) => ({
-          img: article.image,
-          title: article.title,
-          to: `/blog/${article.slug}`,
-          description: article.teaser,
-        }))}
-        orientation="vertical"
-      />
-    </main>
+    <CardGrid
+      content={articles.map((article) => ({
+        img: article.image,
+        title: article.title,
+        to: `/blog/${article.slug}`,
+        description: article.teaser,
+      }))}
+      orientation="vertical"
+    />
   );
 };
 

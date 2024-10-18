@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
-import { Section } from "../../../components/section";
 
 const Article = () => {
   const { articleSlug } = useParams<{ articleSlug: string }>();
@@ -31,9 +30,7 @@ const Article = () => {
           content={`Read our article on ${articleSlug?.replace(/-/g, " ")}`}
         />
       </Helmet>
-      <Section>
-        <ReactMarkdown>{content}</ReactMarkdown>
-      </Section>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </main>
   );
 };
