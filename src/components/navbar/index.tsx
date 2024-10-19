@@ -78,6 +78,7 @@ const Inner = styled.div`
   gap: 3rem;
   padding: 0 1rem;
   justify-content: space-between;
+  max-width: 72rem;
 `;
 
 const Navigation = styled.nav<{ $isMenuOpen: boolean }>`
