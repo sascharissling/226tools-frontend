@@ -1,16 +1,11 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
-import { CookieConsent, getCookieConsentValue } from "react-cookie-consent";
+import { CookieConsent } from "react-cookie-consent";
 import { CSSProperties } from "react";
 import { theme } from "./theme/theme.ts";
-import { useEnv } from "./hooks/useEnv.ts";
 
 const MainLayout = () => {
-  const { isDev } = useEnv();
-  const cookieConsent =
-    getCookieConsentValue("226toolsCookieAccepted") === "true";
-
   return (
     <>
       <NavBar />
@@ -25,9 +20,6 @@ const MainLayout = () => {
         style={cookieConsentStyle}
         enableDeclineButton
         cookieName="226toolsCookieAccepted"
-        onDecline={() =>
-          (window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true)
-        }
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>

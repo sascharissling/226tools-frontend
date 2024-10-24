@@ -8,7 +8,6 @@ import Meta from "./components/Meta.tsx";
 import HeaderGroup from "../../components/header-group";
 import { faqs } from "./data/faqs.ts";
 import Content from "./components/Content.tsx";
-import ReactGA from "react-ga4";
 
 type Competition = "Sprint" | "Olympic" | "Half Ironman" | "Ironman" | "Custom";
 type Length = Record<string, number | undefined>;
@@ -40,11 +39,6 @@ const PaceCalculator = () => {
   });
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
-    ReactGA.event({
-      category: "pace-calculator",
-      action: "change-length",
-      label: event.target.name,
-    });
     setSelectedLength(lengths[event.target.value as Competition]);
   };
 
@@ -78,11 +72,6 @@ const PaceCalculator = () => {
   };
 
   const handleLegChange = (event: ChangeEvent<HTMLInputElement>) => {
-    ReactGA.event({
-      category: "pace-calculator",
-      action: "change-leg",
-      label: event.target.name,
-    });
     const { name, value } = event.target;
     setSelectedLength((prev) => ({
       ...prev,
