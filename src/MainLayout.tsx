@@ -2,8 +2,7 @@ import { Outlet } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import { CookieConsent, getCookieConsentValue } from "react-cookie-consent";
-import ReactGA from "react-ga4";
-import { CSSProperties, useEffect } from "react";
+import { CSSProperties } from "react";
 import { theme } from "./theme/theme.ts";
 import { useEnv } from "./hooks/useEnv.ts";
 
@@ -11,22 +10,6 @@ const MainLayout = () => {
   const { isDev } = useEnv();
   const cookieConsent =
     getCookieConsentValue("226toolsCookieAccepted") === "true";
-
-  useEffect(() => {
-    if (!cookieConsent || isDev) {
-      window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = true;
-      return;
-    }
-
-    ReactGA.initialize(import.meta.env.VITE_GA_ID);
-    ReactGA.send("pageview");
-
-    window[`ga-disable-${import.meta.env.VITE_GA_ID}`] = false;
-    ReactGA.event({
-      category: "cooke consent",
-      action: "consent",
-    });
-  }, [cookieConsent, isDev]);
 
   return (
     <>
